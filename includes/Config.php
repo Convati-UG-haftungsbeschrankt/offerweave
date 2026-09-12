@@ -320,39 +320,6 @@ final class Config
             if (!isset($seen[$id]) && !Catalog::supports($offer)) {
                 $c['offers'][] = $offer;
             }
-            $edited = array_column($c['offers'], null, 'id')[$id] ?? null;
-            if (
-                Catalog::supports($offer) &&
-                (!isset($seen[$id]) || (!empty($offer['enabled']) && empty($edited['enabled'])))
-            ) {
-                // Read foreign keys only. Their pricing/assignment implementations are not in Free.
-                foreach ($previous['offers'] ?? [] as $dependent) {
-                    if (
-                        in_array($id, $dependent['component_ids'] ?? [], true) ||
-                        array_key_exists($id, $dependent['component_prices'] ?? []) ||
-                        ($dependent['selection_parent'] ?? '') === $id
-                    ) {
-                        throw new \DomainException(
-                            // phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- Validation travels through Api::error JSON; the admin notice and issue renderers escape text at output.
-                            __(
-                                'This offer is referenced by saved extension data. Remove those assignments in the original edition before deleting or changing its ID.',
-                                'offerweave',
-                            ),
-                        );
-                    }
-                }
-                foreach ($previous['promotions'] ?? [] as $dependent) {
-                    if (in_array($id, $dependent['offer_ids'] ?? [], true)) {
-                        throw new \DomainException(
-                            // phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- Validation travels through Api::error JSON; the admin notice and issue renderers escape text at output.
-                            __(
-                                'This offer is referenced by saved extension data. Remove those assignments in the original edition before deleting or changing its ID.',
-                                'offerweave',
-                            ),
-                        );
-                    }
-                }
-            }
         }
         $c['legacy_item_map'] = $previous['legacy_item_map'] ?? [];
         $seen = [];
@@ -396,33 +363,6 @@ final class Config
                 throw new \DomainException(__('A selection field needs at least one option.', 'offerweave')); // phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- Validation reaches Api JSON; admin escapes messages and issue metadata.
             }
             $c['fields'][] = $field;
-        }
-        // Protect references in retained mail text without interpreting or rendering a template.
-        $removedFields = array_diff(
-            array_column($previous['fields'] ?? [], 'id'),
-            array_column($c['fields'], 'id'),
-        );
-        if ($removedFields) {
-            $texts = new \RecursiveIteratorIterator(
-                new \RecursiveArrayIterator([
-                    $previous['email'] ?? [],
-                    $previous['languages']['translations'] ?? [],
-                ]),
-            );
-            foreach ($texts as $text) {
-                $text = is_string($text) ? html_entity_decode($text, ENT_QUOTES, 'UTF-8') : $text;
-                foreach ($removedFields as $id) {
-                    if (is_string($text) && str_contains($text, '[field id="' . $id . '"]')) {
-                        throw new \DomainException(
-                            // phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- Validation travels through Api::error JSON; the admin notice and issue renderers escape text at output.
-                            __(
-                                'This field is referenced by saved email text. Remove that reference in the original edition before deleting or changing its ID.',
-                                'offerweave',
-                            ),
-                        );
-                    }
-                }
-            }
         }
         $s = $raw['settings'] ?? [];
         if (!is_array($s)) {

@@ -67,12 +67,9 @@ final class FrontendView
     {
         $category = $this->spec['category'];
         if ($this->spec['view'] === 'builder') {
-            // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only category navigation; no persisted state changes, and the category is allowlisted below.
+            // Public, read-only navigation: no stored state changes; values are allowlisted below.
             $section = sanitize_key(
-                wp_unslash(
-                    $_GET['offerweave_section'][FrontendState::scope($this->spec)] ??
-                        ($_GET['ow_section'][FrontendState::scope($this->spec)] ?? ''),
-                ),
+                wp_unslash($_GET['offerweave_section'][FrontendState::scope($this->spec)] ?? ''),
             );
             $choices = array_column($this->public['offers'], 'category');
             if (is_string($section) && in_array($section, $choices, true)) {

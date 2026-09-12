@@ -153,7 +153,7 @@
         if (type === 'checkbox')
             return (
                 '<label class="qb-check"><input type="checkbox" data-bind="' +
-                path +
+                esc(path) +
                 '" ' +
                 (v ? 'checked' : '') +
                 ' ' +
@@ -166,7 +166,7 @@
         if (type === 'textarea' || type === 'lines')
             control =
                 '<textarea rows="3" data-bind="' +
-                path +
+                esc(path) +
                 '" data-value-type="' +
                 type +
                 '" ' +
@@ -179,7 +179,7 @@
                 '<input type="' +
                 (type === 'money' || type === 'percent' || type === 'optional-percent' ? 'number' : type) +
                 '" data-bind="' +
-                path +
+                esc(path) +
                 '" data-value-type="' +
                 type +
                 '" value="' +
@@ -217,7 +217,7 @@
             '<label class="qb-field"><span>' +
             esc(label) +
             '</span><select data-bind="' +
-            path +
+            esc(path) +
             '" ' +
             (rerender ? 'data-rerender' : '') +
             '>' +
@@ -389,9 +389,9 @@
             '<div class="qb-save">' +
             handbookLink() +
             '<span data-dirty>' +
-            (dirty ? __('Unsaved changes', 'offerweave') : __('Configuration loaded', 'offerweave')) +
+            esc(dirty ? __('Unsaved changes', 'offerweave') : __('Configuration loaded', 'offerweave')) +
             '</span><button class="qb-button" data-save>' +
-            (dirty ? __('Save changes', 'offerweave') : __('Save configuration', 'offerweave')) +
+            esc(dirty ? __('Save changes', 'offerweave') : __('Save configuration', 'offerweave')) +
             ('</button></div></div></header><nav class="qb-tabs" aria-label="' +
                 esc(__('Configuration', 'offerweave')) +
                 '">') +
@@ -403,7 +403,7 @@
                         '" aria-pressed="' +
                         (id === tab) +
                         '">' +
-                        label +
+                        esc(label) +
                         '</button>'
                 )
                 .join('') +
@@ -700,7 +700,32 @@
                 ) +
                 '</p>';
         if (details) {
-            const language = (boot.locale || '').startsWith('de') ? 'de' : 'en';
+            const featureLabels = {
+                offers: __('Offers, categories, images and custom short-info icons', 'offerweave'),
+                fixed_pricing: __('Fixed price × quantity, one-off or monthly', 'offerweave'),
+                standard_shortcodes: __(
+                    'Catalogue, single card, detail selection and enquiry shortcodes',
+                    'offerweave'
+                ),
+                input_labels: __('Shared or independent card inputs and field labels', 'offerweave'),
+                basic_design: __('Accent colour, card background and corner radius', 'offerweave'),
+                forms: __('Custom enquiry fields and spam protection', 'offerweave'),
+                requests: __('Manage and export enquiries; send standard emails', 'offerweave'),
+                currency: __('Global default currency', 'offerweave'),
+                advanced_currencies: __('Additional currencies such as CHF, GBP, JPY and KWD', 'offerweave'),
+                tax_rules: __('Taxes, net/gross display and request conditions', 'offerweave'),
+                languages: __('German/English and Polylang integration', 'offerweave'),
+                transfer: __('Import and export configuration within the edition', 'offerweave'),
+                advanced_pricing: __('Tiered pricing, groups and selection packages', 'offerweave'),
+                variants: __('Variants and delivery shared or per card', 'offerweave'),
+                travel: __('Custom surcharges and additional costs', 'offerweave'),
+                external_controls: __('Freely position inputs using shortcodes', 'offerweave'),
+                promotions: __('Scheduled promotions and discounted prices', 'offerweave'),
+                banner_shortcodes: __('Place promotion banners freely with shortcodes', 'offerweave'),
+                designer: __('Full designer for cards, inputs and banners', 'offerweave'),
+                mail_designer: __('Custom email templates and styling', 'offerweave'),
+                smtp: __('Built-in SMTP delivery for OfferWeave', 'offerweave'),
+            };
             html +=
                 '<div class="qb-feature-matrix"><table><caption>' +
                 esc(__('Features by edition', 'offerweave')) +
@@ -713,7 +738,7 @@
                             '<tr data-feature="' +
                             esc(feature.id) +
                             '"><th scope="row">' +
-                            esc(feature[language]) +
+                            esc(featureLabels[feature.id] || feature.id) +
                             '</th><td>' +
                             esc(feature.free ? __('Included', 'offerweave') : '—') +
                             '</td><td>' +
@@ -731,6 +756,9 @@
                 html += '<a class="qb-secondary" href="' + esc(e[key]) + '">' + esc(label) + '</a> ';
         }
         return panel(__('Free & Pro', 'offerweave'), html);
+    }
+    function freeOfferSupported(o) {
+        return o.kind === 'fixed' && !o.selection_parent && !o.component_ids?.length && !o.use_variants && !o.surcharges?.length;
     }
     function freeDesign() {
         return panel(__('Basic design', 'offerweave'), '<div class="qb-grid">' +
@@ -754,14 +782,14 @@
         return (
             '<div class="qb-stats">' +
             [
-                [config.offers.filter((x) => x.enabled && x.kind === 'fixed').length, __('Active offers', 'offerweave')],
+                [config.offers.filter((x) => x.enabled && freeOfferSupported(x)).length, __('Active offers', 'offerweave')],
                 [
-                    config.offers.filter((x) => x.enabled && x.catalog_visible && x.kind === 'fixed').length,
+                    config.offers.filter((x) => x.enabled && x.catalog_visible && freeOfferSupported(x)).length,
                     __('Listed individually', 'offerweave'),
                 ],
                 [config.fields.filter((x) => x.enabled).length, __('Form fields', 'offerweave')],
             ]
-                .map(([n, l]) => '<div><strong>' + n + '</strong><span>' + l + '</span></div>')
+                .map(([n, l]) => '<div><strong>' + n + '</strong><span>' + esc(l) + '</span></div>')
                 .join('') +
             '</div>' +
             panel(
@@ -883,7 +911,7 @@
                         '</strong><small>' +
                         esc(kinds[x.kind]) +
                         ' · ' +
-                        (x.enabled ? __('active', 'offerweave') : 'inaktiv') +
+                        esc(x.enabled ? __('active', 'offerweave') : __('Inactive', 'offerweave')) +
                         '</small></button>'
                 )
                 .join('') +
@@ -893,10 +921,10 @@
                 '<div class="qb-workspace">' +
                 sidebar +
                 '<div>' +
-                panel(__('Offers', 'offerweave'), __('Create your first offer.', 'offerweave')) +
+                panel(__('Offers', 'offerweave'), esc(__('Create your first offer.', 'offerweave'))) +
                 '</div></div>'
             );
-        if (o.kind !== 'fixed' || o.selection_parent || o.component_ids?.length || o.use_variants || o.surcharges?.length) return '<div class="qb-workspace">' + sidebar + panel(__('Saved Pro offer', 'offerweave'), '<p>' + esc(o.name) + '</p><p>' + esc(__('This offer needs Pro. Its ID, price rules and content remain saved. Activate Pro to edit and publish it again.', 'offerweave')) + '</p>') + '</div>';
+        if (!freeOfferSupported(o)) return '<div class="qb-workspace">' + sidebar + panel(__('Saved Pro offer', 'offerweave'), '<p>' + esc(o.name) + '</p><p>' + esc(__('This offer needs Pro. Its ID, price rules and content remain saved. Activate Pro to edit and publish it again.', 'offerweave')) + '</p>') + '</div>';
         let body = panel(
             __('Edit offer', 'offerweave'),
             '<div class="qb-grid">' +
@@ -1320,20 +1348,6 @@
         });
         root.querySelector('[data-delete-offer]')?.addEventListener('click', async () => {
             const target = config.offers[selected];
-            const parents = config.offers.filter(
-                (o) => o.component_ids?.includes(target.id) || Object.hasOwn(o.component_prices || {}, target.id) || o.selection_parent === target.id
-            );
-            parents.push(...(config.promotions || []).filter(p => p.offer_ids?.includes(target.id)).map(p => ({name: p.name || p.id})));
-            if (parents.length) {
-                message =
-                    __('This offer is used in:', 'offerweave') +
-                    ' ' +
-                    parents.map((o) => o.name).join(', ') +
-                    __('. Please remove the assignment there first.', 'offerweave');
-                error = true;
-                render();
-                return;
-            }
             if (
                 await offerweave_Dialogs.confirm(
                     __(
@@ -1384,8 +1398,8 @@
                             esc(f.label) +
                             ' <small>' +
                             esc(f.type) +
-                            (f.required ? ' ' + __('· Required field', 'offerweave') : '') +
-                            (f.enabled ? '' : ' · inaktiv') +
+                            (f.required ? ' ' + esc(__('· Required field', 'offerweave')) : '') +
+                            (f.enabled ? '' : ' · ' + esc(__('Inactive', 'offerweave'))) +
                             '</small></summary><div class="qb-grid">' +
                             field('fields.' + i + '.label', __('Label', 'offerweave')) +
                             field('fields.' + i + '.id', __('Unique ID', 'offerweave')) +
@@ -2237,7 +2251,7 @@
             html +=
                 '<p>' +
                 money(t.total_cents, s.currency || 'EUR') +
-                (' ' + __('net for monthly services with a', 'offerweave') + ' ') +
+                (' ' + esc(__('net for monthly services with a', 'offerweave')) + ' ') +
                 t.months +
                 (' ' + esc(_x('month term', 'Original label: Monaten Laufzeit', 'offerweave')) + '</p>');
         if (s.comparison_cents !== null)
@@ -2486,25 +2500,25 @@
                               '</small><br>'
                             : '') +
                         (i.amount_cents === null
-                            ? __('On request', 'offerweave')
+                            ? esc(__('On request', 'offerweave'))
                             : money(
                                   displayedAmount(i, 'amount_cents'),
                                   i.currency || s.quote.currency || 'EUR'
                               ) +
                               (i.period === 'month'
-                                  ? ' ' + __('/ month', 'offerweave')
-                                  : ' ' + __('one-time', 'offerweave'))) +
+                                  ? ' ' + esc(__('/ month', 'offerweave'))
+                                  : ' ' + esc(__('one-time', 'offerweave')))) +
                         (i.period === 'month'
                             ? '<br>' +
                               i.term_months +
-                              (' ' + _x('month term', 'Original label: Monate Laufzeit', 'offerweave')) +
+                              (' ' + esc(_x('month term', 'Original label: Monate Laufzeit', 'offerweave'))) +
                               (i.term_cents !== null
                                   ? '<br>' +
                                     money(
                                         displayedAmount(i, 'term_cents'),
                                         i.currency || s.quote.currency || 'EUR'
                                     ) +
-                                    (' ' + __('for the term', 'offerweave'))
+                                    (' ' + esc(__('for the term', 'offerweave')))
                                   : '')
                             : '') +
                         (i.tax
@@ -2519,7 +2533,7 @@
             sums(s.quote.summary) +
             ('</div><p><small>' + esc(__('Price revision:', 'offerweave')) + ' ') +
             esc(s.revision.slice(0, 12)) +
-            (' ' + __('· Email to', 'offerweave') + ' ') +
+            (' ' + esc(__('· Email to', 'offerweave')) + ' ') +
             esc(row.mail_to) +
             '</small></p>' +
             (row.mail_error ? '<p class="qb-red">' + esc(row.mail_error) + '</p>' : '') +
@@ -2536,9 +2550,11 @@
             ('<div class="qb-actions"><button class="qb-secondary" data-customer-preview>' +
                 esc(__('View customer email', 'offerweave')) +
                 '</button><button class="qb-secondary" data-customer-send>') +
-            (row.customer_mail_status === 'sent'
-                ? __('Resend customer email', 'offerweave')
-                : __('Send customer email', 'offerweave')) +
+            esc(
+                row.customer_mail_status === 'sent'
+                    ? __('Resend customer email', 'offerweave')
+                    : __('Send customer email', 'offerweave')
+            ) +
             ('</button></div><div data-customer-preview-wrap hidden><p data-customer-subject></p><iframe class="qb-customer-preview" title="' +
                 esc(__('Saved customer email', 'offerweave')) +
                 '" sandbox="" referrerpolicy="no-referrer"></iframe></div>') +
@@ -2556,7 +2572,7 @@
                         '" ' +
                         (v === row.status ? 'selected' : '') +
                         '>' +
-                        l +
+                        esc(l) +
                         '</option>'
                 )
                 .join('') +

@@ -1,4 +1,4 @@
-/* Shared offer workspace. It organises existing controls; price calculation stays on the server. */
+/* Free offer workspace. It organises existing controls; price calculation stays on the server. */
 (() => {
     'use strict';
     const { __, sprintf } = window.wp.i18n;
@@ -13,17 +13,19 @@
         price: __('Price and quantity', 'offerweave'),
         publication: __('Publication', 'offerweave'),
     });
-    const role = (o) =>
-        o.kind === 'selection' ? 'selection' : o.component_ids?.length ? 'package' : 'single';
+    const supports = (o) =>
+        (o.kind ?? 'fixed') === 'fixed' &&
+        !o.selection_parent &&
+        !o.use_variants &&
+        !o.surcharges?.length &&
+        !o.component_ids?.length;
+    const role = (o) => (supports(o) ? 'single' : 'retained');
     const roles = () => ({
         single: __('Single offer', 'offerweave'),
-        package: __('Package with included offers', 'offerweave'),
-        selection: __('Package to assemble', 'offerweave'),
+        retained: __('Retained data', 'offerweave'),
     });
-    const effective = (o) => o;
-    function summary(o, c, kinds) {
-        const source = effective(o, c);
-        return source !== o ? sprintf(__('Collected in: %s', 'offerweave'), source.name) : kinds[o.kind];
+    function summary(o, kinds) {
+        return supports(o) ? kinds.fixed : __('Not listed in catalog', 'offerweave');
     }
     function open(control) {
         const section = control?.closest('[data-offer-area]');
@@ -121,16 +123,19 @@
                 '</strong><span class="qb-role-label">' +
                 esc(roles()[role(entry)]) +
                 '</span><small>' +
-                esc(summary(entry, c, kinds)) +
-                '</small><small>' +
-                esc(
-                    entry.enabled
-                        ? entry.catalog_visible
-                            ? __('Own catalog card', 'offerweave')
-                            : __('Not listed in catalog', 'offerweave')
-                        : __('Inactive', 'offerweave')
-                ) +
-                '</small>';
+                esc(summary(entry, kinds)) +
+                '</small>' +
+                (supports(entry)
+                    ? '<small>' +
+                      esc(
+                          entry.enabled
+                              ? entry.catalog_visible
+                                  ? __('Own catalog card', 'offerweave')
+                                  : __('Not listed in catalog', 'offerweave')
+                              : __('Inactive', 'offerweave')
+                      ) +
+                      '</small>'
+                    : '');
         });
         // Filters and creation stay outside the independently scrollable result list.
         const results = document.createElement('div');
@@ -155,8 +160,7 @@
                             .join(' ')
                             .toLocaleLowerCase()
                             .includes(state.search.toLocaleLowerCase())) &&
-                    (!state.role ||
-                        (state.role === 'linked' ? !!entry.selection_parent : role(entry) === state.role)) &&
+                    (!state.role || role(entry) === state.role) &&
                     (!state.category || entry.category === state.category) &&
                     (!state.status || entry.enabled === (state.status === 'active'));
                 button.hidden = !match;
@@ -237,13 +241,11 @@
                 box.scrollIntoView({ block: 'nearest' });
             });
         }
-        if (!o || !editor.querySelector('[data-bind]')) {
+        if (!o || !supports(o) || !editor.querySelector('[data-bind]')) {
             filter();
             return;
         }
         editor.dataset.offerEditor = '';
-        const source = effective(o, c),
-            parents = c.offers.filter((p) => p.component_ids?.includes(o.id));
         const header = document.createElement('section');
         header.className = 'qb-panel qb-offer-heading';
         header.innerHTML =
@@ -260,34 +262,10 @@
                     : __('Inactive', 'offerweave')
             ) +
             '</span></div><p data-offer-effective>' +
-            esc(summary(o, c, kinds)) +
+            esc(summary(o, kinds)) +
             '</p><p class="qb-muted">' +
-            esc(
-                source !== o
-                    ? __(
-                          'Selecting this card adds a component to the shared package. The package supplies quantity rules, variants and the final calculation.',
-                          'offerweave'
-                      )
-                    : role(o) === 'package'
-                      ? __(
-                            'The package has its own price. Included offers are not charged again.',
-                            'offerweave'
-                        )
-                      : role(o) === 'selection'
-                        ? __(
-                              'Prices stored in this package are added once, then its own quantity rules apply. Individual offer prices remain independent.',
-                              'offerweave'
-                          )
-                        : __('The price is multiplied by the quantity for this offer.', 'offerweave')
-            ) +
+            esc(__('The price is multiplied by the quantity for this offer.', 'offerweave')) +
             '</p>' +
-            (parents.length
-                ? '<p class="qb-muted">' +
-                  esc(__('Used in:', 'offerweave')) +
-                  ' ' +
-                  parents.map((p) => esc(p.name)).join(', ') +
-                  '</p>'
-                : '') +
             '<p data-filtered-selection hidden class="qb-muted">' +
             esc(__('The open offer is outside the current filter. Your draft stays open.', 'offerweave')) +
             '</p>';
@@ -367,16 +345,9 @@
         previewController?.abort();
         previewController = new AbortController();
         const signal = previewController.signal;
-        if (
-            offer.kind !== 'fixed' ||
-            offer.use_variants ||
-            offer.surcharges?.length ||
-            offer.component_ids?.length
-        )
-            return;
+        if (!supports(offer)) return;
         const box = document.createElement('section');
         box.className = 'qb-panel qb-price-preview';
-        const quantity = true;
         box.innerHTML =
             '<h2>' +
             esc(__('Test the calculation', 'offerweave')) +
@@ -392,11 +363,9 @@
                 offer.input_unit_plural ||
                     ctx.config.settings.quantity_label ||
                     offer.input_unit_singular ||
-                    (quantity ? __('Quantity', 'offerweave') : __('Total input quantity', 'offerweave'))
+                    __('Quantity', 'offerweave')
             ) +
-            '</span><input type="number" min="1" max="100000" step="1" data-test-quantity value="' +
-            (quantity ? 1 : offer.default_participants) +
-            '"></label></div><button type="button" class="qb-secondary" data-test-price>' +
+            '</span><input type="number" min="1" max="100000" step="1" data-test-quantity value="1"></label></div><button type="button" class="qb-secondary" data-test-price>' +
             esc(__('Calculate price', 'offerweave')) +
             '</button><div data-test-result aria-live="polite"></div>';
         host.append(box);
@@ -424,9 +393,7 @@
             const item = {
                 line_id: 'admin-preview',
                 offer_id: offer.id,
-                [quantity ? 'quantity' : 'participants']: Number(
-                    box.querySelector('[data-test-quantity]').value
-                ),
+                quantity: Number(box.querySelector('[data-test-quantity]').value),
             };
             output.className = '';
             output.textContent = __('Calculating …', 'offerweave');
@@ -472,7 +439,7 @@
         mount,
         open,
         role,
-        effective,
+        supports,
         area(value) {
             state.area = value;
         },

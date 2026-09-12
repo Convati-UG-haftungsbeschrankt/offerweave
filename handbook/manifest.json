@@ -1,5 +1,5 @@
 {
-  "version": "2.35.4",
+  "version": "2.35.5",
   "chapters": [
     "start",
     "editions",
@@ -82,6 +82,8 @@
     "mixed-catalog-en.webp": "7ec033b998c9f95fe792a5f9a2be381724f96370bb0ad845ca0efe4384494c69",
     "offer-background-de.webp": "c49ae731987df0d746dc79e426fcc93fb2bf5c2911a85b51d83b7785181f9981",
     "offer-background-en.webp": "b5508d31a2795a8d56805e5d57abae01add545fc06cf707c12f26af3d4c0fdcf",
+    "offer-missing-parent-de.webp": "f9ee3b4d4e858b9c9087389e2e7fafe5ad22d3db3ec30785ed626c61ac7341d5",
+    "offer-missing-parent-en.webp": "87cb2bb9905d537de4ae3c09a2bc31d267247dc2f0f4682e98dd8c730a76af5a",
     "offers-de.webp": "90c55aa471bd4596e99f81398fdce8d5222859ce107ffbd1a98126096dc10fe8",
     "offers-en.webp": "5a6b243a3af6206bd0f37c9334ff646d072856aab5ff19a115389f0f7e62c497",
     "packages-de.webp": "33086b7ecd489f522f8ba0a45f624913d74609857cdb244b0987df2d873d7643",
@@ -94,6 +96,8 @@
     "price-tax-label-en.webp": "95cb0f170306d346ec62cb379c9e20fc0324a6bccdd4a0efef49bbea3fe731cd",
     "promotion-lifecycle-de.webp": "41e91ca2b289e4b40ba58d1637d3d186e7c111f6e73f6e571ee49bebeae37b1b",
     "promotion-lifecycle-en.webp": "7d807aeadd15c91215010bd3abaa0c27a1241d0aa4ec1c30c7435799da55b305",
+    "promotion-missing-reference-de.webp": "d1f94a18903752c291116f2f3c61f96c23bc1f3cc8153e09006e843cc93b4459",
+    "promotion-missing-reference-en.webp": "f367a30ac5cb70c453145e124f063b697c62957e628b0e00b5efa35f6537f9d1",
     "promotions-de.webp": "067ce9d1a1dc030a03b4d8882be8087dafdff3e51e4462604a7945563f6fded3",
     "promotions-en.webp": "035bdb1d3dc8ef4eade4d5d19327c9e5b893553a6b1e1c40117fe7efa7f1b2ee",
     "quantity-design-de.webp": "3b39010a18124e1d6a0f221b3b34eb1b82bdbe98b135081014ffbacb03f9f262",
@@ -138,7 +142,7 @@
     "variants-en.webp": "6d210dbb1010e649afb4abde7009da8d5f4e666dc91fe66c715cba39ff26b586"
   },
   "sources": {
-    "de": "737580692b0aa43710ce4485863ef5ca215798f37403696dd1697c6b4d0d3ce0",
-    "en": "fe44bc766f5f1471103d7d9f1a0a7ebd033d03a1e4c758d6db207f907a42d0aa"
+    "de": "efd5948bba81da7674160ef0bdec99b3a18d35b1f18bfba7c2d5f725739f0bfb",
+    "en": "1a9a6160d7a190b83e2d32912bbc2dcf229f91849f8fc2e9479fa5c6bd080336"
   }
 }

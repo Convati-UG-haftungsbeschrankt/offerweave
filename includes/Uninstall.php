@@ -37,6 +37,7 @@ final class Uninstall
         global $wpdb;
         $wpdb->query($wpdb->prepare('DROP TABLE IF EXISTS %i', $wpdb->prefix . 'offerweave_requests'));
         $wpdb->query($wpdb->prepare('DROP TABLE IF EXISTS %i', $wpdb->prefix . 'cqb_requests'));
+        wp_cache_delete('last_changed', 'offerweave_requests');
         foreach (
             [
                 'cqb_config',

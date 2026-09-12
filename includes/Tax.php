@@ -42,7 +42,8 @@ final class Tax
 
     public static function vat(int $net, int $rate): int
     {
-        return intdiv($net * $rate + 5000, 10000);
+        // Split before multiplying so valid large integer amounts never become floats.
+        return intdiv($net, 10000) * $rate + intdiv(($net % 10000) * $rate + 5000, 10000);
     }
 
     public static function rateLabel(int $rate): string

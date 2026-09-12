@@ -4,7 +4,7 @@ Tags: quote calculator, request a quote, price calculator, service catalog, quot
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.35.4
+Stable tag: 2.35.5
 License: GPL-3.0-only
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -162,6 +162,13 @@ A paid Pro licence includes official updates, downloads and support for the purc
 11. Settings grouped into six areas, including separate customer-document and provider settings.
 
 == Changelog ==
+
+= 2.35.5 =
+* Cache request lists with immediate invalidation after changes and explicit database error handling.
+* Keep ordinary Free editing available when retained settings from another edition reference an offer or form field.
+* Remove unreachable Free editor branches and correct offer counters, HTML escaping and WordPress translations.
+* Make missing Pro offer assignments visible and repairable; reject packages with missing content.
+* Preserve exact large percentage and tax calculations, and isolate frontend updates from other plugins' cards.
 
 = 2.35.4 =
 * Remove obsolete short shortcode aliases and the former REST namespace; use the documented offerweave shortcodes.

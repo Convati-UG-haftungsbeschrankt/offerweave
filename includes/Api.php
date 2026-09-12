@@ -445,12 +445,11 @@ final class Api
     }
     public static function adminRequests(\WP_REST_Request $r)
     {
-        return self::response(
-            Store::listing(
-                sanitize_text_field($r->get_param('q') ?? ''),
-                max(1, min(100000, (int) $r->get_param('page'))),
-            ),
+        $listing = Store::listing(
+            sanitize_text_field($r->get_param('q') ?? ''),
+            max(1, min(100000, (int) $r->get_param('page'))),
         );
+        return is_wp_error($listing) ? $listing : self::response($listing);
     }
     public static function adminRequestEmail(\WP_REST_Request $r)
     {

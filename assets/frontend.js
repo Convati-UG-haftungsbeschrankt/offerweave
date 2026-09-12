@@ -10,10 +10,6 @@
     const pendingActions = new Set();
     let queue = Promise.resolve(),
         refreshing = false;
-    const uid = () =>
-        Array.from(crypto.getRandomValues(new Uint8Array(16)), (b) => b.toString(16).padStart(2, '0')).join(
-            ''
-        );
     const state = (root) => {
         try {
             return JSON.parse(root.querySelector('template[data-ow-state]')?.content.textContent || '{}');
@@ -220,10 +216,11 @@
         return queue;
     };
     function affectedCards(form) {
-        const own = form.closest('[data-card]');
+        const root = form.closest('.cqb-app[data-ow-ssr]');
+        if (!root) return [];
+        const own = form.closest('.cqb-app[data-ow-ssr] [data-card]');
         if (own) return [own];
-        const root = form.closest('.cqb-app');
-        return [...(root?.querySelectorAll('[data-card]') || [])];
+        return [...root.querySelectorAll('[data-card]')];
     }
     function invalidate(form, invalid = false) {
         for (const card of affectedCards(form)) {
@@ -239,7 +236,7 @@
     function change(event) {
         const field = event.target,
             form = field.form;
-        if (!form?.matches('.ow-server-form')) return;
+        if (!form?.matches('.ow-server-form') || !form.closest('.cqb-app[data-ow-ssr]')) return;
         if (field.matches('[data-field]')) return;
         if (!field.matches('[data-people],[data-quantity],[data-count]')) return;
         if (form.closest('.cqb-line-editor')) {
@@ -249,8 +246,12 @@
         dirty.set(form.id, number);
         clearTimeout(timers.get(form.id));
         const card =
-            form.closest('[data-card]') ||
-            document.querySelector('[data-card="' + CSS.escape(form.elements.offerweave_offer?.value || '') + '"]');
+            form.closest('.cqb-app[data-ow-ssr] [data-card]') ||
+            document.querySelector(
+                '.cqb-app[data-ow-ssr] [data-card="' +
+                    CSS.escape(form.elements.offerweave_offer?.value || '') +
+                    '"]'
+            );
         if (!field.checkValidity()) {
             field.setAttribute('aria-invalid', 'true');
             const error =
@@ -416,7 +417,7 @@
     function enhance() {
         for (const root of roots()) root.classList.add('ow-enhanced');
         // Preserve the existing read-only integration property using the PHP calculation result.
-        for (const card of document.querySelectorAll('[data-card]')) {
+        for (const card of document.querySelectorAll('.cqb-app[data-ow-ssr] [data-card]')) {
             try {
                 card.quoteLine = card.hasAttribute('data-ow-pending')
                     ? null
@@ -433,6 +434,7 @@
         'error',
         (event) => {
             const image = event.target;
+            if (!image.closest?.('.cqb-app[data-ow-ssr]')) return;
             if (image.matches?.('.cqb-fact-icon')) image.hidden = true;
             if (image.matches?.('.cqb-offer-image')) {
                 image.closest('.cqb-card-media').hidden = true;
@@ -461,7 +463,9 @@
             ) {
                 const form = document.querySelector('.cqb-app[data-actions="true"] .ow-server-form');
                 if (form)
-                    await enqueue(() => send(form.id, 'import', { offerweave_legacy: JSON.stringify(old.items) }));
+                    await enqueue(() =>
+                        send(form.id, 'import', { offerweave_legacy: JSON.stringify(old.items) })
+                    );
             } else persist();
         } catch {}
     }

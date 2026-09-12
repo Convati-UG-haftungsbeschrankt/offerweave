@@ -292,15 +292,6 @@ final class FrontendRequest
                     FrontendPrice::taxRows($group['rows'], false, $currency) .
                     '</section>';
             }
-            if ($s['has_custom'] || $s['has_travel']) {
-                $out .=
-                    '<p>' .
-                    esc_html__(
-                        'Only known amounts are included. Outstanding services or travel costs and their VAT will be added.',
-                        'offerweave',
-                    ) .
-                    '</p>';
-            }
             return $out .
                 '<p class="cqb-note">' .
                 esc_html__(
@@ -312,11 +303,7 @@ final class FrontendRequest
         if ($s['priced_count']) {
             $out .=
                 '<div><span>' .
-                esc_html(
-                    $s['has_custom'] || $s['has_travel']
-                        ? __('Known one-time amount', 'offerweave')
-                        : __('One-time', 'offerweave'),
-                ) .
+                esc_html__('One-time', 'offerweave') .
                 '</span><strong>' .
                 FrontendPrice::money($s['once_cents'], $currency) .
                 '</strong></div>';
@@ -360,22 +347,6 @@ final class FrontendRequest
                 '</span><strong>' .
                 FrontendPrice::money($s['comparison_cents'], $currency) .
                 '</strong></div>';
-        }
-        if ($s['has_custom']) {
-            $out .=
-                '<p>' . esc_html__('Additional items will be quoted individually.', 'offerweave') . '</p>';
-        }
-        if ($s['has_travel']) {
-            $out .=
-                '<p>' .
-                esc_html(
-                    _x(
-                        'Outstanding travel costs will be added.',
-                        'Original label: Offene Reisekosten kommen hinzu.',
-                        'offerweave',
-                    ),
-                ) .
-                '</p>';
         }
         return $out .
             '<p class="cqb-note">' .
