@@ -1,0 +1,260 @@
+.offerweave-purchase {
+    --offerweave-ink: #17233c;
+    --offerweave-muted: #53627a;
+    --offerweave-blue: #2856c3;
+    max-width: 1160px;
+    margin: 28px 24px 40px 4px;
+    color: var(--offerweave-ink);
+    font-size: 16px;
+    line-height: 1.55;
+}
+.offerweave-purchase *,
+.offerweave-purchase *::before,
+.offerweave-purchase *::after {
+    box-sizing: border-box;
+}
+.offerweave-purchase p {
+    font-size: inherit;
+    line-height: inherit;
+}
+.offerweave-purchase a {
+    color: var(--offerweave-blue);
+}
+.offerweave-purchase-header,
+.offerweave-purchase-brand {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.offerweave-purchase-header {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.offerweave-purchase-logo {
+    display: grid;
+    place-items: center;
+    flex: 0 0 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: #3655de;
+}
+.offerweave-purchase-logo img {
+    display: block;
+    object-fit: contain;
+}
+.offerweave-purchase .offerweave-purchase-eyebrow {
+    color: var(--offerweave-blue);
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+.offerweave-purchase h1 {
+    font-size: clamp(24px, 2.6vw, 32px);
+    color: var(--offerweave-ink);
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+}
+.offerweave-purchase-account {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 14px;
+    border: 1px solid #c4cede;
+    border-radius: 8px;
+    background: #fff;
+}
+.offerweave-purchase-intro {
+    color: var(--offerweave-muted);
+    margin: 22px 0 28px;
+}
+.offerweave-purchase-tax {
+    margin-bottom: 20px;
+}
+.offerweave-purchase-tax h2 {
+    font-size: 16px;
+    color: var(--offerweave-ink);
+    margin: 0 0 4px;
+}
+.offerweave-purchase-tax p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--offerweave-muted);
+}
+.offerweave-purchase-plans {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+.offerweave-purchase-plan {
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    background: #fff;
+    border: 1px solid #c8d3e4;
+    border-top: 4px solid var(--offerweave-blue);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px #182d5510;
+}
+.offerweave-purchase-plan h2 {
+    font-size: 22px;
+    line-height: 1.3;
+    color: var(--offerweave-ink);
+    margin: 0;
+}
+.offerweave-purchase-plan .offerweave-purchase-description {
+    color: var(--offerweave-muted);
+    margin: 8px 0 26px;
+    font-size: 14px;
+}
+.offerweave-purchase-plan .offerweave-purchase-price {
+    margin: 0;
+    line-height: 1.1;
+}
+.offerweave-purchase-price strong {
+    font-size: clamp(36px, 4vw, 48px);
+    font-weight: 750;
+    letter-spacing: -1.6px;
+    white-space: nowrap;
+}
+.offerweave-purchase-price span {
+    font-size: 16px;
+    color: var(--offerweave-muted);
+    white-space: nowrap;
+}
+.offerweave-purchase-plan .offerweave-purchase-monthly {
+    color: var(--offerweave-muted);
+    font-size: 14px;
+    margin: 12px 0 4px;
+}
+.offerweave-purchase-plan .offerweave-purchase-billing {
+    color: var(--offerweave-muted);
+    font-size: 14px;
+    margin: 0 0 24px;
+}
+.offerweave-purchase-benefits {
+    border-top: 1px solid #e0e6ef;
+    padding: 20px 0 0;
+    margin: 0 0 24px;
+    list-style: none;
+    font-size: 14px;
+}
+.offerweave-purchase-benefits li {
+    position: relative;
+    padding-left: 24px;
+    margin: 0 0 12px;
+}
+.offerweave-purchase-benefits li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--offerweave-blue);
+    font-weight: 700;
+}
+.offerweave-purchase a.offerweave-purchase-button {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    min-height: 46px;
+    background: var(--offerweave-blue);
+    color: #fff;
+    border: 1px solid var(--offerweave-blue);
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 650;
+    font-size: 15px;
+}
+.offerweave-purchase a.offerweave-purchase-button:hover {
+    background: #1d4199;
+    border-color: #1d4199;
+}
+.offerweave-purchase a:focus-visible,
+.offerweave-purchase summary:focus-visible {
+    outline: 3px solid #172f84;
+    outline-offset: 4px;
+    box-shadow: none;
+}
+.offerweave-purchase-included {
+    margin-top: 24px;
+    padding: 18px 22px;
+    background: #e8eef8;
+    border-radius: 10px;
+}
+.offerweave-purchase-included h2,
+.offerweave-purchase-faq h2 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    color: var(--offerweave-ink);
+}
+.offerweave-purchase-included p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--offerweave-muted);
+}
+.offerweave-purchase-faq {
+    margin-top: 30px;
+}
+.offerweave-purchase-faq h2 {
+    margin-bottom: 12px;
+}
+.offerweave-purchase-faq details {
+    border-bottom: 1px solid #ccd5e3;
+    padding: 14px 0;
+}
+.offerweave-purchase-faq summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+.offerweave-purchase-faq details p {
+    margin: 12px 0 2px;
+    color: var(--offerweave-muted);
+    font-size: 14px;
+    max-width: 780px;
+}
+.offerweave-purchase-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    color: var(--offerweave-muted);
+    font-size: 13px;
+    margin-top: 24px;
+}
+@media (max-width: 1100px) {
+    .offerweave-purchase-plan {
+        padding: 22px;
+    }
+}
+@media (max-width: 960px) {
+    .offerweave-purchase-plans {
+        grid-template-columns: 1fr;
+    }
+    .offerweave-purchase-plan {
+        padding: 26px;
+    }
+}
+@media (max-width: 600px) {
+    .offerweave-purchase {
+        margin: 20px 12px 30px 0;
+    }
+    .offerweave-purchase-brand {
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .offerweave-purchase-logo {
+        flex-basis: 52px;
+        height: 52px;
+        border-radius: 12px;
+    }
+    .offerweave-purchase-logo img {
+        width: 40px;
+        height: 40px;
+    }
+    .offerweave-purchase-plan {
+        padding: 22px;
+    }
+}

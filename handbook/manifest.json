@@ -1,5 +1,5 @@
 {
-  "version": "2.35.6",
+  "version": "2.35.7",
   "chapters": [
     "start",
     "editions",
@@ -138,15 +138,15 @@
     "unit-explanation-en.webp": "fed788375d8fb92dd89e48aa7de02a046f721aba42ef3011793dab7805e9296f",
     "units-de.webp": "317915efc7fcd66d25a075f03822492ad3ef5420e240b719e2716c67f951df7e",
     "units-en.webp": "73d8bb5e48d9139865c16e862340e8f2c35a6d51c3388b8b1a2b8e1555b3a26f",
-    "upgrade-de.webp": "92503c99da6f086169faf756b3e1f02b633ce831575a2c08f1cd7db02b4eb0d1",
-    "upgrade-en.webp": "450a6ca5b87cecdda4b69a32ddb2c8e341b7778bcb1dd42f013a3fe9532eccf2",
+    "upgrade-de.webp": "0499ab478fe9a3fca7ec62dbc2f19d3ff92b5eb57ac689274b8d58adec31bbfa",
+    "upgrade-en.webp": "89e4f5842f4b339a82f651c160f0575b9c5564f3be562a118e965745e7136c9e",
     "variant-options-de.webp": "169fdda92b5ea1ecf8e6dab5fb60327c4581efd5f4796ebbbd2ee2358aac36c6",
     "variant-options-en.webp": "6bd8c8d08e612f1932d5d92df189769a7d66879d0f40ac6b3c4bf1264bb9bbaf",
     "variants-de.webp": "a0e0d64fc9db3bd92b89bcd6674746b082beb6305e7b12ef7ba012fcd275611c",
     "variants-en.webp": "6d210dbb1010e649afb4abde7009da8d5f4e666dc91fe66c715cba39ff26b586"
   },
   "sources": {
-    "de": "9e31403dc8485c60cd3135313a433ddd53250531458151b33b7561f0c9369f17",
-    "en": "f01c5fee62f5c4f587446952b5be9c077995f6af2f783a853c3304451d6e75b4"
+    "de": "710e32a47a306dd104a216a37d13332076a6f9fcac5770498ed0031b147cbe77",
+    "en": "365088e7b03147873fad1f49244e13bf0583d858bcddc116097a4384cc55f63d"
   }
 }

@@ -38,6 +38,10 @@ final class Licensing
             return OFFERWEAVE_DIR . 'assets/brand/offerweave-logo.png';
         });
         self::$sdk->add_action('after_uninstall', [Uninstall::class, 'run']);
+        if (self::$release['product_id'] === '39020') {
+            require_once OFFERWEAVE_DIR . 'includes/PurchasePage.php';
+            PurchasePage::boot();
+        }
         do_action('offerweave_fs_loaded');
     }
 
@@ -136,13 +140,13 @@ final class Licensing
             $end->getTimestamp() > time();
     }
 
-    /** Fixed public checkout for this product; independent of optional SDK account opt-in. */
+    /** Local plan comparison; independent of optional SDK account opt-in. */
     public static function purchaseUrl(): string
     {
         if (!self::configured() || self::$release['product_id'] !== '39020' || self::servicesEntitled()) {
             return '';
         }
-        return 'https://checkout.freemius.com/plugin/39020/plan/64877/licenses/1/currency/eur/';
+        return admin_url('admin.php?page=offerweave-pro');
     }
 
     public static function status(): array
