@@ -146,10 +146,7 @@ final class FrontendView
                 '</header>' .
                 $this->navigation();
         }
-        $out .=
-            '<div class="cqb-global-message" role="status">' .
-            esc_html($this->state['failure']['error'] ?? ($this->state['message'] ?? '')) .
-            '</div><div class="cqb-content">';
+        $out .= FrontendState::notice($this->state) . '<div class="cqb-content">';
         if ($view === 'request' || $this->requestSection) {
             return $out .
                 (new FrontendRequest($this->config, $this->spec, $this->state))->render() .

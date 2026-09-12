@@ -10,6 +10,7 @@ final class FrontendState
     private static array $discovered = [];
     private static array $failure = [];
     private const TTL = 7200;
+    private static bool $noticeRendered = false;
 
     public static function cookieName(): string
     {
@@ -208,9 +209,71 @@ final class FrontendState
     {
         $data = self::data();
         return array_replace(
-            ['cart' => $data['cart'], 'message' => $data['flash'] ?? '', 'failure' => self::$failure],
+            [
+                'cart' => $data['cart'],
+                'message' => $data['flash'] ?? '',
+                'message_meta' => $data['flash_meta'] ?? [],
+                'failure' => self::$failure,
+            ],
             $data['scopes'][self::scope($spec)] ?? [],
         );
+    }
+    private static function flash(string $message, string $type = 'success'): void
+    {
+        self::$data['flash'] = $message;
+        self::$data['flash_meta'] = [
+            'id' => bin2hex(random_bytes(16)),
+            'type' => $type,
+            'until' => time() + 120,
+        ];
+    }
+    /** Deliver a flash once without rewriting the cart during a page read. */
+    public static function notice(array $state, bool $preview = false): string
+    {
+        $empty = '<div class="cqb-global-message" role="status" aria-atomic="true"></div>';
+        if ($preview || self::$noticeRendered) {
+            return $empty;
+        }
+        $error = $state['failure']['error'] ?? '';
+        $message = $error ?: $state['message'] ?? '';
+        $meta = $state['message_meta'] ?? [];
+        if (!$message) {
+            return $empty;
+        }
+        $type = 'error';
+        if (!$error) {
+            if (
+                !is_string($meta['id'] ?? null) ||
+                !preg_match('/^[a-f0-9]{32}$/D', $meta['id']) ||
+                !in_array($meta['type'] ?? '', ['success', 'warning', 'info'], true) ||
+                !is_int($meta['until'] ?? null) ||
+                $meta['until'] <= time() ||
+                $meta['until'] > time() + 120
+            ) {
+                return $empty;
+            }
+            $key = 'offerweave_notice_' . hash('sha256', self::id() . '|' . $meta['id']);
+            if (get_transient($key)) {
+                return $empty;
+            }
+            set_transient($key, true, 120);
+            $type = $meta['type'];
+        }
+        self::$noticeRendered = true;
+        return '<div class="cqb-global-message cqb-' .
+            esc_attr($type) .
+            '" role="' .
+            ($error ? 'alert' : 'status') .
+            '" aria-atomic="true" data-ow-notice-type="' .
+            esc_attr($type) .
+            '" data-ow-notice-id="' .
+            esc_attr($error ? 'error' : $meta['id']) .
+            '">' .
+            '<span>' .
+            esc_html($message) .
+            '</span><button type="button" data-ow-dismiss-notice hidden aria-label="' .
+            esc_attr__('Dismiss message', 'offerweave') .
+            '">×</button></div>';
     }
     public static function save(): void
     {
@@ -377,10 +440,20 @@ final class FrontendState
                     __('Please reload the form; your selection will be preserved.', 'offerweave'),
                 );
             }
+            if (!empty($completed['result']['saved'])) {
+                self::flash(
+                    $completed['result']['message'] .
+                        ' ' .
+                        __('Reference: #', 'offerweave') .
+                        $completed['result']['reference'],
+                    'info',
+                );
+            }
             return $completed['result'];
         }
         $state = self::state($spec);
         self::$data['flash'] = '';
+        unset(self::$data['flash_meta']);
         if ($action === 'import') {
             if (!empty(self::$data['initialized']) || self::$data['cart']) {
                 return [];
@@ -408,9 +481,12 @@ final class FrontendState
             }
             self::$data['initialized'] = true;
             if ($skipped) {
-                self::$data['flash'] = __(
-                    'Unavailable items from your previous selection were not imported. Please review your selection.',
-                    'offerweave',
+                self::flash(
+                    __(
+                        'Unavailable items from your previous selection were not imported. Please review your selection.',
+                        'offerweave',
+                    ),
+                    'warning',
                 );
             }
             return [];
@@ -498,7 +574,7 @@ final class FrontendState
             } else {
                 self::$data['cart'][$old] = $quote['items'][0]['input'];
             }
-            self::$data['flash'] = $offer['name'] . ' ' . __('was added to your selection.', 'offerweave');
+            self::flash($offer['name'] . ' ' . __('was added to your selection.', 'offerweave'));
             return [];
         }
         if ($action === 'remove') {
@@ -538,8 +614,10 @@ final class FrontendState
             $result = $response->get_data();
             if (!empty($result['saved'])) {
                 self::$data['cart'] = [];
-                self::$data['flash'] =
-                    $result['message'] . ' ' . __('Reference: #', 'offerweave') . $result['reference'];
+                self::flash(
+                    $result['message'] . ' ' . __('Reference: #', 'offerweave') . $result['reference'],
+                    'info',
+                );
             }
             return $result;
         }

@@ -984,7 +984,6 @@
     margin-top: 18px;
 }
 
-
 .cqb-app form.ow-server-form {
     margin: 0;
 }
@@ -1011,4 +1010,40 @@
 }
 .cqb-app.ow-enhanced .ow-update {
     display: none;
+}
+
+/* Selection notices: transient successes, persistent warnings and request references. */
+.cqb-app .cqb-global-message:not(:empty) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+}
+.cqb-app .cqb-global-message.cqb-warning {
+    background: #fff8e6;
+    color: #6b4700;
+}
+.cqb-app .cqb-global-message.cqb-info {
+    background: #eef4ff;
+    color: #203f73;
+}
+.cqb-app .cqb-global-message [data-ow-dismiss-notice] {
+    flex: 0 0 28px;
+    min-height: 28px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 22px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.cqb-app .cqb-global-message [data-ow-dismiss-notice][hidden] {
+    display: none;
+}
+.cqb-app .cqb-global-message [data-ow-dismiss-notice]:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
 }

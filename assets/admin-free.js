@@ -924,7 +924,7 @@
                 panel(__('Offers', 'offerweave'), esc(__('Create your first offer.', 'offerweave'))) +
                 '</div></div>'
             );
-        if (!freeOfferSupported(o)) return '<div class="qb-workspace">' + sidebar + panel(__('Saved Pro offer', 'offerweave'), '<p>' + esc(o.name) + '</p><p>' + esc(__('This offer needs Pro. Its ID, price rules and content remain saved. Activate Pro to edit and publish it again.', 'offerweave')) + '</p>') + '</div>';
+        if (!freeOfferSupported(o)) return '<div class="qb-workspace">' + sidebar + panel(__('Saved Pro offer', 'offerweave'), '<p>' + esc(o.name) + '</p><p>' + esc(__('This saved offer uses pricing features from the separate OfferWeave Pro plugin. Free does not include these features. All offer data is preserved. To edit and publish this offer, switch to the Pro plugin.', 'offerweave')) + '</p>') + '</div>';
         let body = panel(
             __('Edit offer', 'offerweave'),
             '<div class="qb-grid">' +

@@ -7,6 +7,75 @@
     const dirty = new Map(),
         timers = new Map(),
         scripts = new Map();
+    const noticeTimers = new WeakMap();
+    const noticeListeners = new WeakSet();
+    function dismissNotice(notice) {
+        const record = noticeTimers.get(notice);
+        clearTimeout(record?.timer);
+        noticeTimers.delete(notice);
+        if (notice.contains(document.activeElement)) {
+            notice
+                .closest('.cqb-app')
+                ?.querySelector('[data-add], input:not([type="hidden"])')
+                ?.focus({ preventScroll: true });
+        }
+        notice.replaceChildren();
+        delete notice.dataset.owNoticeId;
+        delete notice.dataset.owNoticeType;
+        notice.classList.remove('cqb-success', 'cqb-warning', 'cqb-info', 'cqb-error');
+        notice.setAttribute('role', 'status');
+    }
+    function enhanceNotices() {
+        for (const notice of document.querySelectorAll('.cqb-app[data-ow-ssr] .cqb-global-message')) {
+            if (!notice.textContent.trim()) continue;
+            let button = notice.querySelector('[data-ow-dismiss-notice]');
+            if (!button) {
+                button = document.createElement('button');
+                button.type = 'button';
+                button.dataset.owDismissNotice = '';
+                button.textContent = '×';
+                button.setAttribute('aria-label', __('Dismiss message', 'offerweave'));
+                notice.append(button);
+            }
+            button.hidden = false;
+            button.onclick = () => dismissNotice(notice);
+            const old = noticeTimers.get(notice);
+            const id = notice.dataset.owNoticeId;
+            if (notice.dataset.owNoticeType !== 'success') {
+                clearTimeout(old?.timer);
+                noticeTimers.delete(notice);
+                continue;
+            }
+            if (old?.id === id) continue;
+            clearTimeout(old?.timer);
+            const record = { id, remaining: 8000, started: 0, timer: null };
+            const pause = () => {
+                if (!record.timer) return;
+                clearTimeout(record.timer);
+                record.timer = null;
+                record.remaining = Math.max(0, record.remaining - (Date.now() - record.started));
+            };
+            const resume = () => {
+                if (noticeTimers.get(notice) !== record || notice.matches(':hover, :focus-within')) return;
+                clearTimeout(record.timer);
+                record.started = Date.now();
+                record.timer = setTimeout(() => dismissNotice(notice), record.remaining);
+            };
+            record.pause = pause;
+            record.resume = resume;
+            if (!noticeListeners.has(notice)) {
+                notice.addEventListener('mouseenter', () => noticeTimers.get(notice)?.pause());
+                notice.addEventListener('mouseleave', () => noticeTimers.get(notice)?.resume());
+                notice.addEventListener('focusin', () => noticeTimers.get(notice)?.pause());
+                notice.addEventListener('focusout', () =>
+                    setTimeout(() => noticeTimers.get(notice)?.resume(), 0)
+                );
+                noticeListeners.add(notice);
+            }
+            noticeTimers.set(notice, record);
+            resume();
+        }
+    }
     const pendingActions = new Set();
     let queue = Promise.resolve(),
         refreshing = false;
@@ -21,6 +90,7 @@
         node.nodeType !== 1
             ? ''
             : node.id ||
+              (node.classList.contains('cqb-global-message') ? 'global-message' : '') ||
               (node.dataset.card ? 'card:' + node.dataset.card : '') ||
               (node.dataset.line ? 'line:' + node.dataset.line : '') ||
               (node.name
@@ -118,7 +188,21 @@
                 : null;
         for (const root of roots()) {
             const replacement = replacements.find((r) => r.id === root.id);
-            if (replacement) morph(root, replacement);
+            if (replacement) {
+                // Background refreshes must not erase an unread warning or restart a success timer.
+                const currentNotice = root.querySelector('.cqb-global-message');
+                const nextNotice = replacement.querySelector('.cqb-global-message');
+                if (
+                    ['', 'update'].includes(action) &&
+                    currentNotice?.textContent.trim() &&
+                    !(action === 'update' && currentNotice.dataset.owNoticeType === 'error') &&
+                    nextNotice &&
+                    !nextNotice.textContent.trim()
+                ) {
+                    nextNotice.replaceWith(currentNotice.cloneNode(true));
+                }
+                morph(root, replacement);
+            }
         }
         for (const saved of values) {
             const form = document.getElementById(saved.form);
@@ -167,8 +251,14 @@
             root?.querySelector('.cqb-global-message,.cqb-form-message') ||
             document.querySelector('.cqb-global-message');
         if (target) {
+            clearTimeout(noticeTimers.get(target)?.timer);
+            noticeTimers.delete(target);
             target.textContent = message;
+            target.classList.remove('cqb-success', 'cqb-warning', 'cqb-info');
             target.classList.add('cqb-error');
+            target.dataset.owNoticeType = 'error';
+            target.setAttribute('role', 'alert');
+            enhanceNotices();
         }
     }
     async function send(formId, action, extra = {}) {
@@ -415,6 +505,7 @@
         }
     }
     function enhance() {
+        enhanceNotices();
         for (const root of roots()) root.classList.add('ow-enhanced');
         // Preserve the existing read-only integration property using the PHP calculation result.
         for (const card of document.querySelectorAll('.cqb-app[data-ow-ssr] [data-card]')) {

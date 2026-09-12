@@ -1,5 +1,5 @@
 {
-  "version": "2.35.5",
+  "version": "2.35.6",
   "chapters": [
     "start",
     "editions",
@@ -106,6 +106,10 @@
     "request-notice-en.webp": "7af5d832f32bf134da26986479997dc5cd8622ef27e798d46c2c5f58d1f079c8",
     "requests-de.webp": "2148000998d03fa1e68945140d72439a54947b9450814aedd2672fbe4c5955b0",
     "requests-en.webp": "f8af502d5b342277cff8a756cc415a2a3bf16f1f3b5f9ee876c4620a6ec067fd",
+    "selection-success-de.webp": "54a35b47803b345cfa78bdb81cc18ba823bd47d918ecc173b3ad4e25bdf988a4",
+    "selection-success-en.webp": "1df248e60aa98883732f6b170681bbe831409904175c3b8b13764f159cac3ab6",
+    "selection-warning-de.webp": "b1f096cc06413f03322e2a1a3e1eda6fe07aeb7a677ad6a394d2dd161d37dca1",
+    "selection-warning-en.webp": "7f0d9e53ee6a24f8cbcb9394cc2e83fd95da2867e4272c07e4890b345df9c610",
     "settings-documents-de.webp": "83d00188a251e53034489e140bdd194aa70fc075f07c8214dd9af0810a53fd3a",
     "settings-documents-en.webp": "3e0c93ff52ae278ff281d7654fa4ffbf4add7526a5289a86347a77b482c0a582",
     "settings-general-de.webp": "9cdfb95415c18a76fc0968f408e4bafcf3d358580db39a5bec3d96983155ffe8",
@@ -142,7 +146,7 @@
     "variants-en.webp": "6d210dbb1010e649afb4abde7009da8d5f4e666dc91fe66c715cba39ff26b586"
   },
   "sources": {
-    "de": "efd5948bba81da7674160ef0bdec99b3a18d35b1f18bfba7c2d5f725739f0bfb",
-    "en": "1a9a6160d7a190b83e2d32912bbc2dcf229f91849f8fc2e9479fa5c6bd080336"
+    "de": "9e31403dc8485c60cd3135313a433ddd53250531458151b33b7561f0c9369f17",
+    "en": "f01c5fee62f5c4f587446952b5be9c077995f6af2f783a853c3304451d6e75b4"
   }
 }
