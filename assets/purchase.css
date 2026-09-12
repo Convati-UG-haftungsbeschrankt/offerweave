@@ -70,16 +70,8 @@
     color: var(--offerweave-muted);
     margin: 22px 0 28px;
 }
-.offerweave-purchase-tax {
-    margin-bottom: 20px;
-}
-.offerweave-purchase-tax h2 {
-    font-size: 16px;
-    color: var(--offerweave-ink);
-    margin: 0 0 4px;
-}
-.offerweave-purchase-tax p {
-    margin: 0;
+.offerweave-purchase .offerweave-purchase-tax {
+    margin: 16px 0 0;
     font-size: 14px;
     color: var(--offerweave-muted);
 }
@@ -123,6 +115,12 @@
     font-size: 16px;
     color: var(--offerweave-muted);
     white-space: nowrap;
+}
+.offerweave-purchase-plan .offerweave-purchase-vat {
+    color: var(--offerweave-muted);
+    font-size: 13px;
+    font-weight: 400;
+    margin: 6px 0 0;
 }
 .offerweave-purchase-plan .offerweave-purchase-monthly {
     color: var(--offerweave-muted);

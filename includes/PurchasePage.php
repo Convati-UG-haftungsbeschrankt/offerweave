@@ -128,13 +128,6 @@ final class PurchasePage
                 'All Pro features in every plan. Choose how many websites you want to register.',
                 'offerweave',
             ); ?></p>
-            <div class="offerweave-purchase-tax">
-                <h2><?php esc_html_e('Prices for Germany', 'offerweave'); ?></h2>
-                <p><?php esc_html_e(
-                    'Prices include 19% German VAT. Taxes are adjusted to your billing country at checkout.',
-                    'offerweave',
-                ); ?></p>
-            </div>
             <div class="offerweave-purchase-plans">
                 <?php foreach ($plans as [$sites, $annual, $monthly, $description]):
 
@@ -166,6 +159,10 @@ final class PurchasePage
                         <p class="offerweave-purchase-price"><strong><?php echo esc_html(
                             number_format_i18n($annual, 0),
                         ); ?>&nbsp;€</strong> <span><?php esc_html_e('/ year', 'offerweave'); ?></span></p>
+                        <p class="offerweave-purchase-vat"><?php esc_html_e(
+                            'incl. 19% VAT',
+                            'offerweave',
+                        ); ?></p>
                         <p class="offerweave-purchase-monthly"><?php echo esc_html($monthlyLabel); ?></p>
                         <p class="offerweave-purchase-billing"><?php esc_html_e(
                             'Billed annually. Renews automatically.',
@@ -187,6 +184,10 @@ final class PurchasePage
                 <?php
                 endforeach; ?>
             </div>
+            <p class="offerweave-purchase-tax"><?php esc_html_e(
+                'Prices include 19% German VAT. Taxes are adjusted to your billing country at checkout.',
+                'offerweave',
+            ); ?></p>
             <section class="offerweave-purchase-faq" aria-labelledby="offerweave-purchase-faq">
                 <h2 id="offerweave-purchase-faq"><?php esc_html_e(
                     'Questions about your subscription',

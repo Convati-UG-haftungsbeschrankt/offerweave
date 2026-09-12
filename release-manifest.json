@@ -18,7 +18,7 @@
     "assets/frontend.css": "9eee6b96fc8be54c19fbd4b72c503380cc5d47ddb4f3562093a4c944e9a445da",
     "assets/frontend.js": "7a4ca007c53f8fa0222844d92e0952a24226cf1317c40800b3debafce525c7e5",
     "assets/money.js": "f9e488dfa497ca6aa6bc3ba28d62567f27bce34024ed72913364dccad17747e5",
-    "assets/purchase.css": "4ce5b08434e815bdf931b88ab69a664eaaf75d0a249f51d05ff19f2371292335",
+    "assets/purchase.css": "9d8ca1a67a04f566160c04fde794af8d20db82395d7760fd237c993cf41f3016",
     "docs/AKTIONSBANNER-ANLEITUNG.md": "b718530a05361649c4c3e545f432e62021f5e984febf5551d197657325ec9c50",
     "docs/ANGEBOTSBILDER.md": "2b3b5bd67b3ca5c587dd274164608afc9ed8904fb5ce4542948fbe3fbcc61adf",
     "docs/FREE-PRO.md": "56867942568c7bf074f1e582d2aedbb3875a030a09b809c17b641d40b31f2a8b",
@@ -29,8 +29,8 @@
     "docs/VARIANTEN.md": "230ed86c079f3940b8c6b564cee510ec144fddc908b1fe1fa91423d695719334",
     "docs/WAEHRUNG.md": "ce9f0f5f2883fc88ea951ffff101a4ee49ab9a8246bdb9126747aaaf003149c3",
     "docs/ZUSCHLAEGE.md": "cec5f05e691fcc643f76cb4b7db65587b22ece4db7cb117857a177c74055b5a8",
-    "handbook/de/index.html": "90c8167ae9dc930c78ac66109a4d6a43ddfbe818e5a7c78999529c6b82244a8c",
-    "handbook/en/index.html": "68b68cf66e969ff2b234567ca158828d2bd8e3d7fecdc7a11ddce16e558d2105",
+    "handbook/de/index.html": "5ffa8fe708a4c6688e568b8f4e088b4e511514d6fd7749d476260d78868ee8d8",
+    "handbook/en/index.html": "d8e3c08a1f06b1b96d7f4a4f827e361131f9104c12cf6364817bb164df405071",
     "handbook/images/add-design-de.webp": "e38f20404e66598fa9f55c610fa052e9e890dea053148596859fce4de455ec20",
     "handbook/images/add-design-en.webp": "322dbffdbcd52c38ed54e7d0153fa303360b721f15079cd5b9ac6c11990232b3",
     "handbook/images/add-layout-de.webp": "e0ba0d71c86d3c1ef6234219bcc1cb8bb55ab09d25b902cfdb553800c9e04c20",
@@ -143,13 +143,13 @@
     "handbook/images/unit-explanation-en.webp": "fed788375d8fb92dd89e48aa7de02a046f721aba42ef3011793dab7805e9296f",
     "handbook/images/units-de.webp": "317915efc7fcd66d25a075f03822492ad3ef5420e240b719e2716c67f951df7e",
     "handbook/images/units-en.webp": "73d8bb5e48d9139865c16e862340e8f2c35a6d51c3388b8b1a2b8e1555b3a26f",
-    "handbook/images/upgrade-de.webp": "ea5aedb27e0d04fb96073ebc99d0922726f231b7494df14e2c20af990753d852",
-    "handbook/images/upgrade-en.webp": "e5ec81af54478f17a2f724fdcd51eda99692077b379d6188f0fc1cebccfa784e",
+    "handbook/images/upgrade-de.webp": "3b71df08935a6e326994f80e71f366e5ea3f69a3bb122e4950b95270bd565b31",
+    "handbook/images/upgrade-en.webp": "3d6b17aa899857c7808b039504c25ec1bb528fb19b2b5f811b9e5e21a455aa73",
     "handbook/images/variant-options-de.webp": "169fdda92b5ea1ecf8e6dab5fb60327c4581efd5f4796ebbbd2ee2358aac36c6",
     "handbook/images/variant-options-en.webp": "6bd8c8d08e612f1932d5d92df189769a7d66879d0f40ac6b3c4bf1264bb9bbaf",
     "handbook/images/variants-de.webp": "a0e0d64fc9db3bd92b89bcd6674746b082beb6305e7b12ef7ba012fcd275611c",
     "handbook/images/variants-en.webp": "6d210dbb1010e649afb4abde7009da8d5f4e666dc91fe66c715cba39ff26b586",
-    "handbook/manifest.json": "728e3ec06852e3491d06b9400123c398651fe2b802bcedcc68d9614915a35c4f",
+    "handbook/manifest.json": "49fd6c007664567a0e1ae699b37bf5da8764dc82aefc35b67bb42b0e257bdbd8",
     "handbook/manual.css": "f055eb6d9d0490102c3df92f0b0d782ab394ed3402d700007b1f97a7b3a0a5c6",
     "handbook/manual.js": "4b64e6b7debb137d274030ffc8d52af4476551232ad259dc78a45d8382d27eb5",
     "includes/Activation.php": "74c2bcb1f45a44a74283dd7b80dd53132c0834706a5357dc6ea0abe9d46ac86f",
@@ -179,7 +179,7 @@
     "includes/Mailer.php": "d65d3454015eef4add7f61cece13961ba2dfc68c057976d459e124ffc2e42026",
     "includes/OfferImage.php": "18f15e0756d833d881ba4839910a430a332f01f157792d3b1e44c1ecc6dfb9af",
     "includes/Pricing.php": "b8fd812e4282e48ab7744f27f49f30c835ef1c3c915d78ce07f1ee098ea2c70b",
-    "includes/PurchasePage.php": "45ba414e1af7b001ec7f350ab5db3bcbc51e1c308f185814171024803b21c4e0",
+    "includes/PurchasePage.php": "25042fd5d2a669fe4271b359188de45eb273bc822d5be69a63b5497a7f76ade9",
     "includes/RuntimeGuard.php": "cc71f0959228b98315275d9327304af8a1f614313b0bfa917d8b11f636ddab9c",
     "includes/SelectionRules.php": "124e9381f6a27dc3cdc4015e184f3474691b72c5e4008d5b350a7d18d5cef405",
     "includes/Spam.php": "3eb40ba49f8edebb1cf702f0955284af77d05f2eb67b7c235e2654c78a498712",
@@ -192,8 +192,8 @@
     "includes/features.json": "bbaf534a397270de8801243f67bf23b066cb2e0afca07e3c53c592b87e7d8f19",
     "languages/default-content.json": "599bcb1736258916dbdf2a08434ed0b7db30d987dcd980d1f2108f16b849560c",
     "languages/scripts.json": "ac8ee8ca328fb96d54795a03f9fe7866eb8834d85b70bd292de52eef0de0d319",
-    "offerweave.php": "2c58764bc149867c62a8627168c93329c31ecbb35bf31bee7c10ed00ca11502f",
-    "readme.txt": "dee46efa29b20577a5c15bb130aa116565a71cb8ea7e61afef98c04b24d86841",
+    "offerweave.php": "568af76a1f74be6fbfac938abb79778811476429ac087feb92f5757ff3df93d0",
+    "readme.txt": "f5a0f4987f83ce9799fd1ff07bdad52346cbf4ceff87af3889518e123d1607d5",
     "release-config.php": "f090c28694307ebffb91ead034ca36d94ec1b60e4fad5285d4898f5d9e08e928",
     "uninstall.php": "c5b76f5a1e4cd89bd1d695b11abf58fb51c9062fcc8a7e152007a3762baef3cb",
     "vendor/freemius/LICENSE.txt": "b98fbb37db5b23bc5cfdcd16793206a5a7120a7b01f75374e5e0888376e4691c",
@@ -449,7 +449,7 @@
       "source": "assets/money.js"
     },
     "assets/purchase.css": {
-      "sha256": "4ce5b08434e815bdf931b88ab69a664eaaf75d0a249f51d05ff19f2371292335",
+      "sha256": "9d8ca1a67a04f566160c04fde794af8d20db82395d7760fd237c993cf41f3016",
       "source": "assets/purchase.css"
     },
     "docs/AKTIONSBANNER-ANLEITUNG.md": {
@@ -493,11 +493,11 @@
       "source": "docs/ZUSCHLAEGE.md"
     },
     "handbook/de/index.html": {
-      "sha256": "90c8167ae9dc930c78ac66109a4d6a43ddfbe818e5a7c78999529c6b82244a8c",
+      "sha256": "5ffa8fe708a4c6688e568b8f4e088b4e511514d6fd7749d476260d78868ee8d8",
       "source": "handbook/de/index.html"
     },
     "handbook/en/index.html": {
-      "sha256": "68b68cf66e969ff2b234567ca158828d2bd8e3d7fecdc7a11ddce16e558d2105",
+      "sha256": "d8e3c08a1f06b1b96d7f4a4f827e361131f9104c12cf6364817bb164df405071",
       "source": "handbook/en/index.html"
     },
     "handbook/images/add-design-de.webp": {
@@ -949,11 +949,11 @@
       "source": "handbook/images/units-en.webp"
     },
     "handbook/images/upgrade-de.webp": {
-      "sha256": "ea5aedb27e0d04fb96073ebc99d0922726f231b7494df14e2c20af990753d852",
+      "sha256": "3b71df08935a6e326994f80e71f366e5ea3f69a3bb122e4950b95270bd565b31",
       "source": "handbook/images/upgrade-de.webp"
     },
     "handbook/images/upgrade-en.webp": {
-      "sha256": "e5ec81af54478f17a2f724fdcd51eda99692077b379d6188f0fc1cebccfa784e",
+      "sha256": "3d6b17aa899857c7808b039504c25ec1bb528fb19b2b5f811b9e5e21a455aa73",
       "source": "handbook/images/upgrade-en.webp"
     },
     "handbook/images/variant-options-de.webp": {
@@ -973,7 +973,7 @@
       "source": "handbook/images/variants-en.webp"
     },
     "handbook/manifest.json": {
-      "sha256": "728e3ec06852e3491d06b9400123c398651fe2b802bcedcc68d9614915a35c4f",
+      "sha256": "49fd6c007664567a0e1ae699b37bf5da8764dc82aefc35b67bb42b0e257bdbd8",
       "source": "handbook/manifest.json"
     },
     "handbook/manual.css": {
@@ -1093,7 +1093,7 @@
       "source": "editions/free/includes/Pricing.php"
     },
     "includes/PurchasePage.php": {
-      "sha256": "45ba414e1af7b001ec7f350ab5db3bcbc51e1c308f185814171024803b21c4e0",
+      "sha256": "25042fd5d2a669fe4271b359188de45eb273bc822d5be69a63b5497a7f76ade9",
       "source": "includes/PurchasePage.php"
     },
     "includes/RuntimeGuard.php": {
@@ -1145,11 +1145,11 @@
       "source": "editions/free/languages/scripts.json"
     },
     "offerweave.php": {
-      "sha256": "2c58764bc149867c62a8627168c93329c31ecbb35bf31bee7c10ed00ca11502f",
+      "sha256": "568af76a1f74be6fbfac938abb79778811476429ac087feb92f5757ff3df93d0",
       "source": "editions/free/offerweave.php"
     },
     "readme.txt": {
-      "sha256": "dee46efa29b20577a5c15bb130aa116565a71cb8ea7e61afef98c04b24d86841",
+      "sha256": "f5a0f4987f83ce9799fd1ff07bdad52346cbf4ceff87af3889518e123d1607d5",
       "source": "readme.txt"
     },
     "uninstall.php": {
@@ -1945,5 +1945,5 @@
       "source": "vendor/freemius/templates/tabs.php"
     }
   },
-  "version": "2.35.8"
+  "version": "2.35.9"
 }
