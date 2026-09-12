@@ -1,0 +1,23 @@
+/* Local branding, scoped to OfferWeave so other admin pages retain their styling. */
+#adminmenu #toplevel_page_offerweave .wp-menu-image img {
+    width: 22px;
+    height: 22px;
+    padding: 6px 0 0;
+    object-fit: contain;
+    opacity: 0.9;
+}
+#adminmenu #toplevel_page_offerweave:is(:hover, .current, .wp-has-current-submenu) .wp-menu-image img {
+    opacity: 1;
+}
+.fs-plugin-icon img[src*='/assets/brand/offerweave-logo.png'] {
+    background: #0b60c6;
+    border-radius: 16%;
+    object-fit: contain;
+}
+@media screen and (max-width: 782px) {
+    #adminmenu #toplevel_page_offerweave .wp-menu-image img {
+        width: 28px;
+        height: 28px;
+        padding-top: 10px;
+    }
+}

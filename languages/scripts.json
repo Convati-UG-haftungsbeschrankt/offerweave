@@ -1,0 +1,20 @@
+{
+  "offerweave-admin": {
+    "file": "assets/admin-free.js"
+  },
+  "offerweave-frontend": {
+    "file": "assets/frontend.js"
+  },
+  "offerweave-admin-images": {
+    "file": "assets/admin-images.js"
+  },
+  "offerweave-admin-languages": {
+    "file": "assets/admin-languages.js"
+  },
+  "offerweave-admin-offers": {
+    "file": "assets/admin-offers.js"
+  },
+  "offerweave-admin-dialogs": {
+    "file": "assets/admin-dialogs.js"
+  }
+}

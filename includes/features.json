@@ -1,0 +1,128 @@
+[
+    {
+        "id": "offers",
+        "free": true,
+        "de": "Angebote, Kategorien, Bilder und eigene Kurzinfo-Icons",
+        "en": "Offers, categories, images and custom short-info icons"
+    },
+    {
+        "id": "fixed_pricing",
+        "free": true,
+        "de": "Festpreis × Anzahl, einmalig oder monatlich",
+        "en": "Fixed price × quantity, one-off or monthly"
+    },
+    {
+        "id": "standard_shortcodes",
+        "free": true,
+        "de": "Katalog, Einzelkarte, Detailauswahl und Anfrage per Shortcode",
+        "en": "Catalogue, single card, detail selection and enquiry shortcodes"
+    },
+    {
+        "id": "input_labels",
+        "free": true,
+        "de": "Gemeinsame oder eigene Karteneingaben und Feldbeschriftungen",
+        "en": "Shared or independent card inputs and field labels"
+    },
+    {
+        "id": "basic_design",
+        "free": true,
+        "de": "Akzentfarbe, Kartenhintergrund und Rundung",
+        "en": "Accent colour, card background and corner radius"
+    },
+    {
+        "id": "forms",
+        "free": true,
+        "de": "Eigene Anfragefelder und Spam-Schutz",
+        "en": "Custom enquiry fields and spam protection"
+    },
+    {
+        "id": "requests",
+        "free": true,
+        "de": "Anfragen verwalten, exportieren und Standardmails senden",
+        "en": "Manage and export enquiries; send standard emails"
+    },
+    {
+        "id": "currency",
+        "free": true,
+        "de": "Globale Standardwährung",
+        "en": "Global default currency"
+    },
+    {
+        "id": "advanced_currencies",
+        "free": true,
+        "de": "Weitere Währungen wie CHF, GBP, JPY und KWD",
+        "en": "Additional currencies such as CHF, GBP, JPY and KWD"
+    },
+    {
+        "id": "tax_rules",
+        "free": true,
+        "de": "Steuern, Netto/Brutto und Anfragebedingungen",
+        "en": "Taxes, net/gross display and request conditions"
+    },
+    {
+        "id": "languages",
+        "free": true,
+        "de": "Deutsch/Englisch und Polylang-Anbindung",
+        "en": "German/English and Polylang integration"
+    },
+    {
+        "id": "transfer",
+        "free": true,
+        "de": "Konfiguration importieren und exportieren innerhalb der Ausgabe",
+        "en": "Import and export configuration within the edition"
+    },
+    {
+        "id": "advanced_pricing",
+        "free": false,
+        "de": "Staffelpreise, Gruppen und Auswahlpakete",
+        "en": "Tiered pricing, groups and selection packages"
+    },
+    {
+        "id": "variants",
+        "free": false,
+        "de": "Varianten und Durchführung gemeinsam oder je Karte",
+        "en": "Variants and delivery shared or per card"
+    },
+    {
+        "id": "travel",
+        "free": false,
+        "de": "Individuelle Zuschläge und Zusatzkosten",
+        "en": "Custom surcharges and additional costs"
+    },
+    {
+        "id": "external_controls",
+        "free": false,
+        "de": "Eingaben per Shortcode frei platzieren",
+        "en": "Freely position inputs using shortcodes"
+    },
+    {
+        "id": "promotions",
+        "free": false,
+        "de": "Befristete Aktionen und Aktionspreise",
+        "en": "Scheduled promotions and discounted prices"
+    },
+    {
+        "id": "banner_shortcodes",
+        "free": false,
+        "de": "Aktionsbanner frei per Shortcode platzieren",
+        "en": "Place promotion banners freely with shortcodes"
+    },
+    {
+        "id": "designer",
+        "free": false,
+        "de": "Vollständiger Designer für Karten, Eingaben und Banner",
+        "en": "Full designer for cards, inputs and banners"
+    },
+    {
+        "id": "mail_designer",
+        "free": false,
+        "de": "Eigene Mailvorlagen und Mailgestaltung",
+        "en": "Custom email templates and styling"
+    },
+    {
+        "id": "smtp",
+        "free": false,
+        "de": "Integrierter SMTP-Versand für OfferWeave",
+        "en": "Built-in SMTP delivery for OfferWeave"
+    }
+]

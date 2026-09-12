@@ -1,0 +1,352 @@
+:root {
+    color-scheme: light;
+    --owm-ink: #17213a;
+    --owm-muted: #465672;
+    --owm-blue: #2457c5;
+    --owm-line: #d3dced;
+    --owm-pale: #f3f6fc;
+    font:
+        16px/1.65 system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+body.owm {
+    margin: 0;
+    color: var(--owm-ink);
+    background: #fff;
+}
+a {
+    color: var(--owm-blue);
+    text-underline-offset: 3px;
+}
+button,
+input {
+    font: inherit;
+}
+button {
+    cursor: pointer;
+    border: 1px solid var(--owm-line);
+    border-radius: 6px;
+    padding: 7px 12px;
+    background: white;
+    color: var(--owm-ink);
+}
+button:hover {
+    background: var(--owm-pale);
+}
+:focus-visible {
+    outline: 3px solid var(--owm-blue);
+    outline-offset: 3px;
+}
+[hidden] {
+    display: none !important;
+}
+.owm-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 18px 26px;
+    background: var(--owm-pale);
+    border-bottom: 1px solid var(--owm-line);
+}
+.owm-header strong {
+    font-size: 20px;
+    margin-right: auto;
+}
+.owm-header span {
+    font-size: 13px;
+    color: var(--owm-muted);
+}
+.owm-layout {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    max-width: 1440px;
+    margin: auto;
+}
+.owm-sidebar {
+    padding: 26px 20px;
+    border-right: 1px solid var(--owm-line);
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    overflow: auto;
+    align-self: start;
+}
+.owm-sidebar label {
+    font-weight: 650;
+    font-size: 14px;
+    display: block;
+}
+.owm-sidebar input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #a3b3ce;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.owm-sidebar [role='status'] {
+    font-size: 13px;
+    color: var(--owm-muted);
+    margin: 8px 0;
+}
+.owm-sidebar nav {
+    display: grid;
+    gap: 3px;
+    margin-top: 16px;
+}
+.owm-sidebar nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--owm-muted);
+    font-size: 14px;
+    padding: 9px 10px;
+    border-radius: 5px;
+}
+.owm-sidebar nav a:hover,
+.owm-sidebar nav a[aria-current] {
+    color: var(--owm-blue);
+    background: #edf3ff;
+}
+.owm-sidebar nav a[aria-current] {
+    font-weight: 700;
+    border-left: 3px solid var(--owm-blue);
+}
+main {
+    padding: 44px clamp(22px, 5vw, 72px);
+    min-width: 0;
+}
+article {
+    max-width: 860px;
+    scroll-margin: 24px;
+}
+article:focus {
+    outline: none;
+}
+h1 {
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    margin: 10px 0 20px;
+}
+h2 {
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: -0.015em;
+    margin: 0 0 16px;
+}
+section {
+    margin-top: 38px;
+    scroll-margin: 24px;
+}
+p {
+    margin: 0 0 17px;
+}
+li {
+    margin: 9px 0;
+    padding-left: 3px;
+}
+ul,
+ol {
+    padding-left: 25px;
+}
+strong {
+    font-weight: 680;
+}
+.owm-eyebrow {
+    color: var(--owm-blue);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+.owm-lead {
+    font-size: 19px;
+    color: var(--owm-muted);
+}
+.owm-path,
+.owm-note {
+    padding: 18px 21px;
+    border: 1px solid var(--owm-line);
+    background: var(--owm-pale);
+    border-radius: 8px;
+    margin: 22px 0;
+}
+.owm-path strong {
+    display: block;
+    font-size: 13px;
+}
+.owm-path p {
+    margin: 5px 0 0;
+    color: var(--owm-muted);
+}
+.owm-note {
+    border-left: 3px solid var(--owm-blue);
+}
+code {
+    font:
+        0.88em/1.6 ui-monospace,
+        SFMono-Regular,
+        Consolas,
+        monospace;
+    background: #eef2f8;
+    border-radius: 3px;
+    padding: 2px 5px;
+    overflow-wrap: anywhere;
+}
+pre {
+    padding: 18px;
+    overflow: auto;
+    background: #f2f5fb;
+    border: 1px solid var(--owm-line);
+    border-radius: 8px;
+    white-space: pre-wrap;
+}
+pre code {
+    padding: 0;
+    background: none;
+}
+.owm-table {
+    overflow: auto;
+    border: 1px solid var(--owm-line);
+    border-radius: 8px;
+    margin: 20px 0;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+th,
+td {
+    text-align: left;
+    vertical-align: top;
+    padding: 13px 15px;
+    border-bottom: 1px solid var(--owm-line);
+}
+th {
+    background: var(--owm-pale);
+    font-weight: 650;
+}
+tr:last-child td {
+    border-bottom: 0;
+}
+figure {
+    margin: 28px 0;
+}
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--owm-line);
+    border-radius: 8px;
+    background: var(--owm-pale);
+}
+figcaption {
+    font-size: 13px;
+    color: var(--owm-muted);
+    margin-top: 9px;
+}
+article > footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--owm-line);
+}
+.owm-skip {
+    position: fixed;
+    top: -100px;
+    left: 15px;
+    z-index: 10;
+    padding: 10px;
+    background: #fff;
+}
+.owm-skip:focus {
+    top: 10px;
+}
+@media (max-width: 780px) {
+    .owm-layout {
+        display: block;
+    }
+    .owm-sidebar {
+        position: static;
+        max-height: none;
+        border-right: 0;
+        border-bottom: 1px solid var(--owm-line);
+    }
+    .owm-sidebar nav {
+        max-height: 220px;
+        overflow: auto;
+    }
+    main {
+        padding: 30px 20px;
+    }
+    .owm-header {
+        padding: 16px 20px;
+        gap: 10px;
+    }
+    .owm-header strong {
+        width: 100%;
+    }
+    .owm-header button {
+        font-size: 13px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+}
+@media print {
+    .owm-sidebar,
+    .owm-header,
+    .owm-skip,
+    article > footer,
+    button,
+    noscript {
+        display: none !important;
+    }
+    .owm-layout {
+        display: block;
+    }
+    main {
+        padding: 0;
+    }
+    article {
+        max-width: none;
+    }
+    body.owm-print-all article[hidden] {
+        display: block !important;
+    }
+    body.owm-print-all article {
+        break-before: page;
+    }
+    h1 {
+        font-size: 25pt;
+    }
+    h2 {
+        break-after: avoid;
+        font-size: 16pt;
+    }
+    figure,
+    tr,
+    .owm-note {
+        break-inside: avoid;
+    }
+    body {
+        font-size: 11pt;
+    }
+    a {
+        color: inherit;
+    }
+    img {
+        max-height: 19cm;
+        object-fit: contain;
+    }
+    pre {
+        white-space: pre-wrap;
+    }
+}

@@ -1,0 +1,2043 @@
+{
+    "AED": {
+        "digits": 2,
+        "de": {
+            "name": "VAE-Dirham",
+            "symbol": "AED",
+            "pattern": "{amount} AED"
+        },
+        "en": {
+            "name": "United Arab Emirates Dirham",
+            "symbol": "AED",
+            "pattern": "AED {amount}"
+        }
+    },
+    "AFN": {
+        "digits": 2,
+        "de": {
+            "name": "Afghanischer Afghani",
+            "symbol": "AFN",
+            "pattern": "{amount} AFN"
+        },
+        "en": {
+            "name": "Afghan Afghani",
+            "symbol": "AFN",
+            "pattern": "AFN {amount}"
+        }
+    },
+    "ALL": {
+        "digits": 2,
+        "de": {
+            "name": "Albanischer Lek",
+            "symbol": "ALL",
+            "pattern": "{amount} ALL"
+        },
+        "en": {
+            "name": "Albanian Lek",
+            "symbol": "ALL",
+            "pattern": "ALL {amount}"
+        }
+    },
+    "AMD": {
+        "digits": 2,
+        "de": {
+            "name": "Armenischer Dram",
+            "symbol": "AMD",
+            "pattern": "{amount} AMD"
+        },
+        "en": {
+            "name": "Armenian Dram",
+            "symbol": "AMD",
+            "pattern": "AMD {amount}"
+        }
+    },
+    "AOA": {
+        "digits": 2,
+        "de": {
+            "name": "Angolanischer Kwanza",
+            "symbol": "AOA",
+            "pattern": "{amount} AOA"
+        },
+        "en": {
+            "name": "Angolan Kwanza",
+            "symbol": "AOA",
+            "pattern": "AOA {amount}"
+        }
+    },
+    "ARS": {
+        "digits": 2,
+        "de": {
+            "name": "Argentinischer Peso",
+            "symbol": "ARS",
+            "pattern": "{amount} ARS"
+        },
+        "en": {
+            "name": "Argentine Peso",
+            "symbol": "ARS",
+            "pattern": "ARS {amount}"
+        }
+    },
+    "AUD": {
+        "digits": 2,
+        "de": {
+            "name": "Australischer Dollar",
+            "symbol": "AU$",
+            "pattern": "{amount} AU$"
+        },
+        "en": {
+            "name": "Australian Dollar",
+            "symbol": "A$",
+            "pattern": "A${amount}"
+        }
+    },
+    "AWG": {
+        "digits": 2,
+        "de": {
+            "name": "Aruba-Florin",
+            "symbol": "AWG",
+            "pattern": "{amount} AWG"
+        },
+        "en": {
+            "name": "Aruban Florin",
+            "symbol": "AWG",
+            "pattern": "AWG {amount}"
+        }
+    },
+    "AZN": {
+        "digits": 2,
+        "de": {
+            "name": "Aserbaidschan-Manat",
+            "symbol": "AZN",
+            "pattern": "{amount} AZN"
+        },
+        "en": {
+            "name": "Azerbaijani Manat",
+            "symbol": "AZN",
+            "pattern": "AZN {amount}"
+        }
+    },
+    "BAM": {
+        "digits": 2,
+        "de": {
+            "name": "Konvertible Mark Bosnien und Herzegowina",
+            "symbol": "BAM",
+            "pattern": "{amount} BAM"
+        },
+        "en": {
+            "name": "Bosnia-Herzegovina Convertible Mark",
+            "symbol": "BAM",
+            "pattern": "BAM {amount}"
+        }
+    },
+    "BBD": {
+        "digits": 2,
+        "de": {
+            "name": "Barbados-Dollar",
+            "symbol": "BBD",
+            "pattern": "{amount} BBD"
+        },
+        "en": {
+            "name": "Barbadian Dollar",
+            "symbol": "BBD",
+            "pattern": "BBD {amount}"
+        }
+    },
+    "BDT": {
+        "digits": 2,
+        "de": {
+            "name": "Bangladesch-Taka",
+            "symbol": "BDT",
+            "pattern": "{amount} BDT"
+        },
+        "en": {
+            "name": "Bangladeshi Taka",
+            "symbol": "BDT",
+            "pattern": "BDT {amount}"
+        }
+    },
+    "BHD": {
+        "digits": 3,
+        "de": {
+            "name": "Bahrain-Dinar",
+            "symbol": "BHD",
+            "pattern": "{amount} BHD"
+        },
+        "en": {
+            "name": "Bahraini Dinar",
+            "symbol": "BHD",
+            "pattern": "BHD {amount}"
+        }
+    },
+    "BIF": {
+        "digits": 0,
+        "de": {
+            "name": "Burundi-Franc",
+            "symbol": "BIF",
+            "pattern": "{amount} BIF"
+        },
+        "en": {
+            "name": "Burundian Franc",
+            "symbol": "BIF",
+            "pattern": "BIF {amount}"
+        }
+    },
+    "BMD": {
+        "digits": 2,
+        "de": {
+            "name": "Bermuda-Dollar",
+            "symbol": "BMD",
+            "pattern": "{amount} BMD"
+        },
+        "en": {
+            "name": "Bermudan Dollar",
+            "symbol": "BMD",
+            "pattern": "BMD {amount}"
+        }
+    },
+    "BND": {
+        "digits": 2,
+        "de": {
+            "name": "Brunei-Dollar",
+            "symbol": "BND",
+            "pattern": "{amount} BND"
+        },
+        "en": {
+            "name": "Brunei Dollar",
+            "symbol": "BND",
+            "pattern": "BND {amount}"
+        }
+    },
+    "BOB": {
+        "digits": 2,
+        "de": {
+            "name": "Bolivianischer Boliviano",
+            "symbol": "BOB",
+            "pattern": "{amount} BOB"
+        },
+        "en": {
+            "name": "Bolivian Boliviano",
+            "symbol": "BOB",
+            "pattern": "BOB {amount}"
+        }
+    },
+    "BRL": {
+        "digits": 2,
+        "de": {
+            "name": "Brasilianischer Real",
+            "symbol": "R$",
+            "pattern": "{amount} R$"
+        },
+        "en": {
+            "name": "Brazilian Real",
+            "symbol": "R$",
+            "pattern": "R${amount}"
+        }
+    },
+    "BSD": {
+        "digits": 2,
+        "de": {
+            "name": "Bahamas-Dollar",
+            "symbol": "BSD",
+            "pattern": "{amount} BSD"
+        },
+        "en": {
+            "name": "Bahamian Dollar",
+            "symbol": "BSD",
+            "pattern": "BSD {amount}"
+        }
+    },
+    "BTN": {
+        "digits": 2,
+        "de": {
+            "name": "Bhutan-Ngultrum",
+            "symbol": "BTN",
+            "pattern": "{amount} BTN"
+        },
+        "en": {
+            "name": "Bhutanese Ngultrum",
+            "symbol": "BTN",
+            "pattern": "BTN {amount}"
+        }
+    },
+    "BWP": {
+        "digits": 2,
+        "de": {
+            "name": "Botswanischer Pula",
+            "symbol": "BWP",
+            "pattern": "{amount} BWP"
+        },
+        "en": {
+            "name": "Botswanan Pula",
+            "symbol": "BWP",
+            "pattern": "BWP {amount}"
+        }
+    },
+    "BYN": {
+        "digits": 2,
+        "de": {
+            "name": "Weißrussischer Rubel",
+            "symbol": "BYN",
+            "pattern": "{amount} BYN"
+        },
+        "en": {
+            "name": "Belarusian Ruble",
+            "symbol": "BYN",
+            "pattern": "BYN {amount}"
+        }
+    },
+    "BZD": {
+        "digits": 2,
+        "de": {
+            "name": "Belize-Dollar",
+            "symbol": "BZD",
+            "pattern": "{amount} BZD"
+        },
+        "en": {
+            "name": "Belize Dollar",
+            "symbol": "BZD",
+            "pattern": "BZD {amount}"
+        }
+    },
+    "CAD": {
+        "digits": 2,
+        "de": {
+            "name": "Kanadischer Dollar",
+            "symbol": "CA$",
+            "pattern": "{amount} CA$"
+        },
+        "en": {
+            "name": "Canadian Dollar",
+            "symbol": "CA$",
+            "pattern": "CA${amount}"
+        }
+    },
+    "CDF": {
+        "digits": 2,
+        "de": {
+            "name": "Kongo-Franc",
+            "symbol": "CDF",
+            "pattern": "{amount} CDF"
+        },
+        "en": {
+            "name": "Congolese Franc",
+            "symbol": "CDF",
+            "pattern": "CDF {amount}"
+        }
+    },
+    "CHF": {
+        "digits": 2,
+        "de": {
+            "name": "Schweizer Franken",
+            "symbol": "CHF",
+            "pattern": "{amount} CHF"
+        },
+        "en": {
+            "name": "Swiss Franc",
+            "symbol": "CHF",
+            "pattern": "CHF {amount}"
+        }
+    },
+    "CLP": {
+        "digits": 0,
+        "de": {
+            "name": "Chilenischer Peso",
+            "symbol": "CLP",
+            "pattern": "{amount} CLP"
+        },
+        "en": {
+            "name": "Chilean Peso",
+            "symbol": "CLP",
+            "pattern": "CLP {amount}"
+        }
+    },
+    "CNY": {
+        "digits": 2,
+        "de": {
+            "name": "Renminbi Yuan",
+            "symbol": "CN¥",
+            "pattern": "{amount} CN¥"
+        },
+        "en": {
+            "name": "Chinese Yuan",
+            "symbol": "CN¥",
+            "pattern": "CN¥{amount}"
+        }
+    },
+    "COP": {
+        "digits": 2,
+        "de": {
+            "name": "Kolumbianischer Peso",
+            "symbol": "COP",
+            "pattern": "{amount} COP"
+        },
+        "en": {
+            "name": "Colombian Peso",
+            "symbol": "COP",
+            "pattern": "COP {amount}"
+        }
+    },
+    "CRC": {
+        "digits": 2,
+        "de": {
+            "name": "Costa-Rica-Colón",
+            "symbol": "CRC",
+            "pattern": "{amount} CRC"
+        },
+        "en": {
+            "name": "Costa Rican Colón",
+            "symbol": "CRC",
+            "pattern": "CRC {amount}"
+        }
+    },
+    "CUP": {
+        "digits": 2,
+        "de": {
+            "name": "Kubanischer Peso",
+            "symbol": "CUP",
+            "pattern": "{amount} CUP"
+        },
+        "en": {
+            "name": "Cuban Peso",
+            "symbol": "CUP",
+            "pattern": "CUP {amount}"
+        }
+    },
+    "CVE": {
+        "digits": 2,
+        "de": {
+            "name": "Cabo-Verde-Escudo",
+            "symbol": "CVE",
+            "pattern": "{amount} CVE"
+        },
+        "en": {
+            "name": "Cape Verdean Escudo",
+            "symbol": "CVE",
+            "pattern": "CVE {amount}"
+        }
+    },
+    "CZK": {
+        "digits": 2,
+        "de": {
+            "name": "Tschechische Krone",
+            "symbol": "CZK",
+            "pattern": "{amount} CZK"
+        },
+        "en": {
+            "name": "Czech Koruna",
+            "symbol": "CZK",
+            "pattern": "CZK {amount}"
+        }
+    },
+    "DJF": {
+        "digits": 0,
+        "de": {
+            "name": "Dschibuti-Franc",
+            "symbol": "DJF",
+            "pattern": "{amount} DJF"
+        },
+        "en": {
+            "name": "Djiboutian Franc",
+            "symbol": "DJF",
+            "pattern": "DJF {amount}"
+        }
+    },
+    "DKK": {
+        "digits": 2,
+        "de": {
+            "name": "Dänische Krone",
+            "symbol": "DKK",
+            "pattern": "{amount} DKK"
+        },
+        "en": {
+            "name": "Danish Krone",
+            "symbol": "DKK",
+            "pattern": "DKK {amount}"
+        }
+    },
+    "DOP": {
+        "digits": 2,
+        "de": {
+            "name": "Dominikanischer Peso",
+            "symbol": "DOP",
+            "pattern": "{amount} DOP"
+        },
+        "en": {
+            "name": "Dominican Peso",
+            "symbol": "DOP",
+            "pattern": "DOP {amount}"
+        }
+    },
+    "DZD": {
+        "digits": 2,
+        "de": {
+            "name": "Algerischer Dinar",
+            "symbol": "DZD",
+            "pattern": "{amount} DZD"
+        },
+        "en": {
+            "name": "Algerian Dinar",
+            "symbol": "DZD",
+            "pattern": "DZD {amount}"
+        }
+    },
+    "EGP": {
+        "digits": 2,
+        "de": {
+            "name": "Ägyptisches Pfund",
+            "symbol": "EGP",
+            "pattern": "{amount} EGP"
+        },
+        "en": {
+            "name": "Egyptian Pound",
+            "symbol": "EGP",
+            "pattern": "EGP {amount}"
+        }
+    },
+    "ERN": {
+        "digits": 2,
+        "de": {
+            "name": "Eritreischer Nakfa",
+            "symbol": "ERN",
+            "pattern": "{amount} ERN"
+        },
+        "en": {
+            "name": "Eritrean Nakfa",
+            "symbol": "ERN",
+            "pattern": "ERN {amount}"
+        }
+    },
+    "ETB": {
+        "digits": 2,
+        "de": {
+            "name": "Äthiopischer Birr",
+            "symbol": "ETB",
+            "pattern": "{amount} ETB"
+        },
+        "en": {
+            "name": "Ethiopian Birr",
+            "symbol": "ETB",
+            "pattern": "ETB {amount}"
+        }
+    },
+    "EUR": {
+        "digits": 2,
+        "de": {
+            "name": "Euro",
+            "symbol": "€",
+            "pattern": "{amount} €"
+        },
+        "en": {
+            "name": "Euro",
+            "symbol": "€",
+            "pattern": "€{amount}"
+        }
+    },
+    "FJD": {
+        "digits": 2,
+        "de": {
+            "name": "Fidschi-Dollar",
+            "symbol": "FJD",
+            "pattern": "{amount} FJD"
+        },
+        "en": {
+            "name": "Fijian Dollar",
+            "symbol": "FJD",
+            "pattern": "FJD {amount}"
+        }
+    },
+    "FKP": {
+        "digits": 2,
+        "de": {
+            "name": "Falkland-Pfund",
+            "symbol": "FKP",
+            "pattern": "{amount} FKP"
+        },
+        "en": {
+            "name": "Falkland Islands Pound",
+            "symbol": "FKP",
+            "pattern": "FKP {amount}"
+        }
+    },
+    "GBP": {
+        "digits": 2,
+        "de": {
+            "name": "Britisches Pfund",
+            "symbol": "£",
+            "pattern": "{amount} £"
+        },
+        "en": {
+            "name": "British Pound",
+            "symbol": "£",
+            "pattern": "£{amount}"
+        }
+    },
+    "GEL": {
+        "digits": 2,
+        "de": {
+            "name": "Georgischer Lari",
+            "symbol": "GEL",
+            "pattern": "{amount} GEL"
+        },
+        "en": {
+            "name": "Georgian Lari",
+            "symbol": "GEL",
+            "pattern": "GEL {amount}"
+        }
+    },
+    "GHS": {
+        "digits": 2,
+        "de": {
+            "name": "Ghanaischer Cedi",
+            "symbol": "GHS",
+            "pattern": "{amount} GHS"
+        },
+        "en": {
+            "name": "Ghanaian Cedi",
+            "symbol": "GHS",
+            "pattern": "GHS {amount}"
+        }
+    },
+    "GIP": {
+        "digits": 2,
+        "de": {
+            "name": "Gibraltar-Pfund",
+            "symbol": "GIP",
+            "pattern": "{amount} GIP"
+        },
+        "en": {
+            "name": "Gibraltar Pound",
+            "symbol": "GIP",
+            "pattern": "GIP {amount}"
+        }
+    },
+    "GMD": {
+        "digits": 2,
+        "de": {
+            "name": "Gambia-Dalasi",
+            "symbol": "GMD",
+            "pattern": "{amount} GMD"
+        },
+        "en": {
+            "name": "Gambian Dalasi",
+            "symbol": "GMD",
+            "pattern": "GMD {amount}"
+        }
+    },
+    "GNF": {
+        "digits": 0,
+        "de": {
+            "name": "Guinea-Franc",
+            "symbol": "GNF",
+            "pattern": "{amount} GNF"
+        },
+        "en": {
+            "name": "Guinean Franc",
+            "symbol": "GNF",
+            "pattern": "GNF {amount}"
+        }
+    },
+    "GTQ": {
+        "digits": 2,
+        "de": {
+            "name": "Guatemaltekischer Quetzal",
+            "symbol": "GTQ",
+            "pattern": "{amount} GTQ"
+        },
+        "en": {
+            "name": "Guatemalan Quetzal",
+            "symbol": "GTQ",
+            "pattern": "GTQ {amount}"
+        }
+    },
+    "GYD": {
+        "digits": 2,
+        "de": {
+            "name": "Guyana-Dollar",
+            "symbol": "GYD",
+            "pattern": "{amount} GYD"
+        },
+        "en": {
+            "name": "Guyanaese Dollar",
+            "symbol": "GYD",
+            "pattern": "GYD {amount}"
+        }
+    },
+    "HKD": {
+        "digits": 2,
+        "de": {
+            "name": "Hongkong-Dollar",
+            "symbol": "HK$",
+            "pattern": "{amount} HK$"
+        },
+        "en": {
+            "name": "Hong Kong Dollar",
+            "symbol": "HK$",
+            "pattern": "HK${amount}"
+        }
+    },
+    "HNL": {
+        "digits": 2,
+        "de": {
+            "name": "Honduras-Lempira",
+            "symbol": "HNL",
+            "pattern": "{amount} HNL"
+        },
+        "en": {
+            "name": "Honduran Lempira",
+            "symbol": "HNL",
+            "pattern": "HNL {amount}"
+        }
+    },
+    "HTG": {
+        "digits": 2,
+        "de": {
+            "name": "Haitianische Gourde",
+            "symbol": "HTG",
+            "pattern": "{amount} HTG"
+        },
+        "en": {
+            "name": "Haitian Gourde",
+            "symbol": "HTG",
+            "pattern": "HTG {amount}"
+        }
+    },
+    "HUF": {
+        "digits": 2,
+        "de": {
+            "name": "Ungarischer Forint",
+            "symbol": "HUF",
+            "pattern": "{amount} HUF"
+        },
+        "en": {
+            "name": "Hungarian Forint",
+            "symbol": "HUF",
+            "pattern": "HUF {amount}"
+        }
+    },
+    "IDR": {
+        "digits": 2,
+        "de": {
+            "name": "Indonesische Rupiah",
+            "symbol": "IDR",
+            "pattern": "{amount} IDR"
+        },
+        "en": {
+            "name": "Indonesian Rupiah",
+            "symbol": "IDR",
+            "pattern": "IDR {amount}"
+        }
+    },
+    "ILS": {
+        "digits": 2,
+        "de": {
+            "name": "Israelischer Neuer Schekel",
+            "symbol": "₪",
+            "pattern": "{amount} ₪"
+        },
+        "en": {
+            "name": "Israeli New Shekel",
+            "symbol": "₪",
+            "pattern": "₪{amount}"
+        }
+    },
+    "INR": {
+        "digits": 2,
+        "de": {
+            "name": "Indische Rupie",
+            "symbol": "₹",
+            "pattern": "{amount} ₹"
+        },
+        "en": {
+            "name": "Indian Rupee",
+            "symbol": "₹",
+            "pattern": "₹{amount}"
+        }
+    },
+    "IQD": {
+        "digits": 3,
+        "de": {
+            "name": "Irakischer Dinar",
+            "symbol": "IQD",
+            "pattern": "{amount} IQD"
+        },
+        "en": {
+            "name": "Iraqi Dinar",
+            "symbol": "IQD",
+            "pattern": "IQD {amount}"
+        }
+    },
+    "IRR": {
+        "digits": 2,
+        "de": {
+            "name": "Iranischer Rial",
+            "symbol": "IRR",
+            "pattern": "{amount} IRR"
+        },
+        "en": {
+            "name": "Iranian Rial",
+            "symbol": "IRR",
+            "pattern": "IRR {amount}"
+        }
+    },
+    "ISK": {
+        "digits": 0,
+        "de": {
+            "name": "Isländische Krone",
+            "symbol": "ISK",
+            "pattern": "{amount} ISK"
+        },
+        "en": {
+            "name": "Icelandic Króna",
+            "symbol": "ISK",
+            "pattern": "ISK {amount}"
+        }
+    },
+    "JMD": {
+        "digits": 2,
+        "de": {
+            "name": "Jamaika-Dollar",
+            "symbol": "JMD",
+            "pattern": "{amount} JMD"
+        },
+        "en": {
+            "name": "Jamaican Dollar",
+            "symbol": "JMD",
+            "pattern": "JMD {amount}"
+        }
+    },
+    "JOD": {
+        "digits": 3,
+        "de": {
+            "name": "Jordanischer Dinar",
+            "symbol": "JOD",
+            "pattern": "{amount} JOD"
+        },
+        "en": {
+            "name": "Jordanian Dinar",
+            "symbol": "JOD",
+            "pattern": "JOD {amount}"
+        }
+    },
+    "JPY": {
+        "digits": 0,
+        "de": {
+            "name": "Japanischer Yen",
+            "symbol": "¥",
+            "pattern": "{amount} ¥"
+        },
+        "en": {
+            "name": "Japanese Yen",
+            "symbol": "¥",
+            "pattern": "¥{amount}"
+        }
+    },
+    "KES": {
+        "digits": 2,
+        "de": {
+            "name": "Kenia-Schilling",
+            "symbol": "KES",
+            "pattern": "{amount} KES"
+        },
+        "en": {
+            "name": "Kenyan Shilling",
+            "symbol": "KES",
+            "pattern": "KES {amount}"
+        }
+    },
+    "KGS": {
+        "digits": 2,
+        "de": {
+            "name": "Kirgisischer Som",
+            "symbol": "KGS",
+            "pattern": "{amount} KGS"
+        },
+        "en": {
+            "name": "Kyrgyz Som",
+            "symbol": "KGS",
+            "pattern": "KGS {amount}"
+        }
+    },
+    "KHR": {
+        "digits": 2,
+        "de": {
+            "name": "Kambodschanischer Riel",
+            "symbol": "KHR",
+            "pattern": "{amount} KHR"
+        },
+        "en": {
+            "name": "Cambodian Riel",
+            "symbol": "KHR",
+            "pattern": "KHR {amount}"
+        }
+    },
+    "KMF": {
+        "digits": 0,
+        "de": {
+            "name": "Komoren-Franc",
+            "symbol": "KMF",
+            "pattern": "{amount} KMF"
+        },
+        "en": {
+            "name": "Comorian Franc",
+            "symbol": "KMF",
+            "pattern": "KMF {amount}"
+        }
+    },
+    "KPW": {
+        "digits": 2,
+        "de": {
+            "name": "Nordkoreanischer Won",
+            "symbol": "KPW",
+            "pattern": "{amount} KPW"
+        },
+        "en": {
+            "name": "North Korean Won",
+            "symbol": "KPW",
+            "pattern": "KPW {amount}"
+        }
+    },
+    "KRW": {
+        "digits": 0,
+        "de": {
+            "name": "Südkoreanischer Won",
+            "symbol": "₩",
+            "pattern": "{amount} ₩"
+        },
+        "en": {
+            "name": "South Korean Won",
+            "symbol": "₩",
+            "pattern": "₩{amount}"
+        }
+    },
+    "KWD": {
+        "digits": 3,
+        "de": {
+            "name": "Kuwait-Dinar",
+            "symbol": "KWD",
+            "pattern": "{amount} KWD"
+        },
+        "en": {
+            "name": "Kuwaiti Dinar",
+            "symbol": "KWD",
+            "pattern": "KWD {amount}"
+        }
+    },
+    "KYD": {
+        "digits": 2,
+        "de": {
+            "name": "Kaiman-Dollar",
+            "symbol": "KYD",
+            "pattern": "{amount} KYD"
+        },
+        "en": {
+            "name": "Cayman Islands Dollar",
+            "symbol": "KYD",
+            "pattern": "KYD {amount}"
+        }
+    },
+    "KZT": {
+        "digits": 2,
+        "de": {
+            "name": "Kasachischer Tenge",
+            "symbol": "KZT",
+            "pattern": "{amount} KZT"
+        },
+        "en": {
+            "name": "Kazakhstani Tenge",
+            "symbol": "KZT",
+            "pattern": "KZT {amount}"
+        }
+    },
+    "LAK": {
+        "digits": 2,
+        "de": {
+            "name": "Laotischer Kip",
+            "symbol": "LAK",
+            "pattern": "{amount} LAK"
+        },
+        "en": {
+            "name": "Laotian Kip",
+            "symbol": "LAK",
+            "pattern": "LAK {amount}"
+        }
+    },
+    "LBP": {
+        "digits": 2,
+        "de": {
+            "name": "Libanesisches Pfund",
+            "symbol": "LBP",
+            "pattern": "{amount} LBP"
+        },
+        "en": {
+            "name": "Lebanese Pound",
+            "symbol": "LBP",
+            "pattern": "LBP {amount}"
+        }
+    },
+    "LKR": {
+        "digits": 2,
+        "de": {
+            "name": "Sri-Lanka-Rupie",
+            "symbol": "LKR",
+            "pattern": "{amount} LKR"
+        },
+        "en": {
+            "name": "Sri Lankan Rupee",
+            "symbol": "LKR",
+            "pattern": "LKR {amount}"
+        }
+    },
+    "LRD": {
+        "digits": 2,
+        "de": {
+            "name": "Liberianischer Dollar",
+            "symbol": "LRD",
+            "pattern": "{amount} LRD"
+        },
+        "en": {
+            "name": "Liberian Dollar",
+            "symbol": "LRD",
+            "pattern": "LRD {amount}"
+        }
+    },
+    "LSL": {
+        "digits": 2,
+        "de": {
+            "name": "Loti",
+            "symbol": "LSL",
+            "pattern": "{amount} LSL"
+        },
+        "en": {
+            "name": "Lesotho Loti",
+            "symbol": "LSL",
+            "pattern": "LSL {amount}"
+        }
+    },
+    "LYD": {
+        "digits": 3,
+        "de": {
+            "name": "Libyscher Dinar",
+            "symbol": "LYD",
+            "pattern": "{amount} LYD"
+        },
+        "en": {
+            "name": "Libyan Dinar",
+            "symbol": "LYD",
+            "pattern": "LYD {amount}"
+        }
+    },
+    "MAD": {
+        "digits": 2,
+        "de": {
+            "name": "Marokkanischer Dirham",
+            "symbol": "MAD",
+            "pattern": "{amount} MAD"
+        },
+        "en": {
+            "name": "Moroccan Dirham",
+            "symbol": "MAD",
+            "pattern": "MAD {amount}"
+        }
+    },
+    "MDL": {
+        "digits": 2,
+        "de": {
+            "name": "Moldau-Leu",
+            "symbol": "MDL",
+            "pattern": "{amount} MDL"
+        },
+        "en": {
+            "name": "Moldovan Leu",
+            "symbol": "MDL",
+            "pattern": "MDL {amount}"
+        }
+    },
+    "MGA": {
+        "digits": 2,
+        "de": {
+            "name": "Madagaskar-Ariary",
+            "symbol": "MGA",
+            "pattern": "{amount} MGA"
+        },
+        "en": {
+            "name": "Malagasy Ariary",
+            "symbol": "MGA",
+            "pattern": "MGA {amount}"
+        }
+    },
+    "MKD": {
+        "digits": 2,
+        "de": {
+            "name": "Mazedonischer Denar",
+            "symbol": "MKD",
+            "pattern": "{amount} MKD"
+        },
+        "en": {
+            "name": "Macedonian Denar",
+            "symbol": "MKD",
+            "pattern": "MKD {amount}"
+        }
+    },
+    "MMK": {
+        "digits": 2,
+        "de": {
+            "name": "Myanmarischer Kyat",
+            "symbol": "MMK",
+            "pattern": "{amount} MMK"
+        },
+        "en": {
+            "name": "Myanmar Kyat",
+            "symbol": "MMK",
+            "pattern": "MMK {amount}"
+        }
+    },
+    "MNT": {
+        "digits": 2,
+        "de": {
+            "name": "Mongolischer Tögrög",
+            "symbol": "MNT",
+            "pattern": "{amount} MNT"
+        },
+        "en": {
+            "name": "Mongolian Tugrik",
+            "symbol": "MNT",
+            "pattern": "MNT {amount}"
+        }
+    },
+    "MOP": {
+        "digits": 2,
+        "de": {
+            "name": "Macao-Pataca",
+            "symbol": "MOP",
+            "pattern": "{amount} MOP"
+        },
+        "en": {
+            "name": "Macanese Pataca",
+            "symbol": "MOP",
+            "pattern": "MOP {amount}"
+        }
+    },
+    "MRU": {
+        "digits": 2,
+        "de": {
+            "name": "Mauretanischer Ouguiya",
+            "symbol": "MRU",
+            "pattern": "{amount} MRU"
+        },
+        "en": {
+            "name": "Mauritanian Ouguiya",
+            "symbol": "MRU",
+            "pattern": "MRU {amount}"
+        }
+    },
+    "MUR": {
+        "digits": 2,
+        "de": {
+            "name": "Mauritius-Rupie",
+            "symbol": "MUR",
+            "pattern": "{amount} MUR"
+        },
+        "en": {
+            "name": "Mauritian Rupee",
+            "symbol": "MUR",
+            "pattern": "MUR {amount}"
+        }
+    },
+    "MVR": {
+        "digits": 2,
+        "de": {
+            "name": "Malediven-Rufiyaa",
+            "symbol": "MVR",
+            "pattern": "{amount} MVR"
+        },
+        "en": {
+            "name": "Maldivian Rufiyaa",
+            "symbol": "MVR",
+            "pattern": "MVR {amount}"
+        }
+    },
+    "MWK": {
+        "digits": 2,
+        "de": {
+            "name": "Malawi-Kwacha",
+            "symbol": "MWK",
+            "pattern": "{amount} MWK"
+        },
+        "en": {
+            "name": "Malawian Kwacha",
+            "symbol": "MWK",
+            "pattern": "MWK {amount}"
+        }
+    },
+    "MXN": {
+        "digits": 2,
+        "de": {
+            "name": "Mexikanischer Peso",
+            "symbol": "MX$",
+            "pattern": "{amount} MX$"
+        },
+        "en": {
+            "name": "Mexican Peso",
+            "symbol": "MX$",
+            "pattern": "MX${amount}"
+        }
+    },
+    "MYR": {
+        "digits": 2,
+        "de": {
+            "name": "Malaysischer Ringgit",
+            "symbol": "MYR",
+            "pattern": "{amount} MYR"
+        },
+        "en": {
+            "name": "Malaysian Ringgit",
+            "symbol": "MYR",
+            "pattern": "MYR {amount}"
+        }
+    },
+    "MZN": {
+        "digits": 2,
+        "de": {
+            "name": "Mosambikanischer Metical",
+            "symbol": "MZN",
+            "pattern": "{amount} MZN"
+        },
+        "en": {
+            "name": "Mozambican Metical",
+            "symbol": "MZN",
+            "pattern": "MZN {amount}"
+        }
+    },
+    "NAD": {
+        "digits": 2,
+        "de": {
+            "name": "Namibia-Dollar",
+            "symbol": "NAD",
+            "pattern": "{amount} NAD"
+        },
+        "en": {
+            "name": "Namibian Dollar",
+            "symbol": "NAD",
+            "pattern": "NAD {amount}"
+        }
+    },
+    "NGN": {
+        "digits": 2,
+        "de": {
+            "name": "Nigerianischer Naira",
+            "symbol": "NGN",
+            "pattern": "{amount} NGN"
+        },
+        "en": {
+            "name": "Nigerian Naira",
+            "symbol": "NGN",
+            "pattern": "NGN {amount}"
+        }
+    },
+    "NIO": {
+        "digits": 2,
+        "de": {
+            "name": "Nicaragua-Córdoba",
+            "symbol": "NIO",
+            "pattern": "{amount} NIO"
+        },
+        "en": {
+            "name": "Nicaraguan Córdoba",
+            "symbol": "NIO",
+            "pattern": "NIO {amount}"
+        }
+    },
+    "NOK": {
+        "digits": 2,
+        "de": {
+            "name": "Norwegische Krone",
+            "symbol": "NOK",
+            "pattern": "{amount} NOK"
+        },
+        "en": {
+            "name": "Norwegian Krone",
+            "symbol": "NOK",
+            "pattern": "NOK {amount}"
+        }
+    },
+    "NPR": {
+        "digits": 2,
+        "de": {
+            "name": "Nepalesische Rupie",
+            "symbol": "NPR",
+            "pattern": "{amount} NPR"
+        },
+        "en": {
+            "name": "Nepalese Rupee",
+            "symbol": "NPR",
+            "pattern": "NPR {amount}"
+        }
+    },
+    "NZD": {
+        "digits": 2,
+        "de": {
+            "name": "Neuseeland-Dollar",
+            "symbol": "NZ$",
+            "pattern": "{amount} NZ$"
+        },
+        "en": {
+            "name": "New Zealand Dollar",
+            "symbol": "NZ$",
+            "pattern": "NZ${amount}"
+        }
+    },
+    "OMR": {
+        "digits": 3,
+        "de": {
+            "name": "Omanischer Rial",
+            "symbol": "OMR",
+            "pattern": "{amount} OMR"
+        },
+        "en": {
+            "name": "Omani Rial",
+            "symbol": "OMR",
+            "pattern": "OMR {amount}"
+        }
+    },
+    "PAB": {
+        "digits": 2,
+        "de": {
+            "name": "Panamaischer Balboa",
+            "symbol": "PAB",
+            "pattern": "{amount} PAB"
+        },
+        "en": {
+            "name": "Panamanian Balboa",
+            "symbol": "PAB",
+            "pattern": "PAB {amount}"
+        }
+    },
+    "PEN": {
+        "digits": 2,
+        "de": {
+            "name": "Peruanischer Sol",
+            "symbol": "PEN",
+            "pattern": "{amount} PEN"
+        },
+        "en": {
+            "name": "Peruvian Sol",
+            "symbol": "PEN",
+            "pattern": "PEN {amount}"
+        }
+    },
+    "PGK": {
+        "digits": 2,
+        "de": {
+            "name": "Papua-neuguineischer Kina",
+            "symbol": "PGK",
+            "pattern": "{amount} PGK"
+        },
+        "en": {
+            "name": "Papua New Guinean Kina",
+            "symbol": "PGK",
+            "pattern": "PGK {amount}"
+        }
+    },
+    "PHP": {
+        "digits": 2,
+        "de": {
+            "name": "Philippinischer Peso",
+            "symbol": "PHP",
+            "pattern": "{amount} PHP"
+        },
+        "en": {
+            "name": "Philippine Peso",
+            "symbol": "₱",
+            "pattern": "₱{amount}"
+        }
+    },
+    "PKR": {
+        "digits": 2,
+        "de": {
+            "name": "Pakistanische Rupie",
+            "symbol": "PKR",
+            "pattern": "{amount} PKR"
+        },
+        "en": {
+            "name": "Pakistani Rupee",
+            "symbol": "PKR",
+            "pattern": "PKR {amount}"
+        }
+    },
+    "PLN": {
+        "digits": 2,
+        "de": {
+            "name": "Polnischer Złoty",
+            "symbol": "PLN",
+            "pattern": "{amount} PLN"
+        },
+        "en": {
+            "name": "Polish Zloty",
+            "symbol": "PLN",
+            "pattern": "PLN {amount}"
+        }
+    },
+    "PYG": {
+        "digits": 0,
+        "de": {
+            "name": "Paraguayischer Guaraní",
+            "symbol": "PYG",
+            "pattern": "{amount} PYG"
+        },
+        "en": {
+            "name": "Paraguayan Guarani",
+            "symbol": "PYG",
+            "pattern": "PYG {amount}"
+        }
+    },
+    "QAR": {
+        "digits": 2,
+        "de": {
+            "name": "Katar-Riyal",
+            "symbol": "QAR",
+            "pattern": "{amount} QAR"
+        },
+        "en": {
+            "name": "Qatari Riyal",
+            "symbol": "QAR",
+            "pattern": "QAR {amount}"
+        }
+    },
+    "RON": {
+        "digits": 2,
+        "de": {
+            "name": "Rumänischer Leu",
+            "symbol": "RON",
+            "pattern": "{amount} RON"
+        },
+        "en": {
+            "name": "Romanian Leu",
+            "symbol": "RON",
+            "pattern": "RON {amount}"
+        }
+    },
+    "RSD": {
+        "digits": 2,
+        "de": {
+            "name": "Serbischer Dinar",
+            "symbol": "RSD",
+            "pattern": "{amount} RSD"
+        },
+        "en": {
+            "name": "Serbian Dinar",
+            "symbol": "RSD",
+            "pattern": "RSD {amount}"
+        }
+    },
+    "RUB": {
+        "digits": 2,
+        "de": {
+            "name": "Russischer Rubel",
+            "symbol": "RUB",
+            "pattern": "{amount} RUB"
+        },
+        "en": {
+            "name": "Russian Ruble",
+            "symbol": "RUB",
+            "pattern": "RUB {amount}"
+        }
+    },
+    "RWF": {
+        "digits": 0,
+        "de": {
+            "name": "Ruanda-Franc",
+            "symbol": "RWF",
+            "pattern": "{amount} RWF"
+        },
+        "en": {
+            "name": "Rwandan Franc",
+            "symbol": "RWF",
+            "pattern": "RWF {amount}"
+        }
+    },
+    "SAR": {
+        "digits": 2,
+        "de": {
+            "name": "Saudi-Rial",
+            "symbol": "SAR",
+            "pattern": "{amount} SAR"
+        },
+        "en": {
+            "name": "Saudi Riyal",
+            "symbol": "SAR",
+            "pattern": "SAR {amount}"
+        }
+    },
+    "SBD": {
+        "digits": 2,
+        "de": {
+            "name": "Salomonen-Dollar",
+            "symbol": "SBD",
+            "pattern": "{amount} SBD"
+        },
+        "en": {
+            "name": "Solomon Islands Dollar",
+            "symbol": "SBD",
+            "pattern": "SBD {amount}"
+        }
+    },
+    "SCR": {
+        "digits": 2,
+        "de": {
+            "name": "Seychellen-Rupie",
+            "symbol": "SCR",
+            "pattern": "{amount} SCR"
+        },
+        "en": {
+            "name": "Seychellois Rupee",
+            "symbol": "SCR",
+            "pattern": "SCR {amount}"
+        }
+    },
+    "SDG": {
+        "digits": 2,
+        "de": {
+            "name": "Sudanesisches Pfund",
+            "symbol": "SDG",
+            "pattern": "{amount} SDG"
+        },
+        "en": {
+            "name": "Sudanese Pound",
+            "symbol": "SDG",
+            "pattern": "SDG {amount}"
+        }
+    },
+    "SEK": {
+        "digits": 2,
+        "de": {
+            "name": "Schwedische Krone",
+            "symbol": "SEK",
+            "pattern": "{amount} SEK"
+        },
+        "en": {
+            "name": "Swedish Krona",
+            "symbol": "SEK",
+            "pattern": "SEK {amount}"
+        }
+    },
+    "SGD": {
+        "digits": 2,
+        "de": {
+            "name": "Singapur-Dollar",
+            "symbol": "SGD",
+            "pattern": "{amount} SGD"
+        },
+        "en": {
+            "name": "Singapore Dollar",
+            "symbol": "SGD",
+            "pattern": "SGD {amount}"
+        }
+    },
+    "SHP": {
+        "digits": 2,
+        "de": {
+            "name": "St.-Helena-Pfund",
+            "symbol": "SHP",
+            "pattern": "{amount} SHP"
+        },
+        "en": {
+            "name": "St. Helena Pound",
+            "symbol": "SHP",
+            "pattern": "SHP {amount}"
+        }
+    },
+    "SLE": {
+        "digits": 2,
+        "de": {
+            "name": "Sierra-leonischer Leone",
+            "symbol": "SLE",
+            "pattern": "{amount} SLE"
+        },
+        "en": {
+            "name": "Sierra Leonean Leone",
+            "symbol": "SLE",
+            "pattern": "SLE {amount}"
+        }
+    },
+    "SOS": {
+        "digits": 2,
+        "de": {
+            "name": "Somalia-Schilling",
+            "symbol": "SOS",
+            "pattern": "{amount} SOS"
+        },
+        "en": {
+            "name": "Somali Shilling",
+            "symbol": "SOS",
+            "pattern": "SOS {amount}"
+        }
+    },
+    "SRD": {
+        "digits": 2,
+        "de": {
+            "name": "Suriname-Dollar",
+            "symbol": "SRD",
+            "pattern": "{amount} SRD"
+        },
+        "en": {
+            "name": "Surinamese Dollar",
+            "symbol": "SRD",
+            "pattern": "SRD {amount}"
+        }
+    },
+    "SSP": {
+        "digits": 2,
+        "de": {
+            "name": "Südsudanesisches Pfund",
+            "symbol": "SSP",
+            "pattern": "{amount} SSP"
+        },
+        "en": {
+            "name": "South Sudanese Pound",
+            "symbol": "SSP",
+            "pattern": "SSP {amount}"
+        }
+    },
+    "STN": {
+        "digits": 2,
+        "de": {
+            "name": "São-toméischer Dobra",
+            "symbol": "STN",
+            "pattern": "{amount} STN"
+        },
+        "en": {
+            "name": "São Tomé & Príncipe Dobra",
+            "symbol": "STN",
+            "pattern": "STN {amount}"
+        }
+    },
+    "SVC": {
+        "digits": 2,
+        "de": {
+            "name": "El Salvador Colon",
+            "symbol": "SVC",
+            "pattern": "{amount} SVC"
+        },
+        "en": {
+            "name": "Salvadoran Colón",
+            "symbol": "SVC",
+            "pattern": "SVC {amount}"
+        }
+    },
+    "SYP": {
+        "digits": 2,
+        "de": {
+            "name": "Syrisches Pfund",
+            "symbol": "SYP",
+            "pattern": "{amount} SYP"
+        },
+        "en": {
+            "name": "Syrian Pound",
+            "symbol": "SYP",
+            "pattern": "SYP {amount}"
+        }
+    },
+    "SZL": {
+        "digits": 2,
+        "de": {
+            "name": "Swasiländischer Lilangeni",
+            "symbol": "SZL",
+            "pattern": "{amount} SZL"
+        },
+        "en": {
+            "name": "Swazi Lilangeni",
+            "symbol": "SZL",
+            "pattern": "SZL {amount}"
+        }
+    },
+    "THB": {
+        "digits": 2,
+        "de": {
+            "name": "Thailändischer Baht",
+            "symbol": "฿",
+            "pattern": "{amount} ฿"
+        },
+        "en": {
+            "name": "Thai Baht",
+            "symbol": "THB",
+            "pattern": "THB {amount}"
+        }
+    },
+    "TJS": {
+        "digits": 2,
+        "de": {
+            "name": "Tadschikistan-Somoni",
+            "symbol": "TJS",
+            "pattern": "{amount} TJS"
+        },
+        "en": {
+            "name": "Tajikistani Somoni",
+            "symbol": "TJS",
+            "pattern": "TJS {amount}"
+        }
+    },
+    "TMT": {
+        "digits": 2,
+        "de": {
+            "name": "Turkmenistan-Manat",
+            "symbol": "TMT",
+            "pattern": "{amount} TMT"
+        },
+        "en": {
+            "name": "Turkmenistani Manat",
+            "symbol": "TMT",
+            "pattern": "TMT {amount}"
+        }
+    },
+    "TND": {
+        "digits": 3,
+        "de": {
+            "name": "Tunesischer Dinar",
+            "symbol": "TND",
+            "pattern": "{amount} TND"
+        },
+        "en": {
+            "name": "Tunisian Dinar",
+            "symbol": "TND",
+            "pattern": "TND {amount}"
+        }
+    },
+    "TOP": {
+        "digits": 2,
+        "de": {
+            "name": "Tongaischer Paʻanga",
+            "symbol": "TOP",
+            "pattern": "{amount} TOP"
+        },
+        "en": {
+            "name": "Tongan Paʻanga",
+            "symbol": "TOP",
+            "pattern": "TOP {amount}"
+        }
+    },
+    "TRY": {
+        "digits": 2,
+        "de": {
+            "name": "Türkische Lira",
+            "symbol": "TRY",
+            "pattern": "{amount} TRY"
+        },
+        "en": {
+            "name": "Turkish Lira",
+            "symbol": "TRY",
+            "pattern": "TRY {amount}"
+        }
+    },
+    "TTD": {
+        "digits": 2,
+        "de": {
+            "name": "Trinidad-und-Tobago-Dollar",
+            "symbol": "TTD",
+            "pattern": "{amount} TTD"
+        },
+        "en": {
+            "name": "Trinidad & Tobago Dollar",
+            "symbol": "TTD",
+            "pattern": "TTD {amount}"
+        }
+    },
+    "TWD": {
+        "digits": 2,
+        "de": {
+            "name": "Neuer Taiwan-Dollar",
+            "symbol": "NT$",
+            "pattern": "{amount} NT$"
+        },
+        "en": {
+            "name": "New Taiwan Dollar",
+            "symbol": "NT$",
+            "pattern": "NT${amount}"
+        }
+    },
+    "TZS": {
+        "digits": 2,
+        "de": {
+            "name": "Tansania-Schilling",
+            "symbol": "TZS",
+            "pattern": "{amount} TZS"
+        },
+        "en": {
+            "name": "Tanzanian Shilling",
+            "symbol": "TZS",
+            "pattern": "TZS {amount}"
+        }
+    },
+    "UAH": {
+        "digits": 2,
+        "de": {
+            "name": "Ukrainische Hrywnja",
+            "symbol": "UAH",
+            "pattern": "{amount} UAH"
+        },
+        "en": {
+            "name": "Ukrainian Hryvnia",
+            "symbol": "UAH",
+            "pattern": "UAH {amount}"
+        }
+    },
+    "UGX": {
+        "digits": 0,
+        "de": {
+            "name": "Uganda-Schilling",
+            "symbol": "UGX",
+            "pattern": "{amount} UGX"
+        },
+        "en": {
+            "name": "Ugandan Shilling",
+            "symbol": "UGX",
+            "pattern": "UGX {amount}"
+        }
+    },
+    "USD": {
+        "digits": 2,
+        "de": {
+            "name": "US-Dollar",
+            "symbol": "$",
+            "pattern": "{amount} $"
+        },
+        "en": {
+            "name": "US Dollar",
+            "symbol": "$",
+            "pattern": "${amount}"
+        }
+    },
+    "UYU": {
+        "digits": 2,
+        "de": {
+            "name": "Uruguayischer Peso",
+            "symbol": "UYU",
+            "pattern": "{amount} UYU"
+        },
+        "en": {
+            "name": "Uruguayan Peso",
+            "symbol": "UYU",
+            "pattern": "UYU {amount}"
+        }
+    },
+    "UYW": {
+        "digits": 4,
+        "de": {
+            "name": "UYW",
+            "symbol": "UYW",
+            "pattern": "{amount} UYW"
+        },
+        "en": {
+            "name": "Uruguayan Nominal Wage Index Unit",
+            "symbol": "UYW",
+            "pattern": "UYW {amount}"
+        }
+    },
+    "UZS": {
+        "digits": 2,
+        "de": {
+            "name": "Usbekistan-Sum",
+            "symbol": "UZS",
+            "pattern": "{amount} UZS"
+        },
+        "en": {
+            "name": "Uzbekistani Som",
+            "symbol": "UZS",
+            "pattern": "UZS {amount}"
+        }
+    },
+    "VED": {
+        "digits": 2,
+        "de": {
+            "name": "VED",
+            "symbol": "VED",
+            "pattern": "{amount} VED"
+        },
+        "en": {
+            "name": "Bolívar Soberano",
+            "symbol": "VED",
+            "pattern": "VED {amount}"
+        }
+    },
+    "VES": {
+        "digits": 2,
+        "de": {
+            "name": "Venezolanischer Bolívar",
+            "symbol": "VES",
+            "pattern": "{amount} VES"
+        },
+        "en": {
+            "name": "Venezuelan Bolívar",
+            "symbol": "VES",
+            "pattern": "VES {amount}"
+        }
+    },
+    "VND": {
+        "digits": 0,
+        "de": {
+            "name": "Vietnamesischer Dong",
+            "symbol": "₫",
+            "pattern": "{amount} ₫"
+        },
+        "en": {
+            "name": "Vietnamese Dong",
+            "symbol": "₫",
+            "pattern": "₫{amount}"
+        }
+    },
+    "VUV": {
+        "digits": 0,
+        "de": {
+            "name": "Vanuatu-Vatu",
+            "symbol": "VUV",
+            "pattern": "{amount} VUV"
+        },
+        "en": {
+            "name": "Vanuatu Vatu",
+            "symbol": "VUV",
+            "pattern": "VUV {amount}"
+        }
+    },
+    "WST": {
+        "digits": 2,
+        "de": {
+            "name": "Samoanischer Tala",
+            "symbol": "WST",
+            "pattern": "{amount} WST"
+        },
+        "en": {
+            "name": "Samoan Tala",
+            "symbol": "WST",
+            "pattern": "WST {amount}"
+        }
+    },
+    "XAD": {
+        "digits": 2,
+        "de": {
+            "name": "XAD",
+            "symbol": "XAD",
+            "pattern": "{amount} XAD"
+        },
+        "en": {
+            "name": "XAD",
+            "symbol": "XAD",
+            "pattern": "XAD {amount}"
+        }
+    },
+    "XAF": {
+        "digits": 0,
+        "de": {
+            "name": "CFA-Franc (BEAC)",
+            "symbol": "FCFA",
+            "pattern": "{amount} FCFA"
+        },
+        "en": {
+            "name": "Central African CFA Franc",
+            "symbol": "FCFA",
+            "pattern": "FCFA {amount}"
+        }
+    },
+    "XCD": {
+        "digits": 2,
+        "de": {
+            "name": "Ostkaribischer Dollar",
+            "symbol": "EC$",
+            "pattern": "{amount} EC$"
+        },
+        "en": {
+            "name": "East Caribbean Dollar",
+            "symbol": "EC$",
+            "pattern": "EC${amount}"
+        }
+    },
+    "XCG": {
+        "digits": 2,
+        "de": {
+            "name": "Karibischer Gulden",
+            "symbol": "Cg.",
+            "pattern": "{amount} Cg."
+        },
+        "en": {
+            "name": "Caribbean guilder",
+            "symbol": "Cg.",
+            "pattern": "Cg. {amount}"
+        }
+    },
+    "XOF": {
+        "digits": 0,
+        "de": {
+            "name": "CFA-Franc (BCEAO)",
+            "symbol": "F CFA",
+            "pattern": "{amount} F CFA"
+        },
+        "en": {
+            "name": "West African CFA Franc",
+            "symbol": "F CFA",
+            "pattern": "F CFA {amount}"
+        }
+    },
+    "XPF": {
+        "digits": 0,
+        "de": {
+            "name": "CFP-Franc",
+            "symbol": "CFPF",
+            "pattern": "{amount} CFPF"
+        },
+        "en": {
+            "name": "CFP Franc",
+            "symbol": "CFPF",
+            "pattern": "CFPF {amount}"
+        }
+    },
+    "YER": {
+        "digits": 2,
+        "de": {
+            "name": "Jemen-Rial",
+            "symbol": "YER",
+            "pattern": "{amount} YER"
+        },
+        "en": {
+            "name": "Yemeni Rial",
+            "symbol": "YER",
+            "pattern": "YER {amount}"
+        }
+    },
+    "ZAR": {
+        "digits": 2,
+        "de": {
+            "name": "Südafrikanischer Rand",
+            "symbol": "ZAR",
+            "pattern": "{amount} ZAR"
+        },
+        "en": {
+            "name": "South African Rand",
+            "symbol": "ZAR",
+            "pattern": "ZAR {amount}"
+        }
+    },
+    "ZMW": {
+        "digits": 2,
+        "de": {
+            "name": "Kwacha",
+            "symbol": "ZMW",
+            "pattern": "{amount} ZMW"
+        },
+        "en": {
+            "name": "Zambian Kwacha",
+            "symbol": "ZMW",
+            "pattern": "ZMW {amount}"
+        }
+    },
+    "ZWG": {
+        "digits": 2,
+        "de": {
+            "name": "Simbabwe-Gold",
+            "symbol": "ZWG",
+            "pattern": "{amount} ZWG"
+        },
+        "en": {
+            "name": "Zimbabwean Gold",
+            "symbol": "ZWG",
+            "pattern": "ZWG {amount}"
+        }
+    }
+}

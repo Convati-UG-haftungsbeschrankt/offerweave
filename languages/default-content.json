@@ -1,0 +1,21 @@
+{
+  "Neue Aktion": "New promotion",
+  "Neues Angebot": "New offer",
+  "Leistungen": "Services",
+  "Unternehmen": "Company",
+  "E-Mail": "Email",
+  "Telefon": "Phone",
+  "Gewünschter Zeitraum": "Preferred timeframe",
+  "Nachricht": "Message",
+  "Ihr Unternehmen": "Your company",
+  "Wir verwenden Ihre Angaben zur Bearbeitung Ihrer unverbindlichen Angebotsanfrage.": "We use your details to process your non-binding quote request.",
+  "Unverbindliches Angebot anfordern": "Request a non-binding quote",
+  "Ihre Anfrage wurde gespeichert. Wir melden uns zeitnah bei Ihnen.": "Your request has been saved. We will get back to you shortly.",
+  "Preisübersicht": "Price summary",
+  "[brand] – Neue Angebotsanfrage #[reference]": "[brand] – New quote request #[reference]",
+  "<p>Eine neue Anfrage ist eingegangen.</p><h2>Kontaktdaten</h2>[offerweave_fields]<h2>Gewünschte Leistungen</h2>[offerweave_quote]": "<p>A new request has been received.</p><h2>Contact details</h2>[offerweave_fields]<h2>Requested services</h2>[offerweave_quote]",
+  "Ihre Preisübersicht von [brand] – Anfrage #[reference]": "Your price summary from [brand] – Request #[reference]",
+  "<p>Guten Tag,</p><p>vielen Dank für Ihre Anfrage. Hier finden Sie Ihre Auswahl und die dazu berechneten Preise.</p>[offerweave_quote]<p>Wenn Sie Fragen haben oder Ihre Auswahl ändern möchten, antworten Sie einfach auf diese E-Mail.</p><p>Freundliche Grüße<br>[brand]</p>": "<p>Hello,</p><p>Thank you for your request. Here is your selection and the calculated pricing.</p>[offerweave_quote]<p>If you have questions or would like to change your selection, simply reply to this email.</p><p>Kind regards<br>[brand]</p>",
+  "Diese Nachricht bezieht sich auf Ihre Angebotsanfrage. Es entsteht noch keine verbindliche Buchung.": "This message relates to your quote request. It does not create a binding booking.",
+  "Wählen Sie die passenden Angebote und den gewünschten Umfang.": "Choose the right offers and the scope you need."
+}

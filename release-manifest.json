@@ -1,0 +1,1899 @@
+{
+  "composition": "editions/free/package.json",
+  "composition_sha256": "992e36b916711b2543a85ddc8c763f90f94149733d64c80836d5fb9c37103a3b",
+  "configured": true,
+  "distribution": "public",
+  "edition": "free",
+  "files": {
+    "LICENSE": "b98fbb37db5b23bc5cfdcd16793206a5a7120a7b01f75374e5e0888376e4691c",
+    "THIRD-PARTY-NOTICES.txt": "2f6d840df0d24c84466eb19be78df0e5f96bf391ac2f43342476a4d1639ff1d6",
+    "assets/admin-brand.css": "028251e6f2bdabc25d8bb044d78bb24e99c40b8f30fd4d20004f898252a8cb2e",
+    "assets/admin-dialogs.js": "70b376ebf9b2c05d9e218fedc1a844d54bd4716f6f1954753eb6b66e46592b9c",
+    "assets/admin-free.js": "2ee134712a204ab8f43d94f4aa168ec6c2c8d94bcfeb9927efb776a3c567f96b",
+    "assets/admin-images.js": "429000e7ffaa28f0aa1f423bb11bdfae9988dc12b08e9373dad4e43be0b34c17",
+    "assets/admin-languages.js": "8d0608f5911d4d7fb507bbd34bc9ae2dc9b958ca0cf89f09f5e3ed13b72a5d40",
+    "assets/admin-offers.js": "56a046017b0e4111c4c44197dd557af840eaea4c2c9bcbb89eed11bd8422ca8e",
+    "assets/admin.css": "33ffc936cb05c97b778b8733b1ebaed774f4604a00dbfa4778f2595e09123b0a",
+    "assets/brand/offerweave-logo.png": "33284418d65ca29a0bc16c253a75b1e3895e633ac42eb4906c526fe43964bddd",
+    "assets/frontend.css": "18312ba1569970a6473a9e181b3cea3652d25d7a1d91b328882ab4145ed2419f",
+    "assets/frontend.js": "d396e8bb44c6058167077f8091ce628ab98e586789c98fe062c2faea32d980bd",
+    "assets/money.js": "f9e488dfa497ca6aa6bc3ba28d62567f27bce34024ed72913364dccad17747e5",
+    "docs/AKTIONSBANNER-ANLEITUNG.md": "b718530a05361649c4c3e545f432e62021f5e984febf5551d197657325ec9c50",
+    "docs/ANGEBOTSBILDER.md": "2b3b5bd67b3ca5c587dd274164608afc9ed8904fb5ce4542948fbe3fbcc61adf",
+    "docs/FREE-PRO.md": "56867942568c7bf074f1e582d2aedbb3875a030a09b809c17b641d40b31f2a8b",
+    "docs/GRUPPEN-BERECHNUNG.md": "60dea5f22e36a3edd050ca634dcda1f337cbfc4dd0e72637efa6aaddbf2e66dc",
+    "docs/MEHRSPRACHIGKEIT.md": "4c94c94ce8f1235c6b5e4f7e4b67f88f7eacda6ddc31f9572e7e6cbaf141a2cb",
+    "docs/START.md": "36c46db7d4ca65c4b9dabecc2daafa229989edb82184b7edb878c78cd67d1314",
+    "docs/STEUERN.md": "6ff7efabbed605329510ee1eeebf41856339c4b6d993c826eee93107f9a38cd3",
+    "docs/VARIANTEN.md": "230ed86c079f3940b8c6b564cee510ec144fddc908b1fe1fa91423d695719334",
+    "docs/WAEHRUNG.md": "ce9f0f5f2883fc88ea951ffff101a4ee49ab9a8246bdb9126747aaaf003149c3",
+    "docs/ZUSCHLAEGE.md": "cec5f05e691fcc643f76cb4b7db65587b22ece4db7cb117857a177c74055b5a8",
+    "handbook/de/index.html": "e1a23aa5fa1e7530bd4df5e9b3b5a3683bbb678f14dd10a71c3d635b355b3823",
+    "handbook/en/index.html": "73391370f0c71330a60f62d894f7c5e470e546a92897e7557cf09ae8e7eaf93d",
+    "handbook/images/add-design-de.webp": "e38f20404e66598fa9f55c610fa052e9e890dea053148596859fce4de455ec20",
+    "handbook/images/add-design-en.webp": "322dbffdbcd52c38ed54e7d0153fa303360b721f15079cd5b9ac6c11990232b3",
+    "handbook/images/add-layout-de.webp": "e0ba0d71c86d3c1ef6234219bcc1cb8bb55ab09d25b902cfdb553800c9e04c20",
+    "handbook/images/add-layout-en.webp": "0ed29c7b9e718a1047bf56ab12bbf4603613f94acd545743628853ca2c6639b4",
+    "handbook/images/category-background-de.webp": "aa751bca8381a79ac87b9e3469258cc0bb6ff35ad9bd4e7da4401f6c43643044",
+    "handbook/images/category-background-en.webp": "aca9f1eed630511952b9834e47989a986c07c806c2a768893370344fe98db8a4",
+    "handbook/images/category-columns-de.webp": "2405792e69c8494d233235bd69f3171d0b2fec822a54a41f1ad51cb291f6a7e9",
+    "handbook/images/category-columns-en.webp": "d21a0fb22cd3ed1e1fbc1f26195a3265f864b7024be9f892c77a56873fae5a81",
+    "handbook/images/category-models-de.webp": "b9bd83ca9ddabecb421dbf3b3df0917d98e03a405f86a66515b026c40eb59d11",
+    "handbook/images/category-models-en.webp": "6f021566e53ec389a513ce8a5ef9bfd49b7a91985082eba6753caa83715db881",
+    "handbook/images/conditions-de.webp": "18640c05894c7e0c015bdd3775a418a7e3f781e54dae99f457063bb070835535",
+    "handbook/images/conditions-en.webp": "3426c8c91577ba812dffe618dd630d445d4f6cce6170aeee846e484c099f8f87",
+    "handbook/images/control-labels-de.webp": "ff148fec2105623400c1efc0d64b0909c8cbd7ad2ab4219a1c1b278c0a8b76cd",
+    "handbook/images/control-labels-en.webp": "b7ebdc6f1103984cfaf7e3d781fcb7e8ecf086419eb7b609f92cfbffcf88fde9",
+    "handbook/images/currency-de.webp": "8e944152b1f979eb3782ff1c681d76484816dcc31e436ff4fbd9895ed351e962",
+    "handbook/images/currency-en.webp": "ce6f93a6dc23a558a0b6595e44a41894cc63cd5a526a19770863e22b301e1b58",
+    "handbook/images/dashboard-shortcodes-de.webp": "ab5270dccbd79c9a50f134ee5e1b2a848e871139f42b33beb4c506aa7be58ff0",
+    "handbook/images/dashboard-shortcodes-en.webp": "c69f1e0379b69d7db4b976e5f5014607d397cf751e82db63a21f2eb964e31534",
+    "handbook/images/design-de.webp": "072625982407865d3de04b50d55fd3f08f2934411d1e464aecf275858d829557",
+    "handbook/images/design-en.webp": "082c7a1f2ba0be6518e5fd810d2ec25b18dff2e95a3afb3e3db13609dc4243ba",
+    "handbook/images/design-search-de.webp": "e5ac829bacfc8987a38411589eb22cf2c574effbc87d9521f4551faef87d36be",
+    "handbook/images/design-search-en.webp": "9fef2ac1b9b1a03f79601045d05ffc95b1ebd59c5bba68bc7143e0ed1899c088",
+    "handbook/images/design-state-de.webp": "844f14d062c7d52f18920e694236a6f54f625667526f07267ed1f7a54780e405",
+    "handbook/images/design-state-en.webp": "b0bcceb67682482899308e954a04124e03aa94b343c72b9fa0a6166d5fda7f81",
+    "handbook/images/dialog-confirm-de.webp": "9588fb36fe7b642c75be2007806748e2e4929f20a7c110ba9f42f6c5c0169e10",
+    "handbook/images/dialog-confirm-en.webp": "1141de1f359d97aa42a158496d65be62a8f6f43306c336ea964e2102a7096d26",
+    "handbook/images/dialog-warning-de.webp": "9af43ebea16723607ee1e906d60e32f7ee2a16110e744a074044daf9bb87f0da",
+    "handbook/images/dialog-warning-en.webp": "d061b20e7c7f3ddffba28bf1cd773897ebde9c68f90ca5e912b29d0d2080a4da",
+    "handbook/images/edition-features-de.webp": "c61a73f0f80d444c1178c8c3b464b357338f297194198bdefadafdfcd310ef09",
+    "handbook/images/edition-features-en.webp": "5d1f9ae8c61e0d65b771f0593e225b4c6157a3367ee3e4eda46117858c07ac44",
+    "handbook/images/email-de.webp": "f53f2a8bea0424dbac2421956f36543387a9735f590d75d96d5a383914124152",
+    "handbook/images/email-en.webp": "afc30801a4ecee153c72beb47416b5bb5be253ab86f750fdf3bd294107fad224",
+    "handbook/images/external-controls-de.webp": "737f8f16a6a510062b54308faa4e47f094bc8b242c4c97e517b7598000729f0e",
+    "handbook/images/external-controls-en.webp": "1fc1b28f5d8e82ede4e19a1910cf25539f8b111eb1acc649339b642bb9ad335d",
+    "handbook/images/external-shared-de.webp": "5674ba242c89bbbc1515370de4887c8fcae59135eef5d3a3e35e9fca85035589",
+    "handbook/images/external-shared-en.webp": "d92a062156ee98ae57868efb3442b67deedafddd559d9685334d5a0643d196b3",
+    "handbook/images/fact-icons-de.webp": "2fe0e0ce9d150f066ef6fc3274816364b52f77e4d5f1ba1b14f2febb1ad1b690",
+    "handbook/images/fact-icons-en.webp": "f90d8906122580a83deb8c7628ae40321b8565ea630fad29fba739b6a37d10be",
+    "handbook/images/fact-spacing-de.webp": "74e9c199098e4e2f4b25531ad0e6022804876ae005eebcd28fdab505dc2914aa",
+    "handbook/images/fact-spacing-en.webp": "fcd631e62ab1a508d5f4946cbeb3f5093fb67a24cb1ada9eb772bc9e2939d14e",
+    "handbook/images/forms-de.webp": "38e457b744979708def5fa63ace53aaaaf524c11703b71ade047c4247b3c8cc9",
+    "handbook/images/forms-en.webp": "57a015a049b8f0f9a2312d5395544ced37986213cd65a938cb7d0217ebdef348",
+    "handbook/images/free-design-de.webp": "cdf915e4a7fb952f2ea75398595e83e0f621265e1171279d74cbb5f58ccf8c54",
+    "handbook/images/free-design-en.webp": "3106129dc374fcd2029d610cbb353defc6cd1b93a6972f7e336e5c5a9c710c5f",
+    "handbook/images/groups-de.webp": "15c0b2341b6c5ae6270e076daa0d17bb46759c4ad3c650abeffb18d174e8760d",
+    "handbook/images/groups-en.webp": "87fed0d26ddc34e06111e20da6d2fc33093ed3a3bfc85c6ce671afbe70ac5279",
+    "handbook/images/input-scope-cards-de.webp": "4a8545308930a14abd1d02819170ac81c5a6a97c6bf57e8cd65eaae78b8e2459",
+    "handbook/images/input-scope-cards-en.webp": "0bb138bdbc379e68bbeee7f38d7f834b897b401eab8a1ac19f0260b4414e70d4",
+    "handbook/images/input-scope-setting-de.webp": "22d831b83c66037664e57c82dba9903516e6f36f9ea514d1801b3201369c44d8",
+    "handbook/images/input-scope-setting-en.webp": "990ead096ea29aecbc2f504d4f03fd65396e716650c55d60b0ba59c0bcb207f0",
+    "handbook/images/license-status-de.webp": "10853a14988ce94f88681141028f18c729266259e4b835aef1ba3b1f998546f9",
+    "handbook/images/license-status-en.webp": "5ee58ed0c6830e2035df2e045d8925a574f040e3456ecc0323e436ab86417cf0",
+    "handbook/images/mixed-catalog-de.webp": "4ef5435604db8caf648d55cbcec830dbf23622bc63933080a993ce94df8cf476",
+    "handbook/images/mixed-catalog-en.webp": "7ec033b998c9f95fe792a5f9a2be381724f96370bb0ad845ca0efe4384494c69",
+    "handbook/images/offer-background-de.webp": "c49ae731987df0d746dc79e426fcc93fb2bf5c2911a85b51d83b7785181f9981",
+    "handbook/images/offer-background-en.webp": "b5508d31a2795a8d56805e5d57abae01add545fc06cf707c12f26af3d4c0fdcf",
+    "handbook/images/offers-de.webp": "90c55aa471bd4596e99f81398fdce8d5222859ce107ffbd1a98126096dc10fe8",
+    "handbook/images/offers-en.webp": "5a6b243a3af6206bd0f37c9334ff646d072856aab5ff19a115389f0f7e62c497",
+    "handbook/images/packages-de.webp": "33086b7ecd489f522f8ba0a45f624913d74609857cdb244b0987df2d873d7643",
+    "handbook/images/packages-en.webp": "3921a87caf0e339479ee10b57ae4a26a414d57be0b9b29447a3473d64abba626",
+    "handbook/images/php-rendering-de.webp": "108c8b5e0eb862cf4458674f98f4ad5cc5d69de7db04fed2b1fb5fbb3dce9328",
+    "handbook/images/php-rendering-en.webp": "77b3c479350fa94356e586466c9d91a7ee8bc792e924bb2cc3630f5b113b216f",
+    "handbook/images/price-preview-de.webp": "a60e47d8ae9cab3663add322ad371e5410d14401e334b40f5ae6161384c535cc",
+    "handbook/images/price-preview-en.webp": "43a974c0b175218373f2b655cd37615c32e0e02dee0bc08d6637ce4af8fa67b2",
+    "handbook/images/price-tax-label-de.webp": "e1846d703dfd1327b95e3de461e2464397a665cb4c695e340675d8b639b2d7f8",
+    "handbook/images/price-tax-label-en.webp": "95cb0f170306d346ec62cb379c9e20fc0324a6bccdd4a0efef49bbea3fe731cd",
+    "handbook/images/promotion-lifecycle-de.webp": "41e91ca2b289e4b40ba58d1637d3d186e7c111f6e73f6e571ee49bebeae37b1b",
+    "handbook/images/promotion-lifecycle-en.webp": "7d807aeadd15c91215010bd3abaa0c27a1241d0aa4ec1c30c7435799da55b305",
+    "handbook/images/promotions-de.webp": "067ce9d1a1dc030a03b4d8882be8087dafdff3e51e4462604a7945563f6fded3",
+    "handbook/images/promotions-en.webp": "035bdb1d3dc8ef4eade4d5d19327c9e5b893553a6b1e1c40117fe7efa7f1b2ee",
+    "handbook/images/quantity-design-de.webp": "3b39010a18124e1d6a0f221b3b34eb1b82bdbe98b135081014ffbacb03f9f262",
+    "handbook/images/quantity-design-en.webp": "915dd08706b5010cba34a27c620d26d54c188e50c6e72817f9ed7a5a50d1c100",
+    "handbook/images/request-notice-de.webp": "66efa8cc4274bc891d4cf05d4088f0012e555f448f3967d21eb631fb54eec0b9",
+    "handbook/images/request-notice-en.webp": "7af5d832f32bf134da26986479997dc5cd8622ef27e798d46c2c5f58d1f079c8",
+    "handbook/images/requests-de.webp": "2148000998d03fa1e68945140d72439a54947b9450814aedd2672fbe4c5955b0",
+    "handbook/images/requests-en.webp": "f8af502d5b342277cff8a756cc415a2a3bf16f1f3b5f9ee876c4620a6ec067fd",
+    "handbook/images/settings-documents-de.webp": "83d00188a251e53034489e140bdd194aa70fc075f07c8214dd9af0810a53fd3a",
+    "handbook/images/settings-documents-en.webp": "3e0c93ff52ae278ff281d7654fa4ffbf4add7526a5289a86347a77b482c0a582",
+    "handbook/images/settings-general-de.webp": "9cdfb95415c18a76fc0968f408e4bafcf3d358580db39a5bec3d96983155ffe8",
+    "handbook/images/settings-general-en.webp": "e2f6c2b04de146f6aff784a5f3069e05e3cfbd5a2be6e29e8257265c282e1082",
+    "handbook/images/settings-provider-de.webp": "98ac2f1b1f42cb0e2e87f89cc25cb73e88508fdc8fdc8360b4db9f52a8a74056",
+    "handbook/images/settings-provider-en.webp": "1d082de920db116f28398cfc71917147b1de966e84de2e4ae0bbd8263c3c6b54",
+    "handbook/images/settings-requests-de.webp": "824cfcc199ca1b2b51b1b05b39a1847d99fe182d543b29e6e59f0bf427243cb1",
+    "handbook/images/settings-requests-en.webp": "de32ec51b26e11f31235bae7f3dda4f7a7e94b410d349403f7f626b98cacc7e6",
+    "handbook/images/settings-security-de.webp": "9befef0efd793811a7c048e44c70ba63eae31c4a59cc7821802cc346c3d687cd",
+    "handbook/images/settings-security-en.webp": "ed87297d0bf71028dd8aa92d358e8a9c68ca94dfc629b989af26222b6f5cdebb",
+    "handbook/images/smtp-de.webp": "7a0631d6740508dd7148013ac6b9db185120925c960724a7717f1f880aeb78d4",
+    "handbook/images/smtp-en.webp": "54f9ad0e03ef10a8cbc40a447d274f00123c9289c05f9428f9bbdaba7215d785",
+    "handbook/images/surcharge-assignments-de.webp": "96edeac072dbd1916565149e51fec3b759ad0b867d099b10eb2acbe02898e3be",
+    "handbook/images/surcharge-assignments-en.webp": "aa737046c673e85253168e30e1720303d71aaed0d4c5ef59805f3343b1474b12",
+    "handbook/images/surcharges-de.webp": "2994fed6ca73277a1ae968352b5c8c69e1c0da252f4f7f035b54e26a47fc5197",
+    "handbook/images/surcharges-en.webp": "bf1f9db6a348a02e9cf777d48576842d9794355f5ab6a79c2f7a77322527a1f3",
+    "handbook/images/svg-media-de.webp": "46b514a606ad44e56468381dd9a7b27563e3c2433326ef5f42d49d357e12fc6a",
+    "handbook/images/svg-media-en.webp": "7cab7ec9c949e7bbbc6608d0fbd6dd809f6f4bd1ac920cf697554598c0950e4c",
+    "handbook/images/taxes-de.webp": "ae5fb05dcae0c0ccf1072c116b5dd7831d78f506570095d93ebe9375e947a622",
+    "handbook/images/taxes-en.webp": "03b69f8019806e7b1d6f1d7f97a6368310c3a1c7f3a1a366f22590ddcc74cfa6",
+    "handbook/images/term-display-de.webp": "040707be7631f06cfa5bb869cb688e9fc3fb4ed8d0f61b2161cbfa23c8fe4079",
+    "handbook/images/term-display-en.webp": "e9c5df92594f61d7ccb8b4c893ae1018f1a297a8c2e92cae9e713699304ce334",
+    "handbook/images/tiers-de.webp": "9a8f8e4a5c2eaab3ada76eefb177d01bff98e6deaa340f9af5099dbefd6825c7",
+    "handbook/images/tiers-en.webp": "d134d2dfccba19885f1bb8240e4a6eba30b5b5f48a674e5b3c5abff3265b7419",
+    "handbook/images/unit-explanation-de.webp": "e04d152e1f8c7a3ffa51daf6b027508b19eef0b5eb2fe808876a06267c361a96",
+    "handbook/images/unit-explanation-en.webp": "fed788375d8fb92dd89e48aa7de02a046f721aba42ef3011793dab7805e9296f",
+    "handbook/images/units-de.webp": "317915efc7fcd66d25a075f03822492ad3ef5420e240b719e2716c67f951df7e",
+    "handbook/images/units-en.webp": "73d8bb5e48d9139865c16e862340e8f2c35a6d51c3388b8b1a2b8e1555b3a26f",
+    "handbook/images/upgrade-de.webp": "92503c99da6f086169faf756b3e1f02b633ce831575a2c08f1cd7db02b4eb0d1",
+    "handbook/images/upgrade-en.webp": "450a6ca5b87cecdda4b69a32ddb2c8e341b7778bcb1dd42f013a3fe9532eccf2",
+    "handbook/images/variant-options-de.webp": "169fdda92b5ea1ecf8e6dab5fb60327c4581efd5f4796ebbbd2ee2358aac36c6",
+    "handbook/images/variant-options-en.webp": "6bd8c8d08e612f1932d5d92df189769a7d66879d0f40ac6b3c4bf1264bb9bbaf",
+    "handbook/images/variants-de.webp": "a0e0d64fc9db3bd92b89bcd6674746b082beb6305e7b12ef7ba012fcd275611c",
+    "handbook/images/variants-en.webp": "6d210dbb1010e649afb4abde7009da8d5f4e666dc91fe66c715cba39ff26b586",
+    "handbook/manifest.json": "de61dede02a2c35ac5311853931eba3484d7e9f6705c8ab49bade53367fe59ab",
+    "handbook/manual.css": "f055eb6d9d0490102c3df92f0b0d782ab394ed3402d700007b1f97a7b3a0a5c6",
+    "handbook/manual.js": "4b64e6b7debb137d274030ffc8d52af4476551232ad259dc78a45d8382d27eb5",
+    "includes/Activation.php": "74c2bcb1f45a44a74283dd7b80dd53132c0834706a5357dc6ea0abe9d46ac86f",
+    "includes/Admin.php": "a86510289b33d32ae35d3284efd33fc1575e2c8855406e5f9cdf8924d5ee705c",
+    "includes/Api.php": "f1240f65510371deeb9717034ec7439addaafa64731d1aa8ee95d5333719d809",
+    "includes/Catalog.php": "05917ce648044ab8aee857a2678b4afd131284db51e790fb8505976a6f1211c0",
+    "includes/Config.php": "e3b2138bcb34a1a4bca184cf8d37cd626f18fdfb7bbe67bbe1a810d7d1db8cc0",
+    "includes/ConfigValidation.php": "f8987363f6b5586d2efbc4f3a54250b652430ec906f0193c43907ba0b044f2d0",
+    "includes/Currency.php": "fce1b25707914b0730698cfcd37669c2d713132be3e810ca6bfdfce303134848",
+    "includes/Defaults.php": "a656bc27fea0cee049025df91b38466605a28a461da6ee56bc89e523f0e631db",
+    "includes/Design.php": "4691020153b1d108644f25158a22b247f268a07169c94cd9e736d9a38e55f8a7",
+    "includes/Edition.php": "a69f586ce3cc8b09c0479912567de216ac272700b4cc238c91307fadaa8d3a21",
+    "includes/EmailConfig.php": "e1b009ad7e6f487928669a78e334a990eda49cc7fa84f8bb150b7b1f94c015b6",
+    "includes/EmailView.php": "e5c4f748f148af7d211c89105bd3a36be014097739cdf9a93710db4ecf2ee8e2",
+    "includes/Frontend.php": "d621eab4f1c8cc3ca56fcf8ab6b90df5d478378fbf0d40e01f7c60499c312266",
+    "includes/FrontendDesign.php": "82248ac99bc535d762e3c8e9771251c9859fc003d478ea37584d5bf7fb5bb4b2",
+    "includes/FrontendPrice.php": "7ece903e157e108ff0fa03bb3544e9faf744e873875ca242bfb3469d8d9126c9",
+    "includes/FrontendRequest.php": "9f8232cb0a47f68a7e484460dc46b73673295f6126ad2272246e8ff5fbbdf730",
+    "includes/FrontendState.php": "2dc06c781b41357b526062418b823c86286255a4059925f06bc1327fd4077813",
+    "includes/FrontendView.php": "59147a0e84140789ac2847741a42a6a6976a2c1cea3c525b4c74a8b923062025",
+    "includes/Handbook.php": "2a714689e5770c9895cb7baf147a6e962f26ca21e48bcd42abddfc10116e8f96",
+    "includes/I18n.php": "13e5bb54bf54c062646fcb2d583a3b545f86a1b2fd0683f417afdd76daf373aa",
+    "includes/LegacyCatalogMigration.php": "dd17ac7d9f57df02fc6457e3a4eb033a7a76add3dfa7ec5edb1e62133b58fc8d",
+    "includes/LegacyShortcodes.php": "b74342ccd0a48c5529bfef99eef5e7d77a3ecebcf1065c1197a15828b47fe61a",
+    "includes/Legal.php": "f53613ccd9b6ec7d7d42b0bc2c50b23f3c2bdf93599f360724158c8740c0ea13",
+    "includes/Licensing.php": "bbbf835f6a7db8cf132579cf23c6c9d7d51b4d5c5d6530ea330f560899740ec5",
+    "includes/MailTransport.php": "04d49d50dcc5f5621f89d4ca01a3f6aecda48fd562ffe38e0bc1130e149adc2b",
+    "includes/Mailer.php": "d65d3454015eef4add7f61cece13961ba2dfc68c057976d459e124ffc2e42026",
+    "includes/OfferImage.php": "18f15e0756d833d881ba4839910a430a332f01f157792d3b1e44c1ecc6dfb9af",
+    "includes/Pricing.php": "b8fd812e4282e48ab7744f27f49f30c835ef1c3c915d78ce07f1ee098ea2c70b",
+    "includes/SelectionRules.php": "124e9381f6a27dc3cdc4015e184f3474691b72c5e4008d5b350a7d18d5cef405",
+    "includes/Spam.php": "3eb40ba49f8edebb1cf702f0955284af77d05f2eb67b7c235e2654c78a498712",
+    "includes/StorageMigration.php": "568a12dc2ff2e1ce1baf617293aaf729f88ce6b7d747bf6c3bde904edebf2f9b",
+    "includes/Store.php": "bca338195faebe3e33127d53b73b34c7e6bd165ab952f1b1bee3ecce72e3fd26",
+    "includes/Tax.php": "7fd4d5432745b3eb5160d1e41d78e2c326546f08c1150644c46ba3b1a8d018e3",
+    "includes/Translations.php": "312ab285b3ff361f4470ff6bf4bd27945e5b889f422e5203015d80fa8019fcc0",
+    "includes/Uninstall.php": "4c2b16f050f18ab93202fd03528f7ee93cf06729c809ee83ae113b46cbea1bf6",
+    "includes/currencies.json": "85780ed1b9c30e0335c5c358e8ea8a0840a1ed1488b9e2700dcc2b54fb602f1f",
+    "includes/features.json": "bbaf534a397270de8801243f67bf23b066cb2e0afca07e3c53c592b87e7d8f19",
+    "languages/default-content.json": "599bcb1736258916dbdf2a08434ed0b7db30d987dcd980d1f2108f16b849560c",
+    "languages/scripts.json": "ac8ee8ca328fb96d54795a03f9fe7866eb8834d85b70bd292de52eef0de0d319",
+    "offerweave.php": "c1dae376d44bfc38f7d8af2ef5a260423e42acb538b8501b657086e311e8955c",
+    "readme.txt": "e59b309d1b531d0d61e70027a5a08118b73ed31cd21a384c6a6f11d476f30f66",
+    "release-config.php": "f090c28694307ebffb91ead034ca36d94ec1b60e4fad5285d4898f5d9e08e928",
+    "uninstall.php": "c5b76f5a1e4cd89bd1d695b11abf58fb51c9062fcc8a7e152007a3762baef3cb",
+    "vendor/freemius/LICENSE.txt": "b98fbb37db5b23bc5cfdcd16793206a5a7120a7b01f75374e5e0888376e4691c",
+    "vendor/freemius/README.md": "348f28975ec7e43926cf51741bca466c07ee7deb6abde73f54905e3090a30103",
+    "vendor/freemius/assets/css/admin/account.css": "0863552ad56a38217e8139f1f9211e7bb5845669a917094b666538af5eb1d3a6",
+    "vendor/freemius/assets/css/admin/add-ons.css": "3b6d0cbd5a34d88a4366db952805693ae98a757e988d69baf4b74ec7a205170a",
+    "vendor/freemius/assets/css/admin/affiliation.css": "a2400ddbf61395cbc600d76a2f20716c8e21b22eae2f4d30964bca2a5ef1e711",
+    "vendor/freemius/assets/css/admin/checkout.css": "ea7cb8cf22163969a3bfcd83f65855a2733e23becbbb85f58e1eb093271a75f9",
+    "vendor/freemius/assets/css/admin/clone-resolution.css": "e8c52d4bc80cb1bcaa5b4ee8cceccb102ab01acf78b465b37787c6de0932e045",
+    "vendor/freemius/assets/css/admin/common.css": "917bff808892dc8b5b41a834c0126a3dde8737ae87d42426c12552298ce8ce2b",
+    "vendor/freemius/assets/css/admin/connect.css": "1a4da29a4913a6614349d9a7355fa4a0f16af22a4495b33106395b4754b6a065",
+    "vendor/freemius/assets/css/admin/debug.css": "e95a4b0f57b178d0abc9aa1798fec362e9e094e63596f0de45fe0bc2a3dfc48c",
+    "vendor/freemius/assets/css/admin/dialog-boxes.css": "a2da42bd20ed34e8ebaeee08764c16b616adffff29e61d54d88c9e4da5b6dd20",
+    "vendor/freemius/assets/css/admin/gdpr-optin-notice.css": "fcd2aa4d5ec263e11cfa34492f7caf0f870ffc514c3de61a5ee2c085ae23b408",
+    "vendor/freemius/assets/css/admin/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/assets/css/admin/optout.css": "2fbaed4f483c0afae4ddd6ac1e51ad0007261b32003651aaed95a6f032debac9",
+    "vendor/freemius/assets/css/admin/plugins.css": "54018a96f5c384996ca0958b49c00d0b151db2d899b78c4ad16b5064eba3e04a",
+    "vendor/freemius/assets/css/customizer.css": "6d50c83cb1d1e89566a9f385326fc48470d113493d93024ab59e8c41865cd4bf",
+    "vendor/freemius/assets/css/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/assets/img/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/assets/img/plugin-icon.png": "1cf3bc9425ecb132013b8a33f9d39e22cd1cc2bec8e4d263fe9c5a3fd867a44d",
+    "vendor/freemius/assets/img/theme-icon.png": "c85767ca365172ef9c0b3cf9db30c923c48af455b6b4886017b117256dcb25c1",
+    "vendor/freemius/assets/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/assets/js/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/assets/js/jquery.form.js": "7a57dbbb21b1984a356ea4c6280a18abc607264f56fd6e827f68346b4f2314c5",
+    "vendor/freemius/assets/js/nojquery.ba-postmessage.js": "350027618efd7650fd8b586892923b17e2397d57e7ceaa3858086154efbcd647",
+    "vendor/freemius/assets/js/postmessage.js": "377b8d2b001acfedf72f5cc43c812b20b672921e3fdecbac285d9410039e3e23",
+    "vendor/freemius/assets/js/pricing/14fb1bd5b7c41648488b06147f50a0dc.svg": "c70b4fa1de91a42923e8eca1d2290b277f54eafe30a343899e82037f99355f06",
+    "vendor/freemius/assets/js/pricing/178afa6030e76635dbe835e111d2c507.png": "53fd46bf1fcdd46aa7e57bcbcdfcc088679671bcad52fdcb56f16eafb1627098",
+    "vendor/freemius/assets/js/pricing/27b5a722a5553d9de0170325267fccec.png": "11e2ba99b662bb51c2bd594c34f0d45e2ef1fed2c8f0dc5ddf9c00d2ce6cafcc",
+    "vendor/freemius/assets/js/pricing/4375c4a3ddc6f637c2ab9a2d7220f91e.png": "1cf3bc9425ecb132013b8a33f9d39e22cd1cc2bec8e4d263fe9c5a3fd867a44d",
+    "vendor/freemius/assets/js/pricing/45da596e2b512ffc3bb638baaf0fdc4e.png": "42676d0411a6dcf231a9509f709c39c8ef8bd08468968d76cea34075a4e8c40b",
+    "vendor/freemius/assets/js/pricing/a34e046aee1702a5690679750a7f4d0f.svg": "5d530541b9b8a3684b87e9e73bf659ee7ce3c698d16a91d28f2dbe021fb0ea13",
+    "vendor/freemius/assets/js/pricing/b09d0b38b627c2fa564d050f79f2f064.svg": "432f787a66f03577502dede7472513f30d129da9893a0f1e3f80ea1c4a410518",
+    "vendor/freemius/assets/js/pricing/c03f665db27af43971565560adfba594.png": "3ec45009437a0e95af2c9991952097a271753e4f643034243c15920cf03f51fa",
+    "vendor/freemius/assets/js/pricing/cb5fc4f6ec7ada72e986f6e7dde365bf.png": "91075802d981a3feaf8b046b4ed2ddbd45602183b928f42d5b81ff28be34386e",
+    "vendor/freemius/assets/js/pricing/d65812c447b4523b42d59018e1c0bb53.png": "ce864136d7f35d4922ab1eed2bf02b4093f55fc893a24d07b11ce9f7e43aa50a",
+    "vendor/freemius/assets/js/pricing/f3aac72a8e63997d6bb888f816457e9b.png": "b5e1e045d204cad514f471c00a7c83e813cb5128b817a78282873887a546d16e",
+    "vendor/freemius/assets/js/pricing/fde48e4609a6ddc11d639fc2421f2afd.png": "c85767ca365172ef9c0b3cf9db30c923c48af455b6b4886017b117256dcb25c1",
+    "vendor/freemius/assets/js/pricing/freemius-pricing.js": "da69c6bfc9e23323958aa839e93eac15a4dd34793eb58cefb75e819a19ff1165",
+    "vendor/freemius/assets/js/pricing/freemius-pricing.js.LICENSE.txt": "835a7cc046d6f6caf917bc803e812d2ac2eaeb6a71aad23b90224ff98b3685ea",
+    "vendor/freemius/composer.json": "176d96df8dcf564394152a49fddd5d5425408b9b2e2ce416f011c28c852892b3",
+    "vendor/freemius/config.php": "f7b6ffbd5c2e7c5fc61deb18b2839dd85875e494e4dff54de13ee7525fcbeb00",
+    "vendor/freemius/includes/class-freemius-abstract.php": "7419cf4a382b04fe8b49572e101830a6985821bb5bd1aef443054c3f4083be32",
+    "vendor/freemius/includes/class-freemius.php": "f3cbeae6a457154be40d9030824fbdc1a05c293efd5f2836696127f41a7b1aa8",
+    "vendor/freemius/includes/class-fs-admin-notices.php": "25e11373d368bb35d6624fb5b1cea36999cc3225a0558c505d550b65c2f6b533",
+    "vendor/freemius/includes/class-fs-api.php": "4f99778e4e4a86e1de1379e880eff967cc5a9d604887dff553180a9785422d63",
+    "vendor/freemius/includes/class-fs-garbage-collector.php": "9f37edea83a9c166213f5e7b3888ee2f3affba672cc2588c26d2429fe2803765",
+    "vendor/freemius/includes/class-fs-hook-snapshot.php": "29a08ce2304d538220b8a92e0e0f59271571607ad87ed8904822c63ac51cbb9e",
+    "vendor/freemius/includes/class-fs-lock.php": "aa1576f8c1e31f94c4ae2efbeb2bb9d9778c62104a597f19524eee4409c4babd",
+    "vendor/freemius/includes/class-fs-logger.php": "a9bfa21e6c0aa8cdba7c8fd4b724524b2658cbf215966616c1d35c48f28f365c",
+    "vendor/freemius/includes/class-fs-options.php": "b502fc036e2b6a84ff7b49f7eb52d27c223fad28ff5fa76f64f9c0a4cd99a78a",
+    "vendor/freemius/includes/class-fs-plugin-updater.php": "b26d4e928f06f2ff19dda3d891ee42533ef37aaba57a85c30ed0358e6a0177ee",
+    "vendor/freemius/includes/class-fs-security.php": "8692b7b76fc8ce4c64644a398583db0651fbdc89d5043d0c1be32455498d9da4",
+    "vendor/freemius/includes/class-fs-storage.php": "dbee5c01bec9bae18eebd7b7c08c1b88abcb5d208e80c6ee5ad213259aa0545d",
+    "vendor/freemius/includes/class-fs-user-lock.php": "bc7a341375284146f83636a1ef9eabd45f7ffe68b60e8fdc6dacf9f716ba301c",
+    "vendor/freemius/includes/customizer/class-fs-customizer-support-section.php": "061256a4960417b0bed8ae41297836118cee48bc1a8cb3ddcc06fdfbf4e00281",
+    "vendor/freemius/includes/customizer/class-fs-customizer-upsell-control.php": "71388aa44b181d3d0ff573a1620eb71056c841ff2ad9d077c941d914d35c34ae",
+    "vendor/freemius/includes/customizer/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/includes/debug/class-fs-debug-bar-panel.php": "470c1047cfff98395ad8a44bf153b46ce92c0d75fc4b9c59066a875fbfffe96b",
+    "vendor/freemius/includes/debug/debug-bar-start.php": "13df3aac107fb25dde83b6abc55ef048231306706b0088c55576f4e1c491011c",
+    "vendor/freemius/includes/debug/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/includes/entities/class-fs-affiliate-terms.php": "c9c1da9898b77786fa05c0f272775b69be7218439689c8bbb5f3c3aa684769a0",
+    "vendor/freemius/includes/entities/class-fs-affiliate.php": "812574db8b9a1ebf08cf14b9b49aaa90bfa2ef4ebc5cd42b87fb8dca21e6d217",
+    "vendor/freemius/includes/entities/class-fs-billing.php": "a562123e5f9953e69b51b90298521d9f3d8a135bfeff7386717b3ff30e1a7228",
+    "vendor/freemius/includes/entities/class-fs-entity.php": "fcc21f43851ca73b64895ea398cafe734352a960058c1a3735e7b52083e48dd0",
+    "vendor/freemius/includes/entities/class-fs-payment.php": "3598d952c30c2a0eb7da7e8d113090b5a78e9126cc0dd56848b6d54520624df1",
+    "vendor/freemius/includes/entities/class-fs-plugin-info.php": "cec2d43965b7baad7dff3316ebac43745d329b72408c0da7ec38f09129c98837",
+    "vendor/freemius/includes/entities/class-fs-plugin-license.php": "a074b9233b03d11f85a7fecfe6e3d8e3e511be1a2fffffe2b097abfa09ec458e",
+    "vendor/freemius/includes/entities/class-fs-plugin-plan.php": "fe82e1707c8d9d4094593851a99afcad4ab267e1714e761eb31bcfaf1b89af01",
+    "vendor/freemius/includes/entities/class-fs-plugin-tag.php": "44bd699a657dcceaaef1585b539d13028177a222d4b2a5631d07025f6b8f2e8a",
+    "vendor/freemius/includes/entities/class-fs-plugin.php": "e7b921a00bbb7662bc2fc73ae6c5ffd072289c3a1cad68f05c52c99fc545c28d",
+    "vendor/freemius/includes/entities/class-fs-pricing.php": "350749fb2517c0a07187152bb9f0122092697f42dee8775eeddfe66e148bb044",
+    "vendor/freemius/includes/entities/class-fs-scope-entity.php": "7aeea54684fa99eac3cba01d24834172efc95da23004eb719d9d36a2db77578e",
+    "vendor/freemius/includes/entities/class-fs-site.php": "0e9c86feae4cbc6ea51560093b71295b5114bd74862b213fe1241471fe8bc4c9",
+    "vendor/freemius/includes/entities/class-fs-subscription.php": "44fe2b29845d09f48223f7fadf4ea03df59866084c5a1d4693beac132edb1f48",
+    "vendor/freemius/includes/entities/class-fs-user.php": "f99968b1c46ed92d7f928c2c2857f5de237eb2f8931088853a61334fc7f4eaef",
+    "vendor/freemius/includes/entities/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/includes/fs-core-functions.php": "eb5d87fbe692006ca2f6c3a30211169100704ed1dce1ed339a03531e844c4b9c",
+    "vendor/freemius/includes/fs-essential-functions.php": "0e39a73fe3d50996900c2cfab3ecc35dc42c1b7b72959ed4daa7c22c364d5fa0",
+    "vendor/freemius/includes/fs-html-escaping-functions.php": "348faa4daa7982aea42b8fdfcaaf866b16ff8c02c538cee0edea53a8b0d441c1",
+    "vendor/freemius/includes/fs-plugin-info-dialog.php": "cfba99ae71305cb0decac134e9e81cf7645cc77875c57a6a01586596061f8e32",
+    "vendor/freemius/includes/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/includes/l10n.php": "e4e6555be7898eeee72aed3c5410d3c4beccfc9e0c339e205fbac421d970ee4b",
+    "vendor/freemius/includes/managers/class-fs-admin-menu-manager.php": "4a09301c1dadf7a3c85602db9617277e7cb4a9562c677e0e79d651e5af75acc8",
+    "vendor/freemius/includes/managers/class-fs-admin-notice-manager.php": "ca7ec01d9459238daec6390c7a6fe269f6182d66c5f80de0abf6ce4ded461e8e",
+    "vendor/freemius/includes/managers/class-fs-cache-manager.php": "987dccc66cdfc994bbe9fd01b0ab4a124628988abc9cda2edd3f3e7460a02822",
+    "vendor/freemius/includes/managers/class-fs-checkout-manager.php": "74d059e70473610dfef72843f6f2737859bf7e69a9d781f0ae44f540c922b3e8",
+    "vendor/freemius/includes/managers/class-fs-clone-manager.php": "0935c6c4df00ac86d13f509a1eeea347d91e29159d43b31cf87ca6f189d00ee5",
+    "vendor/freemius/includes/managers/class-fs-contact-form-manager.php": "b578ae9ebe440ddb5ff153490a588d3f5553d09fb81312b4d44cd7236e3bb882",
+    "vendor/freemius/includes/managers/class-fs-debug-manager.php": "9b61a88d38d07254c3fc1e5246ebf2ca138e13d34e99a07cbfc5500224cbc8d2",
+    "vendor/freemius/includes/managers/class-fs-gdpr-manager.php": "0ea1b5b101eee60d473037ebcde976295ecd2f2320ec58b281cec7fb4d039267",
+    "vendor/freemius/includes/managers/class-fs-key-value-storage.php": "35085167afb4ce50bfaa79aea7ce5de69f6a45497c2eadfa09b358116cc1673e",
+    "vendor/freemius/includes/managers/class-fs-license-manager.php": "231c87ac14f90bba6bc6fef94dca34886eda51010fe2b48b7421e61584b83b32",
+    "vendor/freemius/includes/managers/class-fs-option-manager.php": "8a4dd11fdb6269d7e9a151ff8cdcb0712a07234dd8ef33a76ca40ac081f95577",
+    "vendor/freemius/includes/managers/class-fs-permission-manager.php": "89bfb4016794750cdfb815e917bfbe2706d985f0c5b924c3a5f17381314ea881",
+    "vendor/freemius/includes/managers/class-fs-plan-manager.php": "1de54d4f19696e6fc0f222d6c6dc5313b1d96f1200fc1a7c1349a2b0afa8553b",
+    "vendor/freemius/includes/managers/class-fs-plugin-manager.php": "b1fecdd18d47026628b05031e400b0547f64d1205647401c0e633791a903d63b",
+    "vendor/freemius/includes/managers/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/includes/sdk/Exceptions/ArgumentNotExistException.php": "7d85e5563775698c91a7bc7d1dd1bdfa27b714683a976bf6cf823d5924740e6c",
+    "vendor/freemius/includes/sdk/Exceptions/EmptyArgumentException.php": "10be60aacb55c44012fec5fb16b9ece47e1012389b53589f2a418d4f88fa5676",
+    "vendor/freemius/includes/sdk/Exceptions/Exception.php": "d2042caa8f8f5cc3577b59bba9fcd298a5bd93295a01ff50f44272361b10e3f8",
+    "vendor/freemius/includes/sdk/Exceptions/InvalidArgumentException.php": "b6e25a1b6bf4b58769d93ea1b3dd9a2dea852edf49c8959aa648ef2fa98a4f46",
+    "vendor/freemius/includes/sdk/Exceptions/OAuthException.php": "8a5b7b90b617306c7b751f5753cf670f33022616c3b2f31b48ac6988d7cd896e",
+    "vendor/freemius/includes/sdk/Exceptions/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/includes/sdk/FreemiusBase.php": "b646cc13505e3d9487d4f57fe393e932ce332060ddba5c18bc4a82362484e5fe",
+    "vendor/freemius/includes/sdk/FreemiusWordPress.php": "c1771316910dcb99847fc8ee804ac1cc4d8459d087a3243b55782eebecc3737f",
+    "vendor/freemius/includes/sdk/LICENSE.txt": "a45d0bb572ed792ed34627a72621834b3ba92aab6e2cc4e04301dee7a728d753",
+    "vendor/freemius/includes/sdk/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/includes/supplements/fs-essential-functions-1.1.7.1.php": "4c73b0e449e92442ec5a88094c55d7be71a2963108b145371aa993cfd349da54",
+    "vendor/freemius/includes/supplements/fs-essential-functions-2.2.1.php": "f385daaa07ff9eded5176401434d21291a3bb9305dcc7891773e501d50f93a30",
+    "vendor/freemius/includes/supplements/fs-migration-2.5.1.php": "36f0c5831b95ae20f37d965ffde3d713e37caac3d8672f87ab25419603bed125",
+    "vendor/freemius/includes/supplements/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/languages/freemius-cs_CZ.mo": "da65b6e8774cde21a5e6fe5bed07341156aed3721e8cc3b0f55db4ca03e292e8",
+    "vendor/freemius/languages/freemius-da_DK.mo": "8a17c612443e168fea40c662345c93e7ba93d45bc47aae8759c4ec12b7deb422",
+    "vendor/freemius/languages/freemius-de_DE.mo": "37269e607d8a13d9632cbf779626f03294c97b36902cc7333daba7a7c136f07b",
+    "vendor/freemius/languages/freemius-es_ES.mo": "149a9958b1ea2c61571130476281bb20431bba77c3f0c8ae7a56303a1037ac38",
+    "vendor/freemius/languages/freemius-fr_FR.mo": "97f4e919760c8ac2d1099bd45c387af6a2e7a7ea53f97ec50b15594af29b403c",
+    "vendor/freemius/languages/freemius-he_IL.mo": "15de5ced2d57519e6381dab2172296702ef105ba63441b4f6afb9d8bc3c02d5c",
+    "vendor/freemius/languages/freemius-hu_HU.mo": "995d95c2baf2a0128570a3f7fb58e85fe90211fc28bf0dfdd8cac5980b61c77a",
+    "vendor/freemius/languages/freemius-it_IT.mo": "1bc8abcbdf83359fd0969ef7aee3dc05a71505aee896bc388384b7c79b45eab3",
+    "vendor/freemius/languages/freemius-ja.mo": "02d824cf52224c62b65e9cc6813c0ffecfc1f678a61100b7227d17c7be711756",
+    "vendor/freemius/languages/freemius-nl_NL.mo": "71003ff74bd41768a23f5f420da27a9138cfa71389345c688bf4481b6269b4bd",
+    "vendor/freemius/languages/freemius-ru_RU.mo": "178b5e206cd2a01564266334faa6b1a63463042bfdeec71bb8ed2ad5bf081111",
+    "vendor/freemius/languages/freemius-ta.mo": "0623b91f12bbbce348cb152d52a2d6185f6651f85dd829e8d818dc1bc467cf0f",
+    "vendor/freemius/languages/freemius-zh_CN.mo": "f3708281afff3e9c60162236d00189a66bcb5fdc9529545430557c570b5086b5",
+    "vendor/freemius/languages/freemius.pot": "f79b3bc011089abaf11bee8b4a1df08ad6042ded40b5f19d67e5420b9d344f20",
+    "vendor/freemius/languages/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/require.php": "6f31eb9adc5a5ae1e6c25bcd7bc86b9b1aa0ccc5d27c4f5f6786b09975442336",
+    "vendor/freemius/start.php": "46a9f263e38423b0b5015c7d3ce9c46debeda63673dde3a173e5d121194d06e2",
+    "vendor/freemius/templates/account.php": "af3c6f4e153e6a84351e9f67c742b0a9eb73fc3c07b57ed6762bb8d1c348534d",
+    "vendor/freemius/templates/account/billing.php": "775224edc2fe0698ade58c2928079c227061cc703d7c74f8472097f5e2b04c14",
+    "vendor/freemius/templates/account/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/templates/account/partials/activate-license-button.php": "ac9b5306c54cb7a71958090725c9bd8cc58add7568d68c1b21a45f0fc32d7e11",
+    "vendor/freemius/templates/account/partials/addon.php": "e7b334bf5256fc7cbc0431c2f53fc48f52f9e1ff4f1b6979a2dbdcb8a3155819",
+    "vendor/freemius/templates/account/partials/deactivate-license-button.php": "135ba523ed912477d263101cd374645d691898dd91547c0719ddae66a20119d6",
+    "vendor/freemius/templates/account/partials/disconnect-button.php": "de8b13a4dec945c7e3863158c1faf30e3ab2609f175c960ca47f36b6eb584710",
+    "vendor/freemius/templates/account/partials/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/templates/account/partials/site.php": "8fcc660030340086b80aa0bd1bdb1a80b90efb7d676c83859999c9c5d346f440",
+    "vendor/freemius/templates/account/payments.php": "e89a2d27688aec9402b6d85276304b25ce33a21cc7d7b4767000e83a4554f409",
+    "vendor/freemius/templates/add-ons.php": "f2061448c473b1d9a6cddb2551adf57b91ebd93353dc7b93576ec857a7b9c876",
+    "vendor/freemius/templates/add-trial-to-pricing.php": "9e8025201e7c8d08560c20e0e3654ef915ec05903960ec1a9e9577eade023c0b",
+    "vendor/freemius/templates/admin-notice.php": "745627875e2338058cc03c733debac934cc50131132c9ea88cea320e52ad4d06",
+    "vendor/freemius/templates/ajax-loader.php": "8dc4887d9b97b282dc08ec6aedada447bbabb42cacc82b93f81264362c42383b",
+    "vendor/freemius/templates/api-connectivity-message-js.php": "697ab706e6cc4f13c846f3a9f768e72a1aa62aa645f1f62d77a41f35e4e9b1e9",
+    "vendor/freemius/templates/auto-installation.php": "e1c4de12807e39bb607e849e72734e52fd53605ec9be6ec12799fe541a67ac71",
+    "vendor/freemius/templates/checkout.php": "0c79f88b582afe59502a2a95db3a9b530b0872084df2d1c59ffc4301b0299d17",
+    "vendor/freemius/templates/checkout/frame.php": "bbc6d603f37d3a47c96da34580a1799cdaa4ace072e80b305a8da70fd549dda6",
+    "vendor/freemius/templates/checkout/process-redirect.php": "aa4c31aafcc6929f9113ac7f4bc267783d73efc813a93fac83770aea960fd053",
+    "vendor/freemius/templates/checkout/redirect.php": "7ce09ed1ca3bd788689c99d019c29b8d3118a37df5d75a533208464ea0796ab7",
+    "vendor/freemius/templates/clone-resolution-js.php": "f38e917d5d66ff813bb4daaa0c5830671e48bbcdb8f9e59fb42ea53831b73603",
+    "vendor/freemius/templates/connect.php": "027e67eb905681fac97adbc37c8dc5642f4feb49199ebcc556048e784d5987a8",
+    "vendor/freemius/templates/connect/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/templates/connect/permission.php": "939c77c080e0fd288f56d0ea15b9150f24735533199c6d28897f95c23883a0ee",
+    "vendor/freemius/templates/connect/permissions-group.php": "30395f64ecbc1cf3f6015f85a31c433df046ac4a462d091b56ccd7d2881653f2",
+    "vendor/freemius/templates/contact.php": "04b7c240b0864d3f80432f71dd2c1d788d05841eaf538a759212c02a12647ee3",
+    "vendor/freemius/templates/debug.php": "cfca7c6c046bb696ec37fc0f057517c49967473690b78176577706e99cf2186d",
+    "vendor/freemius/templates/debug/api-calls.php": "cb5c314edf9b0b4c3a305131e47fa2fb55d36acdb32030cf1084f77f5ba99b8e",
+    "vendor/freemius/templates/debug/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/templates/debug/logger.php": "184255d2e440955ec388714df54396b4974c1a83a64dd8540e77314b665084ef",
+    "vendor/freemius/templates/debug/plugins-themes-sync.php": "327b965d38e8708dfafc50817664f79902b0938ee37a27131630833bb8b3e77c",
+    "vendor/freemius/templates/debug/scheduled-crons.php": "7aa11607b9d269d974384aa48fb511d0e8d41e5fa8d19ec0350e3f471108ce5d",
+    "vendor/freemius/templates/email.php": "db149f416aad88b58cf718d54818d87c26865ed2442a0482858720c0a700c2b1",
+    "vendor/freemius/templates/forms/affiliation.php": "6d44de4faec98545797ee735b92344bc1fdacf4a4ee1210b35fc20b2708b140a",
+    "vendor/freemius/templates/forms/data-debug-mode.php": "cd6f724cb47a09e67916b1a688526170aabe9d333a0efe5aab940619e2e93982",
+    "vendor/freemius/templates/forms/deactivation/contact.php": "73e1f8eeebed312f5bbdf51d1ef9abd12841d9fa5b0315fa6a7f6198afc3fc6a",
+    "vendor/freemius/templates/forms/deactivation/form.php": "59a915e739ef481341691007800d7f35ae3037711e51cb054b3d79a999eb4764",
+    "vendor/freemius/templates/forms/deactivation/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/templates/forms/deactivation/retry-skip.php": "7092c1389fadc05d13b059463732bab910b05e04c9c9aa59fa0fac8e1e2ccd99",
+    "vendor/freemius/templates/forms/email-address-update.php": "9b1e8165be2945731dfb739f41fadb1b92858ffc9f559062f872bf9ff9020ea2",
+    "vendor/freemius/templates/forms/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/templates/forms/license-activation.php": "019c9b305fe1ea66e33c80c75b1797e6a1b8be0d608ce36150c381d6b592bb0f",
+    "vendor/freemius/templates/forms/optout.php": "72a3d44a294e1f5c44932ce76907226ce6ea00278b643bc5ffca5df6eded00e3",
+    "vendor/freemius/templates/forms/premium-versions-upgrade-handler.php": "2a7860fde009d83a64a5686df351074ba130de0899095ddf08ffffc834f23f06",
+    "vendor/freemius/templates/forms/premium-versions-upgrade-metadata.php": "a5fa5a3dbe131feb8665352f1afee2ea1eb14d59240833c09707dff9da08527e",
+    "vendor/freemius/templates/forms/resend-key.php": "b3f60cd9c09ffe26c58786edb38c95320ddf706531e05e7d4ee4d7d57ddef592",
+    "vendor/freemius/templates/forms/subscription-cancellation.php": "72e94803ac60a72ba8b496059eb515920985a97e5381540529efaa669024b91c",
+    "vendor/freemius/templates/forms/trial-start.php": "f66c0509e068406fe33ed69ec127b2ec9970c9cf43d19ac71e55627e7be78562",
+    "vendor/freemius/templates/forms/user-change.php": "117cc9749c54ea81c09f09ac3d6329810afca69c5cdc3a3634a430e867caa4f0",
+    "vendor/freemius/templates/gdpr-optin-js.php": "271f0655b6d2135329dd1da29517e5122ce6661e6faeb20833ebd47789a9a605",
+    "vendor/freemius/templates/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/templates/js/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/templates/js/jquery.content-change.php": "650f29e9c6937d1b2898d0df393773bd7634c9d32a355b2c41f41235447ff106",
+    "vendor/freemius/templates/js/open-license-activation.php": "df4efb41f5af8da05bd270223b2e4eb7718c4fbbd43fe4cbacb62caa23ff957f",
+    "vendor/freemius/templates/js/permissions.php": "8e3240058642cd98e39a16ac5b2739e7c365f4c5b9a8a9dc7ebc988a92a5d2e3",
+    "vendor/freemius/templates/js/style-premium-theme.php": "78e41bbbb306a0e090907085a8a91e1f927637a0db10eec57d4c8f615200c1b6",
+    "vendor/freemius/templates/partials/index.php": "3b6be3bb5fc5bfa96414255f0579828e5985ef7a0a89a4004c3f01c9afd9a7f3",
+    "vendor/freemius/templates/partials/network-activation.php": "6a1a00a5ecdf6195fe56db207048e59eb31ddc00bdfd367e63725ab9f381cb61",
+    "vendor/freemius/templates/plugin-icon.php": "b5794c503ac93125c564fe4a30af25ab0ad4c37b1520c476886a50959b8fe04e",
+    "vendor/freemius/templates/plugin-info/description.php": "e3334f3c34bd383148f8ed6d7e7cc9da10c426ce2bbcd195fb784edb27742436",
+    "vendor/freemius/templates/plugin-info/features.php": "a043b0c7e1ade84b4256c37907fe034dde731460929879cededdd9a159dac169",
+    "vendor/freemius/templates/plugin-info/index.php": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+    "vendor/freemius/templates/plugin-info/screenshots.php": "a5fe64b639b78c6c282852ec2fef8ee772b8c4420916ffa61e33629403872e2e",
+    "vendor/freemius/templates/pricing.php": "e0ef6de47b727a4c1be1f48227395a9460c46b4e308ea8022cef0ac173cf4390",
+    "vendor/freemius/templates/secure-https-header.php": "d6a5020e8b0b5fcae901cabeeb54bfe3cbed8f19d79918872cfa106f51e67d8e",
+    "vendor/freemius/templates/sticky-admin-notice-js.php": "d0dabcf01eefb89c29a655cda333e493e1c2136d1fee20dc26a1d3fc69f20228",
+    "vendor/freemius/templates/tabs-capture-js.php": "6ad031764f84bd4f3ea59ed69b5db3037e5c171aab2ec0a0686095b597a5e7d7",
+    "vendor/freemius/templates/tabs.php": "e7890df020fbf02c9dbf25433e5f1754b9d21ceec8c6e3736e465ddff10dcdc1"
+  },
+  "sdk_version": "2.13.4",
+  "source_files": {
+    "LICENSE": {
+      "sha256": "b98fbb37db5b23bc5cfdcd16793206a5a7120a7b01f75374e5e0888376e4691c",
+      "source": "LICENSE"
+    },
+    "THIRD-PARTY-NOTICES.txt": {
+      "sha256": "2f6d840df0d24c84466eb19be78df0e5f96bf391ac2f43342476a4d1639ff1d6",
+      "source": "THIRD-PARTY-NOTICES.txt"
+    },
+    "assets/admin-brand.css": {
+      "sha256": "028251e6f2bdabc25d8bb044d78bb24e99c40b8f30fd4d20004f898252a8cb2e",
+      "source": "assets/admin-brand.css"
+    },
+    "assets/admin-dialogs.js": {
+      "sha256": "70b376ebf9b2c05d9e218fedc1a844d54bd4716f6f1954753eb6b66e46592b9c",
+      "source": "assets/admin-dialogs.js"
+    },
+    "assets/admin-free.js": {
+      "sha256": "2ee134712a204ab8f43d94f4aa168ec6c2c8d94bcfeb9927efb776a3c567f96b",
+      "source": "assets/admin-free.js"
+    },
+    "assets/admin-images.js": {
+      "sha256": "429000e7ffaa28f0aa1f423bb11bdfae9988dc12b08e9373dad4e43be0b34c17",
+      "source": "assets/admin-images.js"
+    },
+    "assets/admin-languages.js": {
+      "sha256": "8d0608f5911d4d7fb507bbd34bc9ae2dc9b958ca0cf89f09f5e3ed13b72a5d40",
+      "source": "editions/free/assets/admin-languages.js"
+    },
+    "assets/admin-offers.js": {
+      "sha256": "56a046017b0e4111c4c44197dd557af840eaea4c2c9bcbb89eed11bd8422ca8e",
+      "source": "editions/free/assets/admin-offers.js"
+    },
+    "assets/admin.css": {
+      "sha256": "33ffc936cb05c97b778b8733b1ebaed774f4604a00dbfa4778f2595e09123b0a",
+      "source": "editions/free/assets/admin.css"
+    },
+    "assets/brand/offerweave-logo.png": {
+      "sha256": "33284418d65ca29a0bc16c253a75b1e3895e633ac42eb4906c526fe43964bddd",
+      "source": "assets/brand/offerweave-logo.png"
+    },
+    "assets/frontend.css": {
+      "sha256": "18312ba1569970a6473a9e181b3cea3652d25d7a1d91b328882ab4145ed2419f",
+      "source": "editions/free/assets/frontend.css"
+    },
+    "assets/frontend.js": {
+      "sha256": "d396e8bb44c6058167077f8091ce628ab98e586789c98fe062c2faea32d980bd",
+      "source": "editions/free/assets/frontend.js"
+    },
+    "assets/money.js": {
+      "sha256": "f9e488dfa497ca6aa6bc3ba28d62567f27bce34024ed72913364dccad17747e5",
+      "source": "assets/money.js"
+    },
+    "docs/AKTIONSBANNER-ANLEITUNG.md": {
+      "sha256": "b718530a05361649c4c3e545f432e62021f5e984febf5551d197657325ec9c50",
+      "source": "docs/AKTIONSBANNER-ANLEITUNG.md"
+    },
+    "docs/ANGEBOTSBILDER.md": {
+      "sha256": "2b3b5bd67b3ca5c587dd274164608afc9ed8904fb5ce4542948fbe3fbcc61adf",
+      "source": "docs/ANGEBOTSBILDER.md"
+    },
+    "docs/FREE-PRO.md": {
+      "sha256": "56867942568c7bf074f1e582d2aedbb3875a030a09b809c17b641d40b31f2a8b",
+      "source": "docs/FREE-PRO.md"
+    },
+    "docs/GRUPPEN-BERECHNUNG.md": {
+      "sha256": "60dea5f22e36a3edd050ca634dcda1f337cbfc4dd0e72637efa6aaddbf2e66dc",
+      "source": "docs/GRUPPEN-BERECHNUNG.md"
+    },
+    "docs/MEHRSPRACHIGKEIT.md": {
+      "sha256": "4c94c94ce8f1235c6b5e4f7e4b67f88f7eacda6ddc31f9572e7e6cbaf141a2cb",
+      "source": "docs/MEHRSPRACHIGKEIT.md"
+    },
+    "docs/START.md": {
+      "sha256": "36c46db7d4ca65c4b9dabecc2daafa229989edb82184b7edb878c78cd67d1314",
+      "source": "docs/START.md"
+    },
+    "docs/STEUERN.md": {
+      "sha256": "6ff7efabbed605329510ee1eeebf41856339c4b6d993c826eee93107f9a38cd3",
+      "source": "docs/STEUERN.md"
+    },
+    "docs/VARIANTEN.md": {
+      "sha256": "230ed86c079f3940b8c6b564cee510ec144fddc908b1fe1fa91423d695719334",
+      "source": "docs/VARIANTEN.md"
+    },
+    "docs/WAEHRUNG.md": {
+      "sha256": "ce9f0f5f2883fc88ea951ffff101a4ee49ab9a8246bdb9126747aaaf003149c3",
+      "source": "docs/WAEHRUNG.md"
+    },
+    "docs/ZUSCHLAEGE.md": {
+      "sha256": "cec5f05e691fcc643f76cb4b7db65587b22ece4db7cb117857a177c74055b5a8",
+      "source": "docs/ZUSCHLAEGE.md"
+    },
+    "handbook/de/index.html": {
+      "sha256": "e1a23aa5fa1e7530bd4df5e9b3b5a3683bbb678f14dd10a71c3d635b355b3823",
+      "source": "handbook/de/index.html"
+    },
+    "handbook/en/index.html": {
+      "sha256": "73391370f0c71330a60f62d894f7c5e470e546a92897e7557cf09ae8e7eaf93d",
+      "source": "handbook/en/index.html"
+    },
+    "handbook/images/add-design-de.webp": {
+      "sha256": "e38f20404e66598fa9f55c610fa052e9e890dea053148596859fce4de455ec20",
+      "source": "handbook/images/add-design-de.webp"
+    },
+    "handbook/images/add-design-en.webp": {
+      "sha256": "322dbffdbcd52c38ed54e7d0153fa303360b721f15079cd5b9ac6c11990232b3",
+      "source": "handbook/images/add-design-en.webp"
+    },
+    "handbook/images/add-layout-de.webp": {
+      "sha256": "e0ba0d71c86d3c1ef6234219bcc1cb8bb55ab09d25b902cfdb553800c9e04c20",
+      "source": "handbook/images/add-layout-de.webp"
+    },
+    "handbook/images/add-layout-en.webp": {
+      "sha256": "0ed29c7b9e718a1047bf56ab12bbf4603613f94acd545743628853ca2c6639b4",
+      "source": "handbook/images/add-layout-en.webp"
+    },
+    "handbook/images/category-background-de.webp": {
+      "sha256": "aa751bca8381a79ac87b9e3469258cc0bb6ff35ad9bd4e7da4401f6c43643044",
+      "source": "handbook/images/category-background-de.webp"
+    },
+    "handbook/images/category-background-en.webp": {
+      "sha256": "aca9f1eed630511952b9834e47989a986c07c806c2a768893370344fe98db8a4",
+      "source": "handbook/images/category-background-en.webp"
+    },
+    "handbook/images/category-columns-de.webp": {
+      "sha256": "2405792e69c8494d233235bd69f3171d0b2fec822a54a41f1ad51cb291f6a7e9",
+      "source": "handbook/images/category-columns-de.webp"
+    },
+    "handbook/images/category-columns-en.webp": {
+      "sha256": "d21a0fb22cd3ed1e1fbc1f26195a3265f864b7024be9f892c77a56873fae5a81",
+      "source": "handbook/images/category-columns-en.webp"
+    },
+    "handbook/images/category-models-de.webp": {
+      "sha256": "b9bd83ca9ddabecb421dbf3b3df0917d98e03a405f86a66515b026c40eb59d11",
+      "source": "handbook/images/category-models-de.webp"
+    },
+    "handbook/images/category-models-en.webp": {
+      "sha256": "6f021566e53ec389a513ce8a5ef9bfd49b7a91985082eba6753caa83715db881",
+      "source": "handbook/images/category-models-en.webp"
+    },
+    "handbook/images/conditions-de.webp": {
+      "sha256": "18640c05894c7e0c015bdd3775a418a7e3f781e54dae99f457063bb070835535",
+      "source": "handbook/images/conditions-de.webp"
+    },
+    "handbook/images/conditions-en.webp": {
+      "sha256": "3426c8c91577ba812dffe618dd630d445d4f6cce6170aeee846e484c099f8f87",
+      "source": "handbook/images/conditions-en.webp"
+    },
+    "handbook/images/control-labels-de.webp": {
+      "sha256": "ff148fec2105623400c1efc0d64b0909c8cbd7ad2ab4219a1c1b278c0a8b76cd",
+      "source": "handbook/images/control-labels-de.webp"
+    },
+    "handbook/images/control-labels-en.webp": {
+      "sha256": "b7ebdc6f1103984cfaf7e3d781fcb7e8ecf086419eb7b609f92cfbffcf88fde9",
+      "source": "handbook/images/control-labels-en.webp"
+    },
+    "handbook/images/currency-de.webp": {
+      "sha256": "8e944152b1f979eb3782ff1c681d76484816dcc31e436ff4fbd9895ed351e962",
+      "source": "handbook/images/currency-de.webp"
+    },
+    "handbook/images/currency-en.webp": {
+      "sha256": "ce6f93a6dc23a558a0b6595e44a41894cc63cd5a526a19770863e22b301e1b58",
+      "source": "handbook/images/currency-en.webp"
+    },
+    "handbook/images/dashboard-shortcodes-de.webp": {
+      "sha256": "ab5270dccbd79c9a50f134ee5e1b2a848e871139f42b33beb4c506aa7be58ff0",
+      "source": "handbook/images/dashboard-shortcodes-de.webp"
+    },
+    "handbook/images/dashboard-shortcodes-en.webp": {
+      "sha256": "c69f1e0379b69d7db4b976e5f5014607d397cf751e82db63a21f2eb964e31534",
+      "source": "handbook/images/dashboard-shortcodes-en.webp"
+    },
+    "handbook/images/design-de.webp": {
+      "sha256": "072625982407865d3de04b50d55fd3f08f2934411d1e464aecf275858d829557",
+      "source": "handbook/images/design-de.webp"
+    },
+    "handbook/images/design-en.webp": {
+      "sha256": "082c7a1f2ba0be6518e5fd810d2ec25b18dff2e95a3afb3e3db13609dc4243ba",
+      "source": "handbook/images/design-en.webp"
+    },
+    "handbook/images/design-search-de.webp": {
+      "sha256": "e5ac829bacfc8987a38411589eb22cf2c574effbc87d9521f4551faef87d36be",
+      "source": "handbook/images/design-search-de.webp"
+    },
+    "handbook/images/design-search-en.webp": {
+      "sha256": "9fef2ac1b9b1a03f79601045d05ffc95b1ebd59c5bba68bc7143e0ed1899c088",
+      "source": "handbook/images/design-search-en.webp"
+    },
+    "handbook/images/design-state-de.webp": {
+      "sha256": "844f14d062c7d52f18920e694236a6f54f625667526f07267ed1f7a54780e405",
+      "source": "handbook/images/design-state-de.webp"
+    },
+    "handbook/images/design-state-en.webp": {
+      "sha256": "b0bcceb67682482899308e954a04124e03aa94b343c72b9fa0a6166d5fda7f81",
+      "source": "handbook/images/design-state-en.webp"
+    },
+    "handbook/images/dialog-confirm-de.webp": {
+      "sha256": "9588fb36fe7b642c75be2007806748e2e4929f20a7c110ba9f42f6c5c0169e10",
+      "source": "handbook/images/dialog-confirm-de.webp"
+    },
+    "handbook/images/dialog-confirm-en.webp": {
+      "sha256": "1141de1f359d97aa42a158496d65be62a8f6f43306c336ea964e2102a7096d26",
+      "source": "handbook/images/dialog-confirm-en.webp"
+    },
+    "handbook/images/dialog-warning-de.webp": {
+      "sha256": "9af43ebea16723607ee1e906d60e32f7ee2a16110e744a074044daf9bb87f0da",
+      "source": "handbook/images/dialog-warning-de.webp"
+    },
+    "handbook/images/dialog-warning-en.webp": {
+      "sha256": "d061b20e7c7f3ddffba28bf1cd773897ebde9c68f90ca5e912b29d0d2080a4da",
+      "source": "handbook/images/dialog-warning-en.webp"
+    },
+    "handbook/images/edition-features-de.webp": {
+      "sha256": "c61a73f0f80d444c1178c8c3b464b357338f297194198bdefadafdfcd310ef09",
+      "source": "handbook/images/edition-features-de.webp"
+    },
+    "handbook/images/edition-features-en.webp": {
+      "sha256": "5d1f9ae8c61e0d65b771f0593e225b4c6157a3367ee3e4eda46117858c07ac44",
+      "source": "handbook/images/edition-features-en.webp"
+    },
+    "handbook/images/email-de.webp": {
+      "sha256": "f53f2a8bea0424dbac2421956f36543387a9735f590d75d96d5a383914124152",
+      "source": "handbook/images/email-de.webp"
+    },
+    "handbook/images/email-en.webp": {
+      "sha256": "afc30801a4ecee153c72beb47416b5bb5be253ab86f750fdf3bd294107fad224",
+      "source": "handbook/images/email-en.webp"
+    },
+    "handbook/images/external-controls-de.webp": {
+      "sha256": "737f8f16a6a510062b54308faa4e47f094bc8b242c4c97e517b7598000729f0e",
+      "source": "handbook/images/external-controls-de.webp"
+    },
+    "handbook/images/external-controls-en.webp": {
+      "sha256": "1fc1b28f5d8e82ede4e19a1910cf25539f8b111eb1acc649339b642bb9ad335d",
+      "source": "handbook/images/external-controls-en.webp"
+    },
+    "handbook/images/external-shared-de.webp": {
+      "sha256": "5674ba242c89bbbc1515370de4887c8fcae59135eef5d3a3e35e9fca85035589",
+      "source": "handbook/images/external-shared-de.webp"
+    },
+    "handbook/images/external-shared-en.webp": {
+      "sha256": "d92a062156ee98ae57868efb3442b67deedafddd559d9685334d5a0643d196b3",
+      "source": "handbook/images/external-shared-en.webp"
+    },
+    "handbook/images/fact-icons-de.webp": {
+      "sha256": "2fe0e0ce9d150f066ef6fc3274816364b52f77e4d5f1ba1b14f2febb1ad1b690",
+      "source": "handbook/images/fact-icons-de.webp"
+    },
+    "handbook/images/fact-icons-en.webp": {
+      "sha256": "f90d8906122580a83deb8c7628ae40321b8565ea630fad29fba739b6a37d10be",
+      "source": "handbook/images/fact-icons-en.webp"
+    },
+    "handbook/images/fact-spacing-de.webp": {
+      "sha256": "74e9c199098e4e2f4b25531ad0e6022804876ae005eebcd28fdab505dc2914aa",
+      "source": "handbook/images/fact-spacing-de.webp"
+    },
+    "handbook/images/fact-spacing-en.webp": {
+      "sha256": "fcd631e62ab1a508d5f4946cbeb3f5093fb67a24cb1ada9eb772bc9e2939d14e",
+      "source": "handbook/images/fact-spacing-en.webp"
+    },
+    "handbook/images/forms-de.webp": {
+      "sha256": "38e457b744979708def5fa63ace53aaaaf524c11703b71ade047c4247b3c8cc9",
+      "source": "handbook/images/forms-de.webp"
+    },
+    "handbook/images/forms-en.webp": {
+      "sha256": "57a015a049b8f0f9a2312d5395544ced37986213cd65a938cb7d0217ebdef348",
+      "source": "handbook/images/forms-en.webp"
+    },
+    "handbook/images/free-design-de.webp": {
+      "sha256": "cdf915e4a7fb952f2ea75398595e83e0f621265e1171279d74cbb5f58ccf8c54",
+      "source": "handbook/images/free-design-de.webp"
+    },
+    "handbook/images/free-design-en.webp": {
+      "sha256": "3106129dc374fcd2029d610cbb353defc6cd1b93a6972f7e336e5c5a9c710c5f",
+      "source": "handbook/images/free-design-en.webp"
+    },
+    "handbook/images/groups-de.webp": {
+      "sha256": "15c0b2341b6c5ae6270e076daa0d17bb46759c4ad3c650abeffb18d174e8760d",
+      "source": "handbook/images/groups-de.webp"
+    },
+    "handbook/images/groups-en.webp": {
+      "sha256": "87fed0d26ddc34e06111e20da6d2fc33093ed3a3bfc85c6ce671afbe70ac5279",
+      "source": "handbook/images/groups-en.webp"
+    },
+    "handbook/images/input-scope-cards-de.webp": {
+      "sha256": "4a8545308930a14abd1d02819170ac81c5a6a97c6bf57e8cd65eaae78b8e2459",
+      "source": "handbook/images/input-scope-cards-de.webp"
+    },
+    "handbook/images/input-scope-cards-en.webp": {
+      "sha256": "0bb138bdbc379e68bbeee7f38d7f834b897b401eab8a1ac19f0260b4414e70d4",
+      "source": "handbook/images/input-scope-cards-en.webp"
+    },
+    "handbook/images/input-scope-setting-de.webp": {
+      "sha256": "22d831b83c66037664e57c82dba9903516e6f36f9ea514d1801b3201369c44d8",
+      "source": "handbook/images/input-scope-setting-de.webp"
+    },
+    "handbook/images/input-scope-setting-en.webp": {
+      "sha256": "990ead096ea29aecbc2f504d4f03fd65396e716650c55d60b0ba59c0bcb207f0",
+      "source": "handbook/images/input-scope-setting-en.webp"
+    },
+    "handbook/images/license-status-de.webp": {
+      "sha256": "10853a14988ce94f88681141028f18c729266259e4b835aef1ba3b1f998546f9",
+      "source": "handbook/images/license-status-de.webp"
+    },
+    "handbook/images/license-status-en.webp": {
+      "sha256": "5ee58ed0c6830e2035df2e045d8925a574f040e3456ecc0323e436ab86417cf0",
+      "source": "handbook/images/license-status-en.webp"
+    },
+    "handbook/images/mixed-catalog-de.webp": {
+      "sha256": "4ef5435604db8caf648d55cbcec830dbf23622bc63933080a993ce94df8cf476",
+      "source": "handbook/images/mixed-catalog-de.webp"
+    },
+    "handbook/images/mixed-catalog-en.webp": {
+      "sha256": "7ec033b998c9f95fe792a5f9a2be381724f96370bb0ad845ca0efe4384494c69",
+      "source": "handbook/images/mixed-catalog-en.webp"
+    },
+    "handbook/images/offer-background-de.webp": {
+      "sha256": "c49ae731987df0d746dc79e426fcc93fb2bf5c2911a85b51d83b7785181f9981",
+      "source": "handbook/images/offer-background-de.webp"
+    },
+    "handbook/images/offer-background-en.webp": {
+      "sha256": "b5508d31a2795a8d56805e5d57abae01add545fc06cf707c12f26af3d4c0fdcf",
+      "source": "handbook/images/offer-background-en.webp"
+    },
+    "handbook/images/offers-de.webp": {
+      "sha256": "90c55aa471bd4596e99f81398fdce8d5222859ce107ffbd1a98126096dc10fe8",
+      "source": "handbook/images/offers-de.webp"
+    },
+    "handbook/images/offers-en.webp": {
+      "sha256": "5a6b243a3af6206bd0f37c9334ff646d072856aab5ff19a115389f0f7e62c497",
+      "source": "handbook/images/offers-en.webp"
+    },
+    "handbook/images/packages-de.webp": {
+      "sha256": "33086b7ecd489f522f8ba0a45f624913d74609857cdb244b0987df2d873d7643",
+      "source": "handbook/images/packages-de.webp"
+    },
+    "handbook/images/packages-en.webp": {
+      "sha256": "3921a87caf0e339479ee10b57ae4a26a414d57be0b9b29447a3473d64abba626",
+      "source": "handbook/images/packages-en.webp"
+    },
+    "handbook/images/php-rendering-de.webp": {
+      "sha256": "108c8b5e0eb862cf4458674f98f4ad5cc5d69de7db04fed2b1fb5fbb3dce9328",
+      "source": "handbook/images/php-rendering-de.webp"
+    },
+    "handbook/images/php-rendering-en.webp": {
+      "sha256": "77b3c479350fa94356e586466c9d91a7ee8bc792e924bb2cc3630f5b113b216f",
+      "source": "handbook/images/php-rendering-en.webp"
+    },
+    "handbook/images/price-preview-de.webp": {
+      "sha256": "a60e47d8ae9cab3663add322ad371e5410d14401e334b40f5ae6161384c535cc",
+      "source": "handbook/images/price-preview-de.webp"
+    },
+    "handbook/images/price-preview-en.webp": {
+      "sha256": "43a974c0b175218373f2b655cd37615c32e0e02dee0bc08d6637ce4af8fa67b2",
+      "source": "handbook/images/price-preview-en.webp"
+    },
+    "handbook/images/price-tax-label-de.webp": {
+      "sha256": "e1846d703dfd1327b95e3de461e2464397a665cb4c695e340675d8b639b2d7f8",
+      "source": "handbook/images/price-tax-label-de.webp"
+    },
+    "handbook/images/price-tax-label-en.webp": {
+      "sha256": "95cb0f170306d346ec62cb379c9e20fc0324a6bccdd4a0efef49bbea3fe731cd",
+      "source": "handbook/images/price-tax-label-en.webp"
+    },
+    "handbook/images/promotion-lifecycle-de.webp": {
+      "sha256": "41e91ca2b289e4b40ba58d1637d3d186e7c111f6e73f6e571ee49bebeae37b1b",
+      "source": "handbook/images/promotion-lifecycle-de.webp"
+    },
+    "handbook/images/promotion-lifecycle-en.webp": {
+      "sha256": "7d807aeadd15c91215010bd3abaa0c27a1241d0aa4ec1c30c7435799da55b305",
+      "source": "handbook/images/promotion-lifecycle-en.webp"
+    },
+    "handbook/images/promotions-de.webp": {
+      "sha256": "067ce9d1a1dc030a03b4d8882be8087dafdff3e51e4462604a7945563f6fded3",
+      "source": "handbook/images/promotions-de.webp"
+    },
+    "handbook/images/promotions-en.webp": {
+      "sha256": "035bdb1d3dc8ef4eade4d5d19327c9e5b893553a6b1e1c40117fe7efa7f1b2ee",
+      "source": "handbook/images/promotions-en.webp"
+    },
+    "handbook/images/quantity-design-de.webp": {
+      "sha256": "3b39010a18124e1d6a0f221b3b34eb1b82bdbe98b135081014ffbacb03f9f262",
+      "source": "handbook/images/quantity-design-de.webp"
+    },
+    "handbook/images/quantity-design-en.webp": {
+      "sha256": "915dd08706b5010cba34a27c620d26d54c188e50c6e72817f9ed7a5a50d1c100",
+      "source": "handbook/images/quantity-design-en.webp"
+    },
+    "handbook/images/request-notice-de.webp": {
+      "sha256": "66efa8cc4274bc891d4cf05d4088f0012e555f448f3967d21eb631fb54eec0b9",
+      "source": "handbook/images/request-notice-de.webp"
+    },
+    "handbook/images/request-notice-en.webp": {
+      "sha256": "7af5d832f32bf134da26986479997dc5cd8622ef27e798d46c2c5f58d1f079c8",
+      "source": "handbook/images/request-notice-en.webp"
+    },
+    "handbook/images/requests-de.webp": {
+      "sha256": "2148000998d03fa1e68945140d72439a54947b9450814aedd2672fbe4c5955b0",
+      "source": "handbook/images/requests-de.webp"
+    },
+    "handbook/images/requests-en.webp": {
+      "sha256": "f8af502d5b342277cff8a756cc415a2a3bf16f1f3b5f9ee876c4620a6ec067fd",
+      "source": "handbook/images/requests-en.webp"
+    },
+    "handbook/images/settings-documents-de.webp": {
+      "sha256": "83d00188a251e53034489e140bdd194aa70fc075f07c8214dd9af0810a53fd3a",
+      "source": "handbook/images/settings-documents-de.webp"
+    },
+    "handbook/images/settings-documents-en.webp": {
+      "sha256": "3e0c93ff52ae278ff281d7654fa4ffbf4add7526a5289a86347a77b482c0a582",
+      "source": "handbook/images/settings-documents-en.webp"
+    },
+    "handbook/images/settings-general-de.webp": {
+      "sha256": "9cdfb95415c18a76fc0968f408e4bafcf3d358580db39a5bec3d96983155ffe8",
+      "source": "handbook/images/settings-general-de.webp"
+    },
+    "handbook/images/settings-general-en.webp": {
+      "sha256": "e2f6c2b04de146f6aff784a5f3069e05e3cfbd5a2be6e29e8257265c282e1082",
+      "source": "handbook/images/settings-general-en.webp"
+    },
+    "handbook/images/settings-provider-de.webp": {
+      "sha256": "98ac2f1b1f42cb0e2e87f89cc25cb73e88508fdc8fdc8360b4db9f52a8a74056",
+      "source": "handbook/images/settings-provider-de.webp"
+    },
+    "handbook/images/settings-provider-en.webp": {
+      "sha256": "1d082de920db116f28398cfc71917147b1de966e84de2e4ae0bbd8263c3c6b54",
+      "source": "handbook/images/settings-provider-en.webp"
+    },
+    "handbook/images/settings-requests-de.webp": {
+      "sha256": "824cfcc199ca1b2b51b1b05b39a1847d99fe182d543b29e6e59f0bf427243cb1",
+      "source": "handbook/images/settings-requests-de.webp"
+    },
+    "handbook/images/settings-requests-en.webp": {
+      "sha256": "de32ec51b26e11f31235bae7f3dda4f7a7e94b410d349403f7f626b98cacc7e6",
+      "source": "handbook/images/settings-requests-en.webp"
+    },
+    "handbook/images/settings-security-de.webp": {
+      "sha256": "9befef0efd793811a7c048e44c70ba63eae31c4a59cc7821802cc346c3d687cd",
+      "source": "handbook/images/settings-security-de.webp"
+    },
+    "handbook/images/settings-security-en.webp": {
+      "sha256": "ed87297d0bf71028dd8aa92d358e8a9c68ca94dfc629b989af26222b6f5cdebb",
+      "source": "handbook/images/settings-security-en.webp"
+    },
+    "handbook/images/smtp-de.webp": {
+      "sha256": "7a0631d6740508dd7148013ac6b9db185120925c960724a7717f1f880aeb78d4",
+      "source": "handbook/images/smtp-de.webp"
+    },
+    "handbook/images/smtp-en.webp": {
+      "sha256": "54f9ad0e03ef10a8cbc40a447d274f00123c9289c05f9428f9bbdaba7215d785",
+      "source": "handbook/images/smtp-en.webp"
+    },
+    "handbook/images/surcharge-assignments-de.webp": {
+      "sha256": "96edeac072dbd1916565149e51fec3b759ad0b867d099b10eb2acbe02898e3be",
+      "source": "handbook/images/surcharge-assignments-de.webp"
+    },
+    "handbook/images/surcharge-assignments-en.webp": {
+      "sha256": "aa737046c673e85253168e30e1720303d71aaed0d4c5ef59805f3343b1474b12",
+      "source": "handbook/images/surcharge-assignments-en.webp"
+    },
+    "handbook/images/surcharges-de.webp": {
+      "sha256": "2994fed6ca73277a1ae968352b5c8c69e1c0da252f4f7f035b54e26a47fc5197",
+      "source": "handbook/images/surcharges-de.webp"
+    },
+    "handbook/images/surcharges-en.webp": {
+      "sha256": "bf1f9db6a348a02e9cf777d48576842d9794355f5ab6a79c2f7a77322527a1f3",
+      "source": "handbook/images/surcharges-en.webp"
+    },
+    "handbook/images/svg-media-de.webp": {
+      "sha256": "46b514a606ad44e56468381dd9a7b27563e3c2433326ef5f42d49d357e12fc6a",
+      "source": "handbook/images/svg-media-de.webp"
+    },
+    "handbook/images/svg-media-en.webp": {
+      "sha256": "7cab7ec9c949e7bbbc6608d0fbd6dd809f6f4bd1ac920cf697554598c0950e4c",
+      "source": "handbook/images/svg-media-en.webp"
+    },
+    "handbook/images/taxes-de.webp": {
+      "sha256": "ae5fb05dcae0c0ccf1072c116b5dd7831d78f506570095d93ebe9375e947a622",
+      "source": "handbook/images/taxes-de.webp"
+    },
+    "handbook/images/taxes-en.webp": {
+      "sha256": "03b69f8019806e7b1d6f1d7f97a6368310c3a1c7f3a1a366f22590ddcc74cfa6",
+      "source": "handbook/images/taxes-en.webp"
+    },
+    "handbook/images/term-display-de.webp": {
+      "sha256": "040707be7631f06cfa5bb869cb688e9fc3fb4ed8d0f61b2161cbfa23c8fe4079",
+      "source": "handbook/images/term-display-de.webp"
+    },
+    "handbook/images/term-display-en.webp": {
+      "sha256": "e9c5df92594f61d7ccb8b4c893ae1018f1a297a8c2e92cae9e713699304ce334",
+      "source": "handbook/images/term-display-en.webp"
+    },
+    "handbook/images/tiers-de.webp": {
+      "sha256": "9a8f8e4a5c2eaab3ada76eefb177d01bff98e6deaa340f9af5099dbefd6825c7",
+      "source": "handbook/images/tiers-de.webp"
+    },
+    "handbook/images/tiers-en.webp": {
+      "sha256": "d134d2dfccba19885f1bb8240e4a6eba30b5b5f48a674e5b3c5abff3265b7419",
+      "source": "handbook/images/tiers-en.webp"
+    },
+    "handbook/images/unit-explanation-de.webp": {
+      "sha256": "e04d152e1f8c7a3ffa51daf6b027508b19eef0b5eb2fe808876a06267c361a96",
+      "source": "handbook/images/unit-explanation-de.webp"
+    },
+    "handbook/images/unit-explanation-en.webp": {
+      "sha256": "fed788375d8fb92dd89e48aa7de02a046f721aba42ef3011793dab7805e9296f",
+      "source": "handbook/images/unit-explanation-en.webp"
+    },
+    "handbook/images/units-de.webp": {
+      "sha256": "317915efc7fcd66d25a075f03822492ad3ef5420e240b719e2716c67f951df7e",
+      "source": "handbook/images/units-de.webp"
+    },
+    "handbook/images/units-en.webp": {
+      "sha256": "73d8bb5e48d9139865c16e862340e8f2c35a6d51c3388b8b1a2b8e1555b3a26f",
+      "source": "handbook/images/units-en.webp"
+    },
+    "handbook/images/upgrade-de.webp": {
+      "sha256": "92503c99da6f086169faf756b3e1f02b633ce831575a2c08f1cd7db02b4eb0d1",
+      "source": "handbook/images/upgrade-de.webp"
+    },
+    "handbook/images/upgrade-en.webp": {
+      "sha256": "450a6ca5b87cecdda4b69a32ddb2c8e341b7778bcb1dd42f013a3fe9532eccf2",
+      "source": "handbook/images/upgrade-en.webp"
+    },
+    "handbook/images/variant-options-de.webp": {
+      "sha256": "169fdda92b5ea1ecf8e6dab5fb60327c4581efd5f4796ebbbd2ee2358aac36c6",
+      "source": "handbook/images/variant-options-de.webp"
+    },
+    "handbook/images/variant-options-en.webp": {
+      "sha256": "6bd8c8d08e612f1932d5d92df189769a7d66879d0f40ac6b3c4bf1264bb9bbaf",
+      "source": "handbook/images/variant-options-en.webp"
+    },
+    "handbook/images/variants-de.webp": {
+      "sha256": "a0e0d64fc9db3bd92b89bcd6674746b082beb6305e7b12ef7ba012fcd275611c",
+      "source": "handbook/images/variants-de.webp"
+    },
+    "handbook/images/variants-en.webp": {
+      "sha256": "6d210dbb1010e649afb4abde7009da8d5f4e666dc91fe66c715cba39ff26b586",
+      "source": "handbook/images/variants-en.webp"
+    },
+    "handbook/manifest.json": {
+      "sha256": "de61dede02a2c35ac5311853931eba3484d7e9f6705c8ab49bade53367fe59ab",
+      "source": "handbook/manifest.json"
+    },
+    "handbook/manual.css": {
+      "sha256": "f055eb6d9d0490102c3df92f0b0d782ab394ed3402d700007b1f97a7b3a0a5c6",
+      "source": "handbook/manual.css"
+    },
+    "handbook/manual.js": {
+      "sha256": "4b64e6b7debb137d274030ffc8d52af4476551232ad259dc78a45d8382d27eb5",
+      "source": "handbook/manual.js"
+    },
+    "includes/Activation.php": {
+      "sha256": "74c2bcb1f45a44a74283dd7b80dd53132c0834706a5357dc6ea0abe9d46ac86f",
+      "source": "includes/Activation.php"
+    },
+    "includes/Admin.php": {
+      "sha256": "a86510289b33d32ae35d3284efd33fc1575e2c8855406e5f9cdf8924d5ee705c",
+      "source": "editions/free/includes/Admin.php"
+    },
+    "includes/Api.php": {
+      "sha256": "f1240f65510371deeb9717034ec7439addaafa64731d1aa8ee95d5333719d809",
+      "source": "editions/free/includes/Api.php"
+    },
+    "includes/Catalog.php": {
+      "sha256": "05917ce648044ab8aee857a2678b4afd131284db51e790fb8505976a6f1211c0",
+      "source": "editions/free/includes/Catalog.php"
+    },
+    "includes/Config.php": {
+      "sha256": "e3b2138bcb34a1a4bca184cf8d37cd626f18fdfb7bbe67bbe1a810d7d1db8cc0",
+      "source": "editions/free/includes/Config.php"
+    },
+    "includes/ConfigValidation.php": {
+      "sha256": "f8987363f6b5586d2efbc4f3a54250b652430ec906f0193c43907ba0b044f2d0",
+      "source": "editions/free/includes/ConfigValidation.php"
+    },
+    "includes/Currency.php": {
+      "sha256": "fce1b25707914b0730698cfcd37669c2d713132be3e810ca6bfdfce303134848",
+      "source": "includes/Currency.php"
+    },
+    "includes/Defaults.php": {
+      "sha256": "a656bc27fea0cee049025df91b38466605a28a461da6ee56bc89e523f0e631db",
+      "source": "editions/free/includes/Defaults.php"
+    },
+    "includes/Design.php": {
+      "sha256": "4691020153b1d108644f25158a22b247f268a07169c94cd9e736d9a38e55f8a7",
+      "source": "editions/free/includes/Design.php"
+    },
+    "includes/Edition.php": {
+      "sha256": "a69f586ce3cc8b09c0479912567de216ac272700b4cc238c91307fadaa8d3a21",
+      "source": "editions/free/includes/Edition.php"
+    },
+    "includes/EmailConfig.php": {
+      "sha256": "e1b009ad7e6f487928669a78e334a990eda49cc7fa84f8bb150b7b1f94c015b6",
+      "source": "editions/free/includes/EmailConfig.php"
+    },
+    "includes/EmailView.php": {
+      "sha256": "e5c4f748f148af7d211c89105bd3a36be014097739cdf9a93710db4ecf2ee8e2",
+      "source": "editions/free/includes/EmailView.php"
+    },
+    "includes/Frontend.php": {
+      "sha256": "d621eab4f1c8cc3ca56fcf8ab6b90df5d478378fbf0d40e01f7c60499c312266",
+      "source": "editions/free/includes/Frontend.php"
+    },
+    "includes/FrontendDesign.php": {
+      "sha256": "82248ac99bc535d762e3c8e9771251c9859fc003d478ea37584d5bf7fb5bb4b2",
+      "source": "editions/free/includes/FrontendDesign.php"
+    },
+    "includes/FrontendPrice.php": {
+      "sha256": "7ece903e157e108ff0fa03bb3544e9faf744e873875ca242bfb3469d8d9126c9",
+      "source": "editions/free/includes/FrontendPrice.php"
+    },
+    "includes/FrontendRequest.php": {
+      "sha256": "9f8232cb0a47f68a7e484460dc46b73673295f6126ad2272246e8ff5fbbdf730",
+      "source": "editions/free/includes/FrontendRequest.php"
+    },
+    "includes/FrontendState.php": {
+      "sha256": "2dc06c781b41357b526062418b823c86286255a4059925f06bc1327fd4077813",
+      "source": "editions/free/includes/FrontendState.php"
+    },
+    "includes/FrontendView.php": {
+      "sha256": "59147a0e84140789ac2847741a42a6a6976a2c1cea3c525b4c74a8b923062025",
+      "source": "editions/free/includes/FrontendView.php"
+    },
+    "includes/Handbook.php": {
+      "sha256": "2a714689e5770c9895cb7baf147a6e962f26ca21e48bcd42abddfc10116e8f96",
+      "source": "includes/Handbook.php"
+    },
+    "includes/I18n.php": {
+      "sha256": "13e5bb54bf54c062646fcb2d583a3b545f86a1b2fd0683f417afdd76daf373aa",
+      "source": "editions/free/includes/I18n.php"
+    },
+    "includes/LegacyCatalogMigration.php": {
+      "sha256": "dd17ac7d9f57df02fc6457e3a4eb033a7a76add3dfa7ec5edb1e62133b58fc8d",
+      "source": "includes/LegacyCatalogMigration.php"
+    },
+    "includes/LegacyShortcodes.php": {
+      "sha256": "b74342ccd0a48c5529bfef99eef5e7d77a3ecebcf1065c1197a15828b47fe61a",
+      "source": "includes/LegacyShortcodes.php"
+    },
+    "includes/Legal.php": {
+      "sha256": "f53613ccd9b6ec7d7d42b0bc2c50b23f3c2bdf93599f360724158c8740c0ea13",
+      "source": "includes/Legal.php"
+    },
+    "includes/Licensing.php": {
+      "sha256": "bbbf835f6a7db8cf132579cf23c6c9d7d51b4d5c5d6530ea330f560899740ec5",
+      "source": "includes/Licensing.php"
+    },
+    "includes/MailTransport.php": {
+      "sha256": "04d49d50dcc5f5621f89d4ca01a3f6aecda48fd562ffe38e0bc1130e149adc2b",
+      "source": "editions/free/includes/MailTransport.php"
+    },
+    "includes/Mailer.php": {
+      "sha256": "d65d3454015eef4add7f61cece13961ba2dfc68c057976d459e124ffc2e42026",
+      "source": "includes/Mailer.php"
+    },
+    "includes/OfferImage.php": {
+      "sha256": "18f15e0756d833d881ba4839910a430a332f01f157792d3b1e44c1ecc6dfb9af",
+      "source": "includes/OfferImage.php"
+    },
+    "includes/Pricing.php": {
+      "sha256": "b8fd812e4282e48ab7744f27f49f30c835ef1c3c915d78ce07f1ee098ea2c70b",
+      "source": "editions/free/includes/Pricing.php"
+    },
+    "includes/SelectionRules.php": {
+      "sha256": "124e9381f6a27dc3cdc4015e184f3474691b72c5e4008d5b350a7d18d5cef405",
+      "source": "includes/SelectionRules.php"
+    },
+    "includes/Spam.php": {
+      "sha256": "3eb40ba49f8edebb1cf702f0955284af77d05f2eb67b7c235e2654c78a498712",
+      "source": "includes/Spam.php"
+    },
+    "includes/StorageMigration.php": {
+      "sha256": "568a12dc2ff2e1ce1baf617293aaf729f88ce6b7d747bf6c3bde904edebf2f9b",
+      "source": "includes/StorageMigration.php"
+    },
+    "includes/Store.php": {
+      "sha256": "bca338195faebe3e33127d53b73b34c7e6bd165ab952f1b1bee3ecce72e3fd26",
+      "source": "includes/Store.php"
+    },
+    "includes/Tax.php": {
+      "sha256": "7fd4d5432745b3eb5160d1e41d78e2c326546f08c1150644c46ba3b1a8d018e3",
+      "source": "includes/Tax.php"
+    },
+    "includes/Translations.php": {
+      "sha256": "312ab285b3ff361f4470ff6bf4bd27945e5b889f422e5203015d80fa8019fcc0",
+      "source": "editions/free/includes/Translations.php"
+    },
+    "includes/Uninstall.php": {
+      "sha256": "4c2b16f050f18ab93202fd03528f7ee93cf06729c809ee83ae113b46cbea1bf6",
+      "source": "includes/Uninstall.php"
+    },
+    "includes/currencies.json": {
+      "sha256": "85780ed1b9c30e0335c5c358e8ea8a0840a1ed1488b9e2700dcc2b54fb602f1f",
+      "source": "includes/currencies.json"
+    },
+    "includes/features.json": {
+      "sha256": "bbaf534a397270de8801243f67bf23b066cb2e0afca07e3c53c592b87e7d8f19",
+      "source": "includes/features.json"
+    },
+    "languages/default-content.json": {
+      "sha256": "599bcb1736258916dbdf2a08434ed0b7db30d987dcd980d1f2108f16b849560c",
+      "source": "languages/default-content.json"
+    },
+    "languages/scripts.json": {
+      "sha256": "ac8ee8ca328fb96d54795a03f9fe7866eb8834d85b70bd292de52eef0de0d319",
+      "source": "editions/free/languages/scripts.json"
+    },
+    "offerweave.php": {
+      "sha256": "c1dae376d44bfc38f7d8af2ef5a260423e42acb538b8501b657086e311e8955c",
+      "source": "editions/free/offerweave.php"
+    },
+    "readme.txt": {
+      "sha256": "e59b309d1b531d0d61e70027a5a08118b73ed31cd21a384c6a6f11d476f30f66",
+      "source": "readme.txt"
+    },
+    "uninstall.php": {
+      "sha256": "c5b76f5a1e4cd89bd1d695b11abf58fb51c9062fcc8a7e152007a3762baef3cb",
+      "source": "uninstall.php"
+    },
+    "vendor/freemius/LICENSE.txt": {
+      "sha256": "b98fbb37db5b23bc5cfdcd16793206a5a7120a7b01f75374e5e0888376e4691c",
+      "source": "vendor/freemius/LICENSE.txt"
+    },
+    "vendor/freemius/README.md": {
+      "sha256": "348f28975ec7e43926cf51741bca466c07ee7deb6abde73f54905e3090a30103",
+      "source": "vendor/freemius/README.md"
+    },
+    "vendor/freemius/assets/css/admin/account.css": {
+      "sha256": "0863552ad56a38217e8139f1f9211e7bb5845669a917094b666538af5eb1d3a6",
+      "source": "vendor/freemius/assets/css/admin/account.css"
+    },
+    "vendor/freemius/assets/css/admin/add-ons.css": {
+      "sha256": "3b6d0cbd5a34d88a4366db952805693ae98a757e988d69baf4b74ec7a205170a",
+      "source": "vendor/freemius/assets/css/admin/add-ons.css"
+    },
+    "vendor/freemius/assets/css/admin/affiliation.css": {
+      "sha256": "a2400ddbf61395cbc600d76a2f20716c8e21b22eae2f4d30964bca2a5ef1e711",
+      "source": "vendor/freemius/assets/css/admin/affiliation.css"
+    },
+    "vendor/freemius/assets/css/admin/checkout.css": {
+      "sha256": "ea7cb8cf22163969a3bfcd83f65855a2733e23becbbb85f58e1eb093271a75f9",
+      "source": "vendor/freemius/assets/css/admin/checkout.css"
+    },
+    "vendor/freemius/assets/css/admin/clone-resolution.css": {
+      "sha256": "e8c52d4bc80cb1bcaa5b4ee8cceccb102ab01acf78b465b37787c6de0932e045",
+      "source": "vendor/freemius/assets/css/admin/clone-resolution.css"
+    },
+    "vendor/freemius/assets/css/admin/common.css": {
+      "sha256": "917bff808892dc8b5b41a834c0126a3dde8737ae87d42426c12552298ce8ce2b",
+      "source": "vendor/freemius/assets/css/admin/common.css"
+    },
+    "vendor/freemius/assets/css/admin/connect.css": {
+      "sha256": "1a4da29a4913a6614349d9a7355fa4a0f16af22a4495b33106395b4754b6a065",
+      "source": "vendor/freemius/assets/css/admin/connect.css"
+    },
+    "vendor/freemius/assets/css/admin/debug.css": {
+      "sha256": "e95a4b0f57b178d0abc9aa1798fec362e9e094e63596f0de45fe0bc2a3dfc48c",
+      "source": "vendor/freemius/assets/css/admin/debug.css"
+    },
+    "vendor/freemius/assets/css/admin/dialog-boxes.css": {
+      "sha256": "a2da42bd20ed34e8ebaeee08764c16b616adffff29e61d54d88c9e4da5b6dd20",
+      "source": "vendor/freemius/assets/css/admin/dialog-boxes.css"
+    },
+    "vendor/freemius/assets/css/admin/gdpr-optin-notice.css": {
+      "sha256": "fcd2aa4d5ec263e11cfa34492f7caf0f870ffc514c3de61a5ee2c085ae23b408",
+      "source": "vendor/freemius/assets/css/admin/gdpr-optin-notice.css"
+    },
+    "vendor/freemius/assets/css/admin/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/assets/css/admin/index.php"
+    },
+    "vendor/freemius/assets/css/admin/optout.css": {
+      "sha256": "2fbaed4f483c0afae4ddd6ac1e51ad0007261b32003651aaed95a6f032debac9",
+      "source": "vendor/freemius/assets/css/admin/optout.css"
+    },
+    "vendor/freemius/assets/css/admin/plugins.css": {
+      "sha256": "54018a96f5c384996ca0958b49c00d0b151db2d899b78c4ad16b5064eba3e04a",
+      "source": "vendor/freemius/assets/css/admin/plugins.css"
+    },
+    "vendor/freemius/assets/css/customizer.css": {
+      "sha256": "6d50c83cb1d1e89566a9f385326fc48470d113493d93024ab59e8c41865cd4bf",
+      "source": "vendor/freemius/assets/css/customizer.css"
+    },
+    "vendor/freemius/assets/css/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/assets/css/index.php"
+    },
+    "vendor/freemius/assets/img/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/assets/img/index.php"
+    },
+    "vendor/freemius/assets/img/plugin-icon.png": {
+      "sha256": "1cf3bc9425ecb132013b8a33f9d39e22cd1cc2bec8e4d263fe9c5a3fd867a44d",
+      "source": "vendor/freemius/assets/img/plugin-icon.png"
+    },
+    "vendor/freemius/assets/img/theme-icon.png": {
+      "sha256": "c85767ca365172ef9c0b3cf9db30c923c48af455b6b4886017b117256dcb25c1",
+      "source": "vendor/freemius/assets/img/theme-icon.png"
+    },
+    "vendor/freemius/assets/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/assets/index.php"
+    },
+    "vendor/freemius/assets/js/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/assets/js/index.php"
+    },
+    "vendor/freemius/assets/js/jquery.form.js": {
+      "sha256": "7a57dbbb21b1984a356ea4c6280a18abc607264f56fd6e827f68346b4f2314c5",
+      "source": "vendor/freemius/assets/js/jquery.form.js"
+    },
+    "vendor/freemius/assets/js/nojquery.ba-postmessage.js": {
+      "sha256": "350027618efd7650fd8b586892923b17e2397d57e7ceaa3858086154efbcd647",
+      "source": "vendor/freemius/assets/js/nojquery.ba-postmessage.js"
+    },
+    "vendor/freemius/assets/js/postmessage.js": {
+      "sha256": "377b8d2b001acfedf72f5cc43c812b20b672921e3fdecbac285d9410039e3e23",
+      "source": "vendor/freemius/assets/js/postmessage.js"
+    },
+    "vendor/freemius/assets/js/pricing/14fb1bd5b7c41648488b06147f50a0dc.svg": {
+      "sha256": "c70b4fa1de91a42923e8eca1d2290b277f54eafe30a343899e82037f99355f06",
+      "source": "vendor/freemius/assets/js/pricing/14fb1bd5b7c41648488b06147f50a0dc.svg"
+    },
+    "vendor/freemius/assets/js/pricing/178afa6030e76635dbe835e111d2c507.png": {
+      "sha256": "53fd46bf1fcdd46aa7e57bcbcdfcc088679671bcad52fdcb56f16eafb1627098",
+      "source": "vendor/freemius/assets/js/pricing/178afa6030e76635dbe835e111d2c507.png"
+    },
+    "vendor/freemius/assets/js/pricing/27b5a722a5553d9de0170325267fccec.png": {
+      "sha256": "11e2ba99b662bb51c2bd594c34f0d45e2ef1fed2c8f0dc5ddf9c00d2ce6cafcc",
+      "source": "vendor/freemius/assets/js/pricing/27b5a722a5553d9de0170325267fccec.png"
+    },
+    "vendor/freemius/assets/js/pricing/4375c4a3ddc6f637c2ab9a2d7220f91e.png": {
+      "sha256": "1cf3bc9425ecb132013b8a33f9d39e22cd1cc2bec8e4d263fe9c5a3fd867a44d",
+      "source": "vendor/freemius/assets/js/pricing/4375c4a3ddc6f637c2ab9a2d7220f91e.png"
+    },
+    "vendor/freemius/assets/js/pricing/45da596e2b512ffc3bb638baaf0fdc4e.png": {
+      "sha256": "42676d0411a6dcf231a9509f709c39c8ef8bd08468968d76cea34075a4e8c40b",
+      "source": "vendor/freemius/assets/js/pricing/45da596e2b512ffc3bb638baaf0fdc4e.png"
+    },
+    "vendor/freemius/assets/js/pricing/a34e046aee1702a5690679750a7f4d0f.svg": {
+      "sha256": "5d530541b9b8a3684b87e9e73bf659ee7ce3c698d16a91d28f2dbe021fb0ea13",
+      "source": "vendor/freemius/assets/js/pricing/a34e046aee1702a5690679750a7f4d0f.svg"
+    },
+    "vendor/freemius/assets/js/pricing/b09d0b38b627c2fa564d050f79f2f064.svg": {
+      "sha256": "432f787a66f03577502dede7472513f30d129da9893a0f1e3f80ea1c4a410518",
+      "source": "vendor/freemius/assets/js/pricing/b09d0b38b627c2fa564d050f79f2f064.svg"
+    },
+    "vendor/freemius/assets/js/pricing/c03f665db27af43971565560adfba594.png": {
+      "sha256": "3ec45009437a0e95af2c9991952097a271753e4f643034243c15920cf03f51fa",
+      "source": "vendor/freemius/assets/js/pricing/c03f665db27af43971565560adfba594.png"
+    },
+    "vendor/freemius/assets/js/pricing/cb5fc4f6ec7ada72e986f6e7dde365bf.png": {
+      "sha256": "91075802d981a3feaf8b046b4ed2ddbd45602183b928f42d5b81ff28be34386e",
+      "source": "vendor/freemius/assets/js/pricing/cb5fc4f6ec7ada72e986f6e7dde365bf.png"
+    },
+    "vendor/freemius/assets/js/pricing/d65812c447b4523b42d59018e1c0bb53.png": {
+      "sha256": "ce864136d7f35d4922ab1eed2bf02b4093f55fc893a24d07b11ce9f7e43aa50a",
+      "source": "vendor/freemius/assets/js/pricing/d65812c447b4523b42d59018e1c0bb53.png"
+    },
+    "vendor/freemius/assets/js/pricing/f3aac72a8e63997d6bb888f816457e9b.png": {
+      "sha256": "b5e1e045d204cad514f471c00a7c83e813cb5128b817a78282873887a546d16e",
+      "source": "vendor/freemius/assets/js/pricing/f3aac72a8e63997d6bb888f816457e9b.png"
+    },
+    "vendor/freemius/assets/js/pricing/fde48e4609a6ddc11d639fc2421f2afd.png": {
+      "sha256": "c85767ca365172ef9c0b3cf9db30c923c48af455b6b4886017b117256dcb25c1",
+      "source": "vendor/freemius/assets/js/pricing/fde48e4609a6ddc11d639fc2421f2afd.png"
+    },
+    "vendor/freemius/assets/js/pricing/freemius-pricing.js": {
+      "sha256": "da69c6bfc9e23323958aa839e93eac15a4dd34793eb58cefb75e819a19ff1165",
+      "source": "vendor/freemius/assets/js/pricing/freemius-pricing.js"
+    },
+    "vendor/freemius/assets/js/pricing/freemius-pricing.js.LICENSE.txt": {
+      "sha256": "835a7cc046d6f6caf917bc803e812d2ac2eaeb6a71aad23b90224ff98b3685ea",
+      "source": "vendor/freemius/assets/js/pricing/freemius-pricing.js.LICENSE.txt"
+    },
+    "vendor/freemius/composer.json": {
+      "sha256": "176d96df8dcf564394152a49fddd5d5425408b9b2e2ce416f011c28c852892b3",
+      "source": "vendor/freemius/composer.json"
+    },
+    "vendor/freemius/config.php": {
+      "sha256": "f7b6ffbd5c2e7c5fc61deb18b2839dd85875e494e4dff54de13ee7525fcbeb00",
+      "source": "vendor/freemius/config.php"
+    },
+    "vendor/freemius/includes/class-freemius-abstract.php": {
+      "sha256": "7419cf4a382b04fe8b49572e101830a6985821bb5bd1aef443054c3f4083be32",
+      "source": "vendor/freemius/includes/class-freemius-abstract.php"
+    },
+    "vendor/freemius/includes/class-freemius.php": {
+      "sha256": "f3cbeae6a457154be40d9030824fbdc1a05c293efd5f2836696127f41a7b1aa8",
+      "source": "vendor/freemius/includes/class-freemius.php"
+    },
+    "vendor/freemius/includes/class-fs-admin-notices.php": {
+      "sha256": "25e11373d368bb35d6624fb5b1cea36999cc3225a0558c505d550b65c2f6b533",
+      "source": "vendor/freemius/includes/class-fs-admin-notices.php"
+    },
+    "vendor/freemius/includes/class-fs-api.php": {
+      "sha256": "4f99778e4e4a86e1de1379e880eff967cc5a9d604887dff553180a9785422d63",
+      "source": "vendor/freemius/includes/class-fs-api.php"
+    },
+    "vendor/freemius/includes/class-fs-garbage-collector.php": {
+      "sha256": "9f37edea83a9c166213f5e7b3888ee2f3affba672cc2588c26d2429fe2803765",
+      "source": "vendor/freemius/includes/class-fs-garbage-collector.php"
+    },
+    "vendor/freemius/includes/class-fs-hook-snapshot.php": {
+      "sha256": "29a08ce2304d538220b8a92e0e0f59271571607ad87ed8904822c63ac51cbb9e",
+      "source": "vendor/freemius/includes/class-fs-hook-snapshot.php"
+    },
+    "vendor/freemius/includes/class-fs-lock.php": {
+      "sha256": "aa1576f8c1e31f94c4ae2efbeb2bb9d9778c62104a597f19524eee4409c4babd",
+      "source": "vendor/freemius/includes/class-fs-lock.php"
+    },
+    "vendor/freemius/includes/class-fs-logger.php": {
+      "sha256": "a9bfa21e6c0aa8cdba7c8fd4b724524b2658cbf215966616c1d35c48f28f365c",
+      "source": "vendor/freemius/includes/class-fs-logger.php"
+    },
+    "vendor/freemius/includes/class-fs-options.php": {
+      "sha256": "b502fc036e2b6a84ff7b49f7eb52d27c223fad28ff5fa76f64f9c0a4cd99a78a",
+      "source": "vendor/freemius/includes/class-fs-options.php"
+    },
+    "vendor/freemius/includes/class-fs-plugin-updater.php": {
+      "sha256": "b26d4e928f06f2ff19dda3d891ee42533ef37aaba57a85c30ed0358e6a0177ee",
+      "source": "vendor/freemius/includes/class-fs-plugin-updater.php"
+    },
+    "vendor/freemius/includes/class-fs-security.php": {
+      "sha256": "8692b7b76fc8ce4c64644a398583db0651fbdc89d5043d0c1be32455498d9da4",
+      "source": "vendor/freemius/includes/class-fs-security.php"
+    },
+    "vendor/freemius/includes/class-fs-storage.php": {
+      "sha256": "dbee5c01bec9bae18eebd7b7c08c1b88abcb5d208e80c6ee5ad213259aa0545d",
+      "source": "vendor/freemius/includes/class-fs-storage.php"
+    },
+    "vendor/freemius/includes/class-fs-user-lock.php": {
+      "sha256": "bc7a341375284146f83636a1ef9eabd45f7ffe68b60e8fdc6dacf9f716ba301c",
+      "source": "vendor/freemius/includes/class-fs-user-lock.php"
+    },
+    "vendor/freemius/includes/customizer/class-fs-customizer-support-section.php": {
+      "sha256": "061256a4960417b0bed8ae41297836118cee48bc1a8cb3ddcc06fdfbf4e00281",
+      "source": "vendor/freemius/includes/customizer/class-fs-customizer-support-section.php"
+    },
+    "vendor/freemius/includes/customizer/class-fs-customizer-upsell-control.php": {
+      "sha256": "71388aa44b181d3d0ff573a1620eb71056c841ff2ad9d077c941d914d35c34ae",
+      "source": "vendor/freemius/includes/customizer/class-fs-customizer-upsell-control.php"
+    },
+    "vendor/freemius/includes/customizer/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/includes/customizer/index.php"
+    },
+    "vendor/freemius/includes/debug/class-fs-debug-bar-panel.php": {
+      "sha256": "470c1047cfff98395ad8a44bf153b46ce92c0d75fc4b9c59066a875fbfffe96b",
+      "source": "vendor/freemius/includes/debug/class-fs-debug-bar-panel.php"
+    },
+    "vendor/freemius/includes/debug/debug-bar-start.php": {
+      "sha256": "13df3aac107fb25dde83b6abc55ef048231306706b0088c55576f4e1c491011c",
+      "source": "vendor/freemius/includes/debug/debug-bar-start.php"
+    },
+    "vendor/freemius/includes/debug/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/includes/debug/index.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-affiliate-terms.php": {
+      "sha256": "c9c1da9898b77786fa05c0f272775b69be7218439689c8bbb5f3c3aa684769a0",
+      "source": "vendor/freemius/includes/entities/class-fs-affiliate-terms.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-affiliate.php": {
+      "sha256": "812574db8b9a1ebf08cf14b9b49aaa90bfa2ef4ebc5cd42b87fb8dca21e6d217",
+      "source": "vendor/freemius/includes/entities/class-fs-affiliate.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-billing.php": {
+      "sha256": "a562123e5f9953e69b51b90298521d9f3d8a135bfeff7386717b3ff30e1a7228",
+      "source": "vendor/freemius/includes/entities/class-fs-billing.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-entity.php": {
+      "sha256": "fcc21f43851ca73b64895ea398cafe734352a960058c1a3735e7b52083e48dd0",
+      "source": "vendor/freemius/includes/entities/class-fs-entity.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-payment.php": {
+      "sha256": "3598d952c30c2a0eb7da7e8d113090b5a78e9126cc0dd56848b6d54520624df1",
+      "source": "vendor/freemius/includes/entities/class-fs-payment.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-plugin-info.php": {
+      "sha256": "cec2d43965b7baad7dff3316ebac43745d329b72408c0da7ec38f09129c98837",
+      "source": "vendor/freemius/includes/entities/class-fs-plugin-info.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-plugin-license.php": {
+      "sha256": "a074b9233b03d11f85a7fecfe6e3d8e3e511be1a2fffffe2b097abfa09ec458e",
+      "source": "vendor/freemius/includes/entities/class-fs-plugin-license.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-plugin-plan.php": {
+      "sha256": "fe82e1707c8d9d4094593851a99afcad4ab267e1714e761eb31bcfaf1b89af01",
+      "source": "vendor/freemius/includes/entities/class-fs-plugin-plan.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-plugin-tag.php": {
+      "sha256": "44bd699a657dcceaaef1585b539d13028177a222d4b2a5631d07025f6b8f2e8a",
+      "source": "vendor/freemius/includes/entities/class-fs-plugin-tag.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-plugin.php": {
+      "sha256": "e7b921a00bbb7662bc2fc73ae6c5ffd072289c3a1cad68f05c52c99fc545c28d",
+      "source": "vendor/freemius/includes/entities/class-fs-plugin.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-pricing.php": {
+      "sha256": "350749fb2517c0a07187152bb9f0122092697f42dee8775eeddfe66e148bb044",
+      "source": "vendor/freemius/includes/entities/class-fs-pricing.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-scope-entity.php": {
+      "sha256": "7aeea54684fa99eac3cba01d24834172efc95da23004eb719d9d36a2db77578e",
+      "source": "vendor/freemius/includes/entities/class-fs-scope-entity.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-site.php": {
+      "sha256": "0e9c86feae4cbc6ea51560093b71295b5114bd74862b213fe1241471fe8bc4c9",
+      "source": "vendor/freemius/includes/entities/class-fs-site.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-subscription.php": {
+      "sha256": "44fe2b29845d09f48223f7fadf4ea03df59866084c5a1d4693beac132edb1f48",
+      "source": "vendor/freemius/includes/entities/class-fs-subscription.php"
+    },
+    "vendor/freemius/includes/entities/class-fs-user.php": {
+      "sha256": "f99968b1c46ed92d7f928c2c2857f5de237eb2f8931088853a61334fc7f4eaef",
+      "source": "vendor/freemius/includes/entities/class-fs-user.php"
+    },
+    "vendor/freemius/includes/entities/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/includes/entities/index.php"
+    },
+    "vendor/freemius/includes/fs-core-functions.php": {
+      "sha256": "eb5d87fbe692006ca2f6c3a30211169100704ed1dce1ed339a03531e844c4b9c",
+      "source": "vendor/freemius/includes/fs-core-functions.php"
+    },
+    "vendor/freemius/includes/fs-essential-functions.php": {
+      "sha256": "0e39a73fe3d50996900c2cfab3ecc35dc42c1b7b72959ed4daa7c22c364d5fa0",
+      "source": "vendor/freemius/includes/fs-essential-functions.php"
+    },
+    "vendor/freemius/includes/fs-html-escaping-functions.php": {
+      "sha256": "348faa4daa7982aea42b8fdfcaaf866b16ff8c02c538cee0edea53a8b0d441c1",
+      "source": "vendor/freemius/includes/fs-html-escaping-functions.php"
+    },
+    "vendor/freemius/includes/fs-plugin-info-dialog.php": {
+      "sha256": "cfba99ae71305cb0decac134e9e81cf7645cc77875c57a6a01586596061f8e32",
+      "source": "vendor/freemius/includes/fs-plugin-info-dialog.php"
+    },
+    "vendor/freemius/includes/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/includes/index.php"
+    },
+    "vendor/freemius/includes/l10n.php": {
+      "sha256": "e4e6555be7898eeee72aed3c5410d3c4beccfc9e0c339e205fbac421d970ee4b",
+      "source": "vendor/freemius/includes/l10n.php"
+    },
+    "vendor/freemius/includes/managers/class-fs-admin-menu-manager.php": {
+      "sha256": "4a09301c1dadf7a3c85602db9617277e7cb4a9562c677e0e79d651e5af75acc8",
+      "source": "vendor/freemius/includes/managers/class-fs-admin-menu-manager.php"
+    },
+    "vendor/freemius/includes/managers/class-fs-admin-notice-manager.php": {
+      "sha256": "ca7ec01d9459238daec6390c7a6fe269f6182d66c5f80de0abf6ce4ded461e8e",
+      "source": "vendor/freemius/includes/managers/class-fs-admin-notice-manager.php"
+    },
+    "vendor/freemius/includes/managers/class-fs-cache-manager.php": {
+      "sha256": "987dccc66cdfc994bbe9fd01b0ab4a124628988abc9cda2edd3f3e7460a02822",
+      "source": "vendor/freemius/includes/managers/class-fs-cache-manager.php"
+    },
+    "vendor/freemius/includes/managers/class-fs-checkout-manager.php": {
+      "sha256": "74d059e70473610dfef72843f6f2737859bf7e69a9d781f0ae44f540c922b3e8",
+      "source": "vendor/freemius/includes/managers/class-fs-checkout-manager.php"
+    },
+    "vendor/freemius/includes/managers/class-fs-clone-manager.php": {
+      "sha256": "0935c6c4df00ac86d13f509a1eeea347d91e29159d43b31cf87ca6f189d00ee5",
+      "source": "vendor/freemius/includes/managers/class-fs-clone-manager.php"
+    },
+    "vendor/freemius/includes/managers/class-fs-contact-form-manager.php": {
+      "sha256": "b578ae9ebe440ddb5ff153490a588d3f5553d09fb81312b4d44cd7236e3bb882",
+      "source": "vendor/freemius/includes/managers/class-fs-contact-form-manager.php"
+    },
+    "vendor/freemius/includes/managers/class-fs-debug-manager.php": {
+      "sha256": "9b61a88d38d07254c3fc1e5246ebf2ca138e13d34e99a07cbfc5500224cbc8d2",
+      "source": "vendor/freemius/includes/managers/class-fs-debug-manager.php"
+    },
+    "vendor/freemius/includes/managers/class-fs-gdpr-manager.php": {
+      "sha256": "0ea1b5b101eee60d473037ebcde976295ecd2f2320ec58b281cec7fb4d039267",
+      "source": "vendor/freemius/includes/managers/class-fs-gdpr-manager.php"
+    },
+    "vendor/freemius/includes/managers/class-fs-key-value-storage.php": {
+      "sha256": "35085167afb4ce50bfaa79aea7ce5de69f6a45497c2eadfa09b358116cc1673e",
+      "source": "vendor/freemius/includes/managers/class-fs-key-value-storage.php"
+    },
+    "vendor/freemius/includes/managers/class-fs-license-manager.php": {
+      "sha256": "231c87ac14f90bba6bc6fef94dca34886eda51010fe2b48b7421e61584b83b32",
+      "source": "vendor/freemius/includes/managers/class-fs-license-manager.php"
+    },
+    "vendor/freemius/includes/managers/class-fs-option-manager.php": {
+      "sha256": "8a4dd11fdb6269d7e9a151ff8cdcb0712a07234dd8ef33a76ca40ac081f95577",
+      "source": "vendor/freemius/includes/managers/class-fs-option-manager.php"
+    },
+    "vendor/freemius/includes/managers/class-fs-permission-manager.php": {
+      "sha256": "89bfb4016794750cdfb815e917bfbe2706d985f0c5b924c3a5f17381314ea881",
+      "source": "vendor/freemius/includes/managers/class-fs-permission-manager.php"
+    },
+    "vendor/freemius/includes/managers/class-fs-plan-manager.php": {
+      "sha256": "1de54d4f19696e6fc0f222d6c6dc5313b1d96f1200fc1a7c1349a2b0afa8553b",
+      "source": "vendor/freemius/includes/managers/class-fs-plan-manager.php"
+    },
+    "vendor/freemius/includes/managers/class-fs-plugin-manager.php": {
+      "sha256": "b1fecdd18d47026628b05031e400b0547f64d1205647401c0e633791a903d63b",
+      "source": "vendor/freemius/includes/managers/class-fs-plugin-manager.php"
+    },
+    "vendor/freemius/includes/managers/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/includes/managers/index.php"
+    },
+    "vendor/freemius/includes/sdk/Exceptions/ArgumentNotExistException.php": {
+      "sha256": "7d85e5563775698c91a7bc7d1dd1bdfa27b714683a976bf6cf823d5924740e6c",
+      "source": "vendor/freemius/includes/sdk/Exceptions/ArgumentNotExistException.php"
+    },
+    "vendor/freemius/includes/sdk/Exceptions/EmptyArgumentException.php": {
+      "sha256": "10be60aacb55c44012fec5fb16b9ece47e1012389b53589f2a418d4f88fa5676",
+      "source": "vendor/freemius/includes/sdk/Exceptions/EmptyArgumentException.php"
+    },
+    "vendor/freemius/includes/sdk/Exceptions/Exception.php": {
+      "sha256": "d2042caa8f8f5cc3577b59bba9fcd298a5bd93295a01ff50f44272361b10e3f8",
+      "source": "vendor/freemius/includes/sdk/Exceptions/Exception.php"
+    },
+    "vendor/freemius/includes/sdk/Exceptions/InvalidArgumentException.php": {
+      "sha256": "b6e25a1b6bf4b58769d93ea1b3dd9a2dea852edf49c8959aa648ef2fa98a4f46",
+      "source": "vendor/freemius/includes/sdk/Exceptions/InvalidArgumentException.php"
+    },
+    "vendor/freemius/includes/sdk/Exceptions/OAuthException.php": {
+      "sha256": "8a5b7b90b617306c7b751f5753cf670f33022616c3b2f31b48ac6988d7cd896e",
+      "source": "vendor/freemius/includes/sdk/Exceptions/OAuthException.php"
+    },
+    "vendor/freemius/includes/sdk/Exceptions/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/includes/sdk/Exceptions/index.php"
+    },
+    "vendor/freemius/includes/sdk/FreemiusBase.php": {
+      "sha256": "b646cc13505e3d9487d4f57fe393e932ce332060ddba5c18bc4a82362484e5fe",
+      "source": "vendor/freemius/includes/sdk/FreemiusBase.php"
+    },
+    "vendor/freemius/includes/sdk/FreemiusWordPress.php": {
+      "sha256": "c1771316910dcb99847fc8ee804ac1cc4d8459d087a3243b55782eebecc3737f",
+      "source": "vendor/freemius/includes/sdk/FreemiusWordPress.php"
+    },
+    "vendor/freemius/includes/sdk/LICENSE.txt": {
+      "sha256": "a45d0bb572ed792ed34627a72621834b3ba92aab6e2cc4e04301dee7a728d753",
+      "source": "vendor/freemius/includes/sdk/LICENSE.txt"
+    },
+    "vendor/freemius/includes/sdk/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/includes/sdk/index.php"
+    },
+    "vendor/freemius/includes/supplements/fs-essential-functions-1.1.7.1.php": {
+      "sha256": "4c73b0e449e92442ec5a88094c55d7be71a2963108b145371aa993cfd349da54",
+      "source": "vendor/freemius/includes/supplements/fs-essential-functions-1.1.7.1.php"
+    },
+    "vendor/freemius/includes/supplements/fs-essential-functions-2.2.1.php": {
+      "sha256": "f385daaa07ff9eded5176401434d21291a3bb9305dcc7891773e501d50f93a30",
+      "source": "vendor/freemius/includes/supplements/fs-essential-functions-2.2.1.php"
+    },
+    "vendor/freemius/includes/supplements/fs-migration-2.5.1.php": {
+      "sha256": "36f0c5831b95ae20f37d965ffde3d713e37caac3d8672f87ab25419603bed125",
+      "source": "vendor/freemius/includes/supplements/fs-migration-2.5.1.php"
+    },
+    "vendor/freemius/includes/supplements/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/includes/supplements/index.php"
+    },
+    "vendor/freemius/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/index.php"
+    },
+    "vendor/freemius/languages/freemius-cs_CZ.mo": {
+      "sha256": "da65b6e8774cde21a5e6fe5bed07341156aed3721e8cc3b0f55db4ca03e292e8",
+      "source": "vendor/freemius/languages/freemius-cs_CZ.mo"
+    },
+    "vendor/freemius/languages/freemius-da_DK.mo": {
+      "sha256": "8a17c612443e168fea40c662345c93e7ba93d45bc47aae8759c4ec12b7deb422",
+      "source": "vendor/freemius/languages/freemius-da_DK.mo"
+    },
+    "vendor/freemius/languages/freemius-de_DE.mo": {
+      "sha256": "37269e607d8a13d9632cbf779626f03294c97b36902cc7333daba7a7c136f07b",
+      "source": "vendor/freemius/languages/freemius-de_DE.mo"
+    },
+    "vendor/freemius/languages/freemius-es_ES.mo": {
+      "sha256": "149a9958b1ea2c61571130476281bb20431bba77c3f0c8ae7a56303a1037ac38",
+      "source": "vendor/freemius/languages/freemius-es_ES.mo"
+    },
+    "vendor/freemius/languages/freemius-fr_FR.mo": {
+      "sha256": "97f4e919760c8ac2d1099bd45c387af6a2e7a7ea53f97ec50b15594af29b403c",
+      "source": "vendor/freemius/languages/freemius-fr_FR.mo"
+    },
+    "vendor/freemius/languages/freemius-he_IL.mo": {
+      "sha256": "15de5ced2d57519e6381dab2172296702ef105ba63441b4f6afb9d8bc3c02d5c",
+      "source": "vendor/freemius/languages/freemius-he_IL.mo"
+    },
+    "vendor/freemius/languages/freemius-hu_HU.mo": {
+      "sha256": "995d95c2baf2a0128570a3f7fb58e85fe90211fc28bf0dfdd8cac5980b61c77a",
+      "source": "vendor/freemius/languages/freemius-hu_HU.mo"
+    },
+    "vendor/freemius/languages/freemius-it_IT.mo": {
+      "sha256": "1bc8abcbdf83359fd0969ef7aee3dc05a71505aee896bc388384b7c79b45eab3",
+      "source": "vendor/freemius/languages/freemius-it_IT.mo"
+    },
+    "vendor/freemius/languages/freemius-ja.mo": {
+      "sha256": "02d824cf52224c62b65e9cc6813c0ffecfc1f678a61100b7227d17c7be711756",
+      "source": "vendor/freemius/languages/freemius-ja.mo"
+    },
+    "vendor/freemius/languages/freemius-nl_NL.mo": {
+      "sha256": "71003ff74bd41768a23f5f420da27a9138cfa71389345c688bf4481b6269b4bd",
+      "source": "vendor/freemius/languages/freemius-nl_NL.mo"
+    },
+    "vendor/freemius/languages/freemius-ru_RU.mo": {
+      "sha256": "178b5e206cd2a01564266334faa6b1a63463042bfdeec71bb8ed2ad5bf081111",
+      "source": "vendor/freemius/languages/freemius-ru_RU.mo"
+    },
+    "vendor/freemius/languages/freemius-ta.mo": {
+      "sha256": "0623b91f12bbbce348cb152d52a2d6185f6651f85dd829e8d818dc1bc467cf0f",
+      "source": "vendor/freemius/languages/freemius-ta.mo"
+    },
+    "vendor/freemius/languages/freemius-zh_CN.mo": {
+      "sha256": "f3708281afff3e9c60162236d00189a66bcb5fdc9529545430557c570b5086b5",
+      "source": "vendor/freemius/languages/freemius-zh_CN.mo"
+    },
+    "vendor/freemius/languages/freemius.pot": {
+      "sha256": "f79b3bc011089abaf11bee8b4a1df08ad6042ded40b5f19d67e5420b9d344f20",
+      "source": "vendor/freemius/languages/freemius.pot"
+    },
+    "vendor/freemius/languages/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/languages/index.php"
+    },
+    "vendor/freemius/require.php": {
+      "sha256": "6f31eb9adc5a5ae1e6c25bcd7bc86b9b1aa0ccc5d27c4f5f6786b09975442336",
+      "source": "vendor/freemius/require.php"
+    },
+    "vendor/freemius/start.php": {
+      "sha256": "46a9f263e38423b0b5015c7d3ce9c46debeda63673dde3a173e5d121194d06e2",
+      "source": "vendor/freemius/start.php"
+    },
+    "vendor/freemius/templates/account.php": {
+      "sha256": "af3c6f4e153e6a84351e9f67c742b0a9eb73fc3c07b57ed6762bb8d1c348534d",
+      "source": "vendor/freemius/templates/account.php"
+    },
+    "vendor/freemius/templates/account/billing.php": {
+      "sha256": "775224edc2fe0698ade58c2928079c227061cc703d7c74f8472097f5e2b04c14",
+      "source": "vendor/freemius/templates/account/billing.php"
+    },
+    "vendor/freemius/templates/account/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/templates/account/index.php"
+    },
+    "vendor/freemius/templates/account/partials/activate-license-button.php": {
+      "sha256": "ac9b5306c54cb7a71958090725c9bd8cc58add7568d68c1b21a45f0fc32d7e11",
+      "source": "vendor/freemius/templates/account/partials/activate-license-button.php"
+    },
+    "vendor/freemius/templates/account/partials/addon.php": {
+      "sha256": "e7b334bf5256fc7cbc0431c2f53fc48f52f9e1ff4f1b6979a2dbdcb8a3155819",
+      "source": "vendor/freemius/templates/account/partials/addon.php"
+    },
+    "vendor/freemius/templates/account/partials/deactivate-license-button.php": {
+      "sha256": "135ba523ed912477d263101cd374645d691898dd91547c0719ddae66a20119d6",
+      "source": "vendor/freemius/templates/account/partials/deactivate-license-button.php"
+    },
+    "vendor/freemius/templates/account/partials/disconnect-button.php": {
+      "sha256": "de8b13a4dec945c7e3863158c1faf30e3ab2609f175c960ca47f36b6eb584710",
+      "source": "vendor/freemius/templates/account/partials/disconnect-button.php"
+    },
+    "vendor/freemius/templates/account/partials/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/templates/account/partials/index.php"
+    },
+    "vendor/freemius/templates/account/partials/site.php": {
+      "sha256": "8fcc660030340086b80aa0bd1bdb1a80b90efb7d676c83859999c9c5d346f440",
+      "source": "vendor/freemius/templates/account/partials/site.php"
+    },
+    "vendor/freemius/templates/account/payments.php": {
+      "sha256": "e89a2d27688aec9402b6d85276304b25ce33a21cc7d7b4767000e83a4554f409",
+      "source": "vendor/freemius/templates/account/payments.php"
+    },
+    "vendor/freemius/templates/add-ons.php": {
+      "sha256": "f2061448c473b1d9a6cddb2551adf57b91ebd93353dc7b93576ec857a7b9c876",
+      "source": "vendor/freemius/templates/add-ons.php"
+    },
+    "vendor/freemius/templates/add-trial-to-pricing.php": {
+      "sha256": "9e8025201e7c8d08560c20e0e3654ef915ec05903960ec1a9e9577eade023c0b",
+      "source": "vendor/freemius/templates/add-trial-to-pricing.php"
+    },
+    "vendor/freemius/templates/admin-notice.php": {
+      "sha256": "745627875e2338058cc03c733debac934cc50131132c9ea88cea320e52ad4d06",
+      "source": "vendor/freemius/templates/admin-notice.php"
+    },
+    "vendor/freemius/templates/ajax-loader.php": {
+      "sha256": "8dc4887d9b97b282dc08ec6aedada447bbabb42cacc82b93f81264362c42383b",
+      "source": "vendor/freemius/templates/ajax-loader.php"
+    },
+    "vendor/freemius/templates/api-connectivity-message-js.php": {
+      "sha256": "697ab706e6cc4f13c846f3a9f768e72a1aa62aa645f1f62d77a41f35e4e9b1e9",
+      "source": "vendor/freemius/templates/api-connectivity-message-js.php"
+    },
+    "vendor/freemius/templates/auto-installation.php": {
+      "sha256": "e1c4de12807e39bb607e849e72734e52fd53605ec9be6ec12799fe541a67ac71",
+      "source": "vendor/freemius/templates/auto-installation.php"
+    },
+    "vendor/freemius/templates/checkout.php": {
+      "sha256": "0c79f88b582afe59502a2a95db3a9b530b0872084df2d1c59ffc4301b0299d17",
+      "source": "vendor/freemius/templates/checkout.php"
+    },
+    "vendor/freemius/templates/checkout/frame.php": {
+      "sha256": "bbc6d603f37d3a47c96da34580a1799cdaa4ace072e80b305a8da70fd549dda6",
+      "source": "vendor/freemius/templates/checkout/frame.php"
+    },
+    "vendor/freemius/templates/checkout/process-redirect.php": {
+      "sha256": "aa4c31aafcc6929f9113ac7f4bc267783d73efc813a93fac83770aea960fd053",
+      "source": "vendor/freemius/templates/checkout/process-redirect.php"
+    },
+    "vendor/freemius/templates/checkout/redirect.php": {
+      "sha256": "7ce09ed1ca3bd788689c99d019c29b8d3118a37df5d75a533208464ea0796ab7",
+      "source": "vendor/freemius/templates/checkout/redirect.php"
+    },
+    "vendor/freemius/templates/clone-resolution-js.php": {
+      "sha256": "f38e917d5d66ff813bb4daaa0c5830671e48bbcdb8f9e59fb42ea53831b73603",
+      "source": "vendor/freemius/templates/clone-resolution-js.php"
+    },
+    "vendor/freemius/templates/connect.php": {
+      "sha256": "027e67eb905681fac97adbc37c8dc5642f4feb49199ebcc556048e784d5987a8",
+      "source": "vendor/freemius/templates/connect.php"
+    },
+    "vendor/freemius/templates/connect/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/templates/connect/index.php"
+    },
+    "vendor/freemius/templates/connect/permission.php": {
+      "sha256": "939c77c080e0fd288f56d0ea15b9150f24735533199c6d28897f95c23883a0ee",
+      "source": "vendor/freemius/templates/connect/permission.php"
+    },
+    "vendor/freemius/templates/connect/permissions-group.php": {
+      "sha256": "30395f64ecbc1cf3f6015f85a31c433df046ac4a462d091b56ccd7d2881653f2",
+      "source": "vendor/freemius/templates/connect/permissions-group.php"
+    },
+    "vendor/freemius/templates/contact.php": {
+      "sha256": "04b7c240b0864d3f80432f71dd2c1d788d05841eaf538a759212c02a12647ee3",
+      "source": "vendor/freemius/templates/contact.php"
+    },
+    "vendor/freemius/templates/debug.php": {
+      "sha256": "cfca7c6c046bb696ec37fc0f057517c49967473690b78176577706e99cf2186d",
+      "source": "vendor/freemius/templates/debug.php"
+    },
+    "vendor/freemius/templates/debug/api-calls.php": {
+      "sha256": "cb5c314edf9b0b4c3a305131e47fa2fb55d36acdb32030cf1084f77f5ba99b8e",
+      "source": "vendor/freemius/templates/debug/api-calls.php"
+    },
+    "vendor/freemius/templates/debug/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/templates/debug/index.php"
+    },
+    "vendor/freemius/templates/debug/logger.php": {
+      "sha256": "184255d2e440955ec388714df54396b4974c1a83a64dd8540e77314b665084ef",
+      "source": "vendor/freemius/templates/debug/logger.php"
+    },
+    "vendor/freemius/templates/debug/plugins-themes-sync.php": {
+      "sha256": "327b965d38e8708dfafc50817664f79902b0938ee37a27131630833bb8b3e77c",
+      "source": "vendor/freemius/templates/debug/plugins-themes-sync.php"
+    },
+    "vendor/freemius/templates/debug/scheduled-crons.php": {
+      "sha256": "7aa11607b9d269d974384aa48fb511d0e8d41e5fa8d19ec0350e3f471108ce5d",
+      "source": "vendor/freemius/templates/debug/scheduled-crons.php"
+    },
+    "vendor/freemius/templates/email.php": {
+      "sha256": "db149f416aad88b58cf718d54818d87c26865ed2442a0482858720c0a700c2b1",
+      "source": "vendor/freemius/templates/email.php"
+    },
+    "vendor/freemius/templates/forms/affiliation.php": {
+      "sha256": "6d44de4faec98545797ee735b92344bc1fdacf4a4ee1210b35fc20b2708b140a",
+      "source": "vendor/freemius/templates/forms/affiliation.php"
+    },
+    "vendor/freemius/templates/forms/data-debug-mode.php": {
+      "sha256": "cd6f724cb47a09e67916b1a688526170aabe9d333a0efe5aab940619e2e93982",
+      "source": "vendor/freemius/templates/forms/data-debug-mode.php"
+    },
+    "vendor/freemius/templates/forms/deactivation/contact.php": {
+      "sha256": "73e1f8eeebed312f5bbdf51d1ef9abd12841d9fa5b0315fa6a7f6198afc3fc6a",
+      "source": "vendor/freemius/templates/forms/deactivation/contact.php"
+    },
+    "vendor/freemius/templates/forms/deactivation/form.php": {
+      "sha256": "59a915e739ef481341691007800d7f35ae3037711e51cb054b3d79a999eb4764",
+      "source": "vendor/freemius/templates/forms/deactivation/form.php"
+    },
+    "vendor/freemius/templates/forms/deactivation/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/templates/forms/deactivation/index.php"
+    },
+    "vendor/freemius/templates/forms/deactivation/retry-skip.php": {
+      "sha256": "7092c1389fadc05d13b059463732bab910b05e04c9c9aa59fa0fac8e1e2ccd99",
+      "source": "vendor/freemius/templates/forms/deactivation/retry-skip.php"
+    },
+    "vendor/freemius/templates/forms/email-address-update.php": {
+      "sha256": "9b1e8165be2945731dfb739f41fadb1b92858ffc9f559062f872bf9ff9020ea2",
+      "source": "vendor/freemius/templates/forms/email-address-update.php"
+    },
+    "vendor/freemius/templates/forms/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/templates/forms/index.php"
+    },
+    "vendor/freemius/templates/forms/license-activation.php": {
+      "sha256": "019c9b305fe1ea66e33c80c75b1797e6a1b8be0d608ce36150c381d6b592bb0f",
+      "source": "vendor/freemius/templates/forms/license-activation.php"
+    },
+    "vendor/freemius/templates/forms/optout.php": {
+      "sha256": "72a3d44a294e1f5c44932ce76907226ce6ea00278b643bc5ffca5df6eded00e3",
+      "source": "vendor/freemius/templates/forms/optout.php"
+    },
+    "vendor/freemius/templates/forms/premium-versions-upgrade-handler.php": {
+      "sha256": "2a7860fde009d83a64a5686df351074ba130de0899095ddf08ffffc834f23f06",
+      "source": "vendor/freemius/templates/forms/premium-versions-upgrade-handler.php"
+    },
+    "vendor/freemius/templates/forms/premium-versions-upgrade-metadata.php": {
+      "sha256": "a5fa5a3dbe131feb8665352f1afee2ea1eb14d59240833c09707dff9da08527e",
+      "source": "vendor/freemius/templates/forms/premium-versions-upgrade-metadata.php"
+    },
+    "vendor/freemius/templates/forms/resend-key.php": {
+      "sha256": "b3f60cd9c09ffe26c58786edb38c95320ddf706531e05e7d4ee4d7d57ddef592",
+      "source": "vendor/freemius/templates/forms/resend-key.php"
+    },
+    "vendor/freemius/templates/forms/subscription-cancellation.php": {
+      "sha256": "72e94803ac60a72ba8b496059eb515920985a97e5381540529efaa669024b91c",
+      "source": "vendor/freemius/templates/forms/subscription-cancellation.php"
+    },
+    "vendor/freemius/templates/forms/trial-start.php": {
+      "sha256": "f66c0509e068406fe33ed69ec127b2ec9970c9cf43d19ac71e55627e7be78562",
+      "source": "vendor/freemius/templates/forms/trial-start.php"
+    },
+    "vendor/freemius/templates/forms/user-change.php": {
+      "sha256": "117cc9749c54ea81c09f09ac3d6329810afca69c5cdc3a3634a430e867caa4f0",
+      "source": "vendor/freemius/templates/forms/user-change.php"
+    },
+    "vendor/freemius/templates/gdpr-optin-js.php": {
+      "sha256": "271f0655b6d2135329dd1da29517e5122ce6661e6faeb20833ebd47789a9a605",
+      "source": "vendor/freemius/templates/gdpr-optin-js.php"
+    },
+    "vendor/freemius/templates/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/templates/index.php"
+    },
+    "vendor/freemius/templates/js/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/templates/js/index.php"
+    },
+    "vendor/freemius/templates/js/jquery.content-change.php": {
+      "sha256": "650f29e9c6937d1b2898d0df393773bd7634c9d32a355b2c41f41235447ff106",
+      "source": "vendor/freemius/templates/js/jquery.content-change.php"
+    },
+    "vendor/freemius/templates/js/open-license-activation.php": {
+      "sha256": "df4efb41f5af8da05bd270223b2e4eb7718c4fbbd43fe4cbacb62caa23ff957f",
+      "source": "vendor/freemius/templates/js/open-license-activation.php"
+    },
+    "vendor/freemius/templates/js/permissions.php": {
+      "sha256": "8e3240058642cd98e39a16ac5b2739e7c365f4c5b9a8a9dc7ebc988a92a5d2e3",
+      "source": "vendor/freemius/templates/js/permissions.php"
+    },
+    "vendor/freemius/templates/js/style-premium-theme.php": {
+      "sha256": "78e41bbbb306a0e090907085a8a91e1f927637a0db10eec57d4c8f615200c1b6",
+      "source": "vendor/freemius/templates/js/style-premium-theme.php"
+    },
+    "vendor/freemius/templates/partials/index.php": {
+      "sha256": "3b6be3bb5fc5bfa96414255f0579828e5985ef7a0a89a4004c3f01c9afd9a7f3",
+      "source": "vendor/freemius/templates/partials/index.php"
+    },
+    "vendor/freemius/templates/partials/network-activation.php": {
+      "sha256": "6a1a00a5ecdf6195fe56db207048e59eb31ddc00bdfd367e63725ab9f381cb61",
+      "source": "vendor/freemius/templates/partials/network-activation.php"
+    },
+    "vendor/freemius/templates/plugin-icon.php": {
+      "sha256": "b5794c503ac93125c564fe4a30af25ab0ad4c37b1520c476886a50959b8fe04e",
+      "source": "vendor/freemius/templates/plugin-icon.php"
+    },
+    "vendor/freemius/templates/plugin-info/description.php": {
+      "sha256": "e3334f3c34bd383148f8ed6d7e7cc9da10c426ce2bbcd195fb784edb27742436",
+      "source": "vendor/freemius/templates/plugin-info/description.php"
+    },
+    "vendor/freemius/templates/plugin-info/features.php": {
+      "sha256": "a043b0c7e1ade84b4256c37907fe034dde731460929879cededdd9a159dac169",
+      "source": "vendor/freemius/templates/plugin-info/features.php"
+    },
+    "vendor/freemius/templates/plugin-info/index.php": {
+      "sha256": "da7d4679fdd1fc7ed156fe4e91d467fde87970e2f6f914e13fc4362e8a3e4915",
+      "source": "vendor/freemius/templates/plugin-info/index.php"
+    },
+    "vendor/freemius/templates/plugin-info/screenshots.php": {
+      "sha256": "a5fe64b639b78c6c282852ec2fef8ee772b8c4420916ffa61e33629403872e2e",
+      "source": "vendor/freemius/templates/plugin-info/screenshots.php"
+    },
+    "vendor/freemius/templates/pricing.php": {
+      "sha256": "e0ef6de47b727a4c1be1f48227395a9460c46b4e308ea8022cef0ac173cf4390",
+      "source": "vendor/freemius/templates/pricing.php"
+    },
+    "vendor/freemius/templates/secure-https-header.php": {
+      "sha256": "d6a5020e8b0b5fcae901cabeeb54bfe3cbed8f19d79918872cfa106f51e67d8e",
+      "source": "vendor/freemius/templates/secure-https-header.php"
+    },
+    "vendor/freemius/templates/sticky-admin-notice-js.php": {
+      "sha256": "d0dabcf01eefb89c29a655cda333e493e1c2136d1fee20dc26a1d3fc69f20228",
+      "source": "vendor/freemius/templates/sticky-admin-notice-js.php"
+    },
+    "vendor/freemius/templates/tabs-capture-js.php": {
+      "sha256": "6ad031764f84bd4f3ea59ed69b5db3037e5c171aab2ec0a0686095b597a5e7d7",
+      "source": "vendor/freemius/templates/tabs-capture-js.php"
+    },
+    "vendor/freemius/templates/tabs.php": {
+      "sha256": "e7890df020fbf02c9dbf25433e5f1754b9d21ceec8c6e3736e465ddff10dcdc1",
+      "source": "vendor/freemius/templates/tabs.php"
+    }
+  },
+  "version": "2.35.3"
+}

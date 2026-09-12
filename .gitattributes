@@ -1,0 +1,2 @@
+# Preserve the original SDK and release-source bytes across Git checkouts.
+* -text
