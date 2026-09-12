@@ -4,15 +4,6 @@ namespace OfferWeave;
 final class Admin
 {
     private static string $requestsHook = '';
-    public static function legacyRoute(): void
-    {
-        $page =
-            isset($_GET['page']) && is_string($_GET['page']) ? sanitize_key(wp_unslash($_GET['page'])) : '';
-        if ($page === 'cqb' && current_user_can('manage_options')) {
-            wp_safe_redirect(admin_url('admin.php?page=offerweave'));
-            exit();
-        }
-    }
     public static function menu(): void
     {
         add_menu_page(
@@ -154,19 +145,6 @@ final class Admin
             ($requests
                 ? esc_html__('Loading requests …', 'offerweave')
                 : esc_html__('Loading configuration …', 'offerweave')) .
-            '</p></div>';
-    }
-    public static function legacyNotice(): void
-    {
-        if (!current_user_can('manage_options') || !defined('CONVATI1_VER')) {
-            return;
-        }
-        echo '<div class="notice notice-warning"><p><strong>OfferWeave:</strong> ' .
-            esc_html__('The original Convati Quote plugin is also active. First use the new', 'offerweave') .
-            ' <code>offerweave</code>' .
-            esc_html__('shortcodes on a test page. To switch', 'offerweave') .
-            ' <code>[rq_request]</code> ' .
-            esc_html__('the original plugin must be deactivated. Its data will be preserved.', 'offerweave') .
             '</p></div>';
     }
 }

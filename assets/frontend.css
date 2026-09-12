@@ -27,10 +27,7 @@
 .cqb-app * {
     box-sizing: border-box;
 }
-.cqb-app .cqb-card.cqb-card-on-sale {
-    border-color: #7aa98c;
-    box-shadow: inset 0 3px 0 #438068;
-}
+
 .cqb-app [hidden] {
     display: none !important;
 }
@@ -722,17 +719,11 @@
 .cqb-app :is(button, input, select, textarea, a, summary):focus-visible {
     outline-color: var(--cqb-accent);
 }
-.cqb-app .cqb-card.cqb-card-on-sale {
-    border-color: #175747;
-    box-shadow: none;
-    border-top-color: #175747;
-}
+
 .cqb-app .cqb-selection-button {
     display: flex;
 }
-.cqb-app[data-preview='true'] {
-    pointer-events: none;
-}
+
 @container cqb (max-width: 950px) {
     .cqb-app .cqb-cards {
         grid-template-columns: repeat(var(--cqb-columns-small, 2), minmax(0, 1fr));
@@ -823,13 +814,7 @@
 .cqb-app .cqb-price {
     min-height: 0;
 }
-.cqb-app .cqb-price-scope {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 12px;
-    row-gap: 2px;
-    color: #45556c;
-}
+
 .cqb-app .cqb-price-period {
     margin-top: 5px;
 }
@@ -848,24 +833,7 @@
 .cqb-app .cqb-term-label {
     font-weight: 600;
 }
-.cqb-app .cqb-card-heading {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 12px;
-    min-height: 20px;
-}
-.cqb-app .cqb-card-heading .cqb-eyebrow {
-    margin: 0;
-}
-.cqb-app .cqb-card-badge {
-    font-size: 12px;
-    line-height: 1.5;
-    background: color-mix(in srgb, var(--cqb-accent) 8%, white);
-    color: var(--cqb-accent);
-    padding: 3px 7px;
-    border-radius: 3px;
-}
+
 .cqb-app .cqb-card-facts {
     list-style: none;
     padding: 14px 0;
@@ -951,27 +919,7 @@
     margin: 0 0 14px;
     color: #0d1426;
 }
-.cqb-app .cqb-compact-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    min-height: 20px;
-    color: var(--cqb-accent);
-}
-.cqb-app .cqb-compact-heading > span {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 4px 10px;
-    margin-left: auto;
-    color: #45556c;
-    font-size: 12px;
-}
-.cqb-app .cqb-compact-heading strong {
-    color: #0d1426;
-    font-weight: 700;
-}
+
 .cqb-app .cqb-features:empty,
 .cqb-app .cqb-card-error:empty {
     display: none;
@@ -981,12 +929,7 @@
         font-size: 30px;
     }
 }
-.cqb-app .cqb-card .cqb-price-scope {
-    font-weight: 400;
-}
-.cqb-app .cqb-billing-period {
-    margin: 0;
-}
+
 .cqb-app .cqb-price-core {
     display: flex;
     flex-direction: column;
@@ -1027,59 +970,21 @@
 .cqb-app .cqb-card-facts .cqb-fact-icon[hidden] {
     display: none;
 }
-.cqb-app
-    .cqb-card
-    :is(.cqb-card-main, .cqb-add-details)
-    > .cqb-card-controls
-    > label:has(input[type='number']) {
+.cqb-app .cqb-card .cqb-card-main > .cqb-card-controls > label:has(input[type='number']) {
     flex: 0 1 auto;
     max-width: 100%;
 }
-.cqb-app .cqb-card :is(.cqb-card-main, .cqb-add-details) > .cqb-card-controls input[type='number'] {
+.cqb-app .cqb-card .cqb-card-main > .cqb-card-controls input[type='number'] {
     width: 7rem;
 }
-.cqb-app .cqb-card :is(.cqb-card-main, .cqb-add-details) > .cqb-card-controls > .cqb-note {
+.cqb-app .cqb-card .cqb-card-main > .cqb-card-controls > .cqb-note {
     flex-basis: 100%;
 }
 .cqb-app .cqb-cards + .cqb-cards {
     margin-top: 18px;
 }
-.cqb-app[data-view='add'] .cqb-card-main:has(> .cqb-add-layout) {
-    container-type: inline-size;
-    container-name: ow-add-main;
-}
-.cqb-app[data-view='add'] .cqb-add-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 24px 32px;
-    margin-top: 24px;
-}
-.cqb-app[data-view='add'] :is(.cqb-add-pricing, .cqb-add-details) {
-    min-width: 0;
-    overflow-wrap: anywhere;
-}
-.cqb-app[data-view='add'] .cqb-card .cqb-add-layout .cqb-price {
-    margin: 0;
-    min-height: 0;
-}
-.cqb-app[data-view='add'] .cqb-card .cqb-add-layout .cqb-add-price-details {
-    margin-bottom: 14px;
-}
-.cqb-app[data-view='add'] .cqb-add-price-details:empty {
-    display: none;
-}
-.cqb-app[data-view='add'] .cqb-add-price-details .cqb-unit-help {
-    margin-top: 0;
-}
-.cqb-app[data-view='add'] .cqb-add-details > .cqb-card-facts {
-    margin-inline: 0;
-    padding-inline: 0;
-}
-@container ow-add-main (min-width: 640px) {
-    .cqb-app[data-view='add'] .cqb-add-layout:has(> .cqb-add-pricing:not([hidden])) {
-        grid-template-columns: minmax(0, 40%) minmax(0, 1fr);
-    }
-}
+
+
 .cqb-app form.ow-server-form {
     margin: 0;
 }

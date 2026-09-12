@@ -17,7 +17,7 @@
         const parentDialog = trigger?.closest('dialog');
         const d = document.createElement('dialog');
         const id = 'offerweave-notice-' + ++sequence;
-        d.className = 'qb-dialog qb-notice-dialog';
+        d.className = 'offerweave-dialog offerweave-notice-dialog';
         d.dataset.owDialog = confirmation ? 'confirm' : 'notice';
         d.setAttribute('aria-labelledby', id + '-title');
         d.setAttribute('aria-describedby', id + '-message');

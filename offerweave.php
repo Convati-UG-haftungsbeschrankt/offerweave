@@ -2,7 +2,7 @@
 /**
  * Plugin Name: OfferWeave
  * Description: Offer cards with images, quantity-based fixed prices, request forms and standard customer emails.
- * Version: 2.35.3
+ * Version: 2.35.4
  * Requires at least: 6.5
  * Requires PHP: 8.1
  * Author: Convati UG (haftungsbeschränkt)
@@ -12,6 +12,10 @@
 if (!defined('ABSPATH')) {
     exit();
 }
+if (!class_exists('OfferWeave\\RuntimeGuard', false)) {
+    require_once __DIR__ . '/includes/RuntimeGuard.php';
+}
+
 // All editions share one data store. Users explicitly deactivate the old edition first.
 if (!class_exists('OfferWeave\\Activation', false)) {
     require_once __DIR__ . '/includes/Activation.php';
@@ -36,34 +40,25 @@ register_activation_hook(__FILE__, static function ($networkWide = false) use ($
         wp_schedule_event(time() + 3600, 'daily', 'offerweave_retention');
     }
 });
+// Header-based fallback also handles imported states and renamed old editions.
+if (!\OfferWeave\RuntimeGuard::available(__FILE__, $offerweave_editions)) {
+    return;
+}
 if (
     (defined('OFFERWEAVE_DIR') && is_file(OFFERWEAVE_DIR . 'offerweave.php')) ||
-    (defined('CQB_DIR') && is_file(CQB_DIR . 'offerweave.php'))
+    class_exists('OfferWeave\\Store', false)
 ) {
     // The activation sandbox has loaded another edition. The registered guard
     // refuses this activation before WordPress changes its active plugin list.
     return;
 }
-// Deterministic fallback if an import or network activation left several editions active.
-foreach ($offerweave_editions as $offerweave_candidate) {
-    if ($offerweave_candidate === $offerweave_basename) {
-        break;
-    }
-    if (
-        is_file(WP_PLUGIN_DIR . '/' . $offerweave_candidate) &&
-        (in_array($offerweave_candidate, (array) get_option('active_plugins', []), true) ||
-            isset(((array) get_site_option('active_sitewide_plugins', []))[$offerweave_candidate]))
-    ) {
-        return;
-    }
-}
-unset($offerweave_basename, $offerweave_editions, $offerweave_activation_file, $offerweave_candidate);
-// The obsolete Quote Builder uses the same symbols and must first be deactivated.
+unset($offerweave_basename, $offerweave_editions, $offerweave_activation_file);
+// The actual old plugin must be inactive before its shared data is migrated.
+// Unrelated plugins may use short CQB constants; those never identify an edition.
 $offerweave_previous_plugin = 'convati-quote-builder/convati-quote-builder.php';
 if (
     in_array($offerweave_previous_plugin, (array) get_option('active_plugins', []), true) ||
-    isset(((array) get_site_option('active_sitewide_plugins', []))[$offerweave_previous_plugin]) ||
-    defined('CQB_VERSION')
+    isset(((array) get_site_option('active_sitewide_plugins', []))[$offerweave_previous_plugin])
 ) {
     register_activation_hook(__FILE__, static function () {
         wp_die(
@@ -86,7 +81,7 @@ if (
     return;
 }
 unset($offerweave_previous_plugin);
-define('OFFERWEAVE_VERSION', '2.35.3');
+define('OFFERWEAVE_VERSION', '2.35.4');
 define('OFFERWEAVE_DIR', plugin_dir_path(__FILE__));
 define('OFFERWEAVE_URL', plugin_dir_url(__FILE__));
 foreach (
@@ -121,7 +116,6 @@ foreach (
         'FrontendState',
         'FrontendRequest',
         'FrontendView',
-        'LegacyShortcodes',
         'Frontend',
         'Handbook',
         'Admin',
@@ -150,6 +144,3 @@ add_action('init', [\OfferWeave\Frontend::class, 'register'], 30);
 \OfferWeave\FrontendState::register();
 add_action('admin_menu', [\OfferWeave\Admin::class, 'menu']);
 add_action('admin_enqueue_scripts', [\OfferWeave\Admin::class, 'assets']);
-add_action('admin_notices', [\OfferWeave\Admin::class, 'legacyNotice']);
-
-add_action('admin_init', [\OfferWeave\Admin::class, 'legacyRoute']);

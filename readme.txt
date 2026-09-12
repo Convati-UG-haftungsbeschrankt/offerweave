@@ -4,7 +4,7 @@ Tags: quote calculator, request a quote, price calculator, service catalog, quot
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.35.3
+Stable tag: 2.35.4
 License: GPL-3.0-only
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -162,6 +162,11 @@ A paid Pro licence includes official updates, downloads and support for the purc
 11. Settings grouped into six areas, including separate customer-document and provider settings.
 
 == Changelog ==
+
+= 2.35.4 =
+* Remove obsolete short shortcode aliases and the former REST namespace; use the documented offerweave shortcodes.
+* Remove exclusively Pro presentation styles and misleading Pro guidance from Free. Free no longer registers placeholder input/banner shortcodes.
+* Scope administration dialog styles to OfferWeave. Stored offers, settings and requests remain preserved during upgrades.
 
 = 2.35.3 =
 * Publish the complete editable Free source and reproducible packaging tools in the Convati GitHub organisation.

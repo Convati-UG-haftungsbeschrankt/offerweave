@@ -32,11 +32,7 @@ final class FrontendState
         }
         foreach ($matches as $match) {
             $tag = $match[2];
-            if (
-                !str_starts_with($tag, 'offerweave') &&
-                !str_starts_with($tag, 'cqb_') &&
-                $tag !== 'rq_request'
-            ) {
+            if ($tag !== 'offerweave' && !str_starts_with($tag, 'offerweave_')) {
                 continue;
             }
             $atts = shortcode_parse_atts($match[3]);

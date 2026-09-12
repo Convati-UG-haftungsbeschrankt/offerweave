@@ -4,7 +4,6 @@ namespace OfferWeave;
 final class Api
 {
     public const NS = 'offerweave/v1';
-    public const LEGACY_NS = 'convati-quote/v1';
     public static function register(): void
     {
         $public = '__return_true';
@@ -26,22 +25,20 @@ final class Api
             ]
             as [$route, $methods, $method, $permission]
         ) {
-            foreach ([self::NS, self::LEGACY_NS] as $namespace) {
-                register_rest_route($namespace, $route, [
-                    'methods' => $methods,
-                    'callback' => static function (\WP_REST_Request $request) use ($method, $route) {
-                        try {
-                            if (str_starts_with($route, '/admin/')) {
-                                return I18n::run(I18n::locale(), fn() => self::$method($request));
-                            }
-                            return I18n::run(I18n::requested($request), fn() => self::$method($request));
-                        } catch (\DomainException $error) {
-                            return self::error($error);
+            register_rest_route(self::NS, $route, [
+                'methods' => $methods,
+                'callback' => static function (\WP_REST_Request $request) use ($method, $route) {
+                    try {
+                        if (str_starts_with($route, '/admin/')) {
+                            return I18n::run(I18n::locale(), fn() => self::$method($request));
                         }
-                    },
-                    'permission_callback' => $permission,
-                ]);
-            }
+                        return I18n::run(I18n::requested($request), fn() => self::$method($request));
+                    } catch (\DomainException $error) {
+                        return self::error($error);
+                    }
+                },
+                'permission_callback' => $permission,
+            ]);
         }
     }
     private static function response(array $data, int $status = 200): \WP_REST_Response

@@ -7,8 +7,6 @@ final class Frontend
     public static function register(): void
     {
         add_shortcode('offerweave', fn($a) => self::render('builder', $a));
-        add_shortcode('offerweave_promotions', static fn() => '');
-        add_shortcode('offerweave_controls', static fn() => '');
         add_shortcode('offerweave_catalog', fn($a) => self::render('catalog', $a));
         add_shortcode('offerweave_offer', fn($a) => self::render('offer', $a));
         add_shortcode('offerweave_add', fn($a) => self::render('add', $a));
@@ -28,7 +26,6 @@ final class Frontend
                 ),
             );
         }
-        LegacyShortcodes::register([self::class, 'render'], static fn() => self::previousCategory());
     }
     private static function previousCategory(): string
     {
@@ -54,16 +51,12 @@ final class Frontend
             'offerweave_add' => 'add',
             'offerweave_request' => 'request',
             'offerweave_selection' => 'selection',
-            'cqb_builder' => 'builder',
-            'cqb_catalog' => 'catalog',
-            'cqb_request' => 'request',
-            'rq_request' => 'request',
         ];
         foreach (
             ['phishing' => 'phishing', 'workshops' => 'workshops', 'modules' => self::previousCategory()]
             as $alias => $category
         ) {
-            if (in_array($tag, ['offerweave_' . $alias, 'cqb_' . $alias], true)) {
+            if ($tag === 'offerweave_' . $alias) {
                 $views[$tag] = 'catalog';
                 $atts['category'] = $category;
             }

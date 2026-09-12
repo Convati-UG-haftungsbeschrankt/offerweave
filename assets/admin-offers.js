@@ -44,12 +44,6 @@
                 el.setAttribute('aria-pressed', String(el.dataset.offerAreaButton === state.area))
             );
     }
-    const model = (o) =>
-        o.kind === 'selection' || o.kind === 'linked'
-            ? o.selection_mode === 'group'
-                ? 'group'
-                : 'fixed'
-            : o.kind;
     function mount(ctx) {
         const { root, config: c, selected, kinds } = ctx;
         const workspace = root.querySelector('.qb-workspace');
@@ -133,7 +127,7 @@
                     entry.enabled
                         ? entry.catalog_visible
                             ? __('Own catalog card', 'offerweave')
-                            : __('Only in packages', 'offerweave')
+                            : __('Not listed in catalog', 'offerweave')
                         : __('Inactive', 'offerweave')
                 ) +
                 '</small>';
@@ -262,7 +256,7 @@
                 o.enabled
                     ? o.catalog_visible
                         ? __('Own catalog card', 'offerweave')
-                        : __('Only in packages', 'offerweave')
+                        : __('Not listed in catalog', 'offerweave')
                     : __('Inactive', 'offerweave')
             ) +
             '</span></div><p data-offer-effective>' +
@@ -284,10 +278,7 @@
                               'Prices stored in this package are added once, then its own quantity rules apply. Individual offer prices remain independent.',
                               'offerweave'
                           )
-                        : __(
-                              'The price is multiplied by the quantity for this offer.',
-                              'offerweave'
-                          )
+                        : __('The price is multiplied by the quantity for this offer.', 'offerweave')
             ) +
             '</p>' +
             (parents.length

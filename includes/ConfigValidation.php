@@ -71,7 +71,6 @@ final class ConfigValidation
                 'selection_url' => 8000,
                 'privacy_url' => 8000,
             ],
-            'promotions' => ['title' => 400, 'description' => 1600, 'start_date' => 40, 'end_date' => 40],
         ];
     }
     public static function length(string $value): ?int

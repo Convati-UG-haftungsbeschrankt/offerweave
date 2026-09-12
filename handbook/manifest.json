@@ -1,5 +1,5 @@
 {
-  "version": "2.35.3",
+  "version": "2.35.4",
   "chapters": [
     "start",
     "editions",
@@ -42,18 +42,18 @@
     "control-labels-en.webp": "b7ebdc6f1103984cfaf7e3d781fcb7e8ecf086419eb7b609f92cfbffcf88fde9",
     "currency-de.webp": "8e944152b1f979eb3782ff1c681d76484816dcc31e436ff4fbd9895ed351e962",
     "currency-en.webp": "ce6f93a6dc23a558a0b6595e44a41894cc63cd5a526a19770863e22b301e1b58",
-    "dashboard-shortcodes-de.webp": "ab5270dccbd79c9a50f134ee5e1b2a848e871139f42b33beb4c506aa7be58ff0",
-    "dashboard-shortcodes-en.webp": "c69f1e0379b69d7db4b976e5f5014607d397cf751e82db63a21f2eb964e31534",
+    "dashboard-shortcodes-de.webp": "fc1282c9c90232be7ff756178bb9b2c0432bfa5c091e772c11914a0fee1d4a79",
+    "dashboard-shortcodes-en.webp": "f212256e7e201b8854840dd165046dc6c9a60cedb9fbaa902a5ec3d8b7146b68",
     "design-de.webp": "072625982407865d3de04b50d55fd3f08f2934411d1e464aecf275858d829557",
     "design-en.webp": "082c7a1f2ba0be6518e5fd810d2ec25b18dff2e95a3afb3e3db13609dc4243ba",
     "design-search-de.webp": "e5ac829bacfc8987a38411589eb22cf2c574effbc87d9521f4551faef87d36be",
     "design-search-en.webp": "9fef2ac1b9b1a03f79601045d05ffc95b1ebd59c5bba68bc7143e0ed1899c088",
     "design-state-de.webp": "844f14d062c7d52f18920e694236a6f54f625667526f07267ed1f7a54780e405",
     "design-state-en.webp": "b0bcceb67682482899308e954a04124e03aa94b343c72b9fa0a6166d5fda7f81",
-    "dialog-confirm-de.webp": "9588fb36fe7b642c75be2007806748e2e4929f20a7c110ba9f42f6c5c0169e10",
-    "dialog-confirm-en.webp": "1141de1f359d97aa42a158496d65be62a8f6f43306c336ea964e2102a7096d26",
-    "dialog-warning-de.webp": "9af43ebea16723607ee1e906d60e32f7ee2a16110e744a074044daf9bb87f0da",
-    "dialog-warning-en.webp": "d061b20e7c7f3ddffba28bf1cd773897ebde9c68f90ca5e912b29d0d2080a4da",
+    "dialog-confirm-de.webp": "49202e2a05a96ecbfb440277d91c1839c7f494f53950bd0541cab7ad74869325",
+    "dialog-confirm-en.webp": "d3767a19d6c55d743dde70fe488c637d11885bebd7efeb0852d1d5b414da90ba",
+    "dialog-warning-de.webp": "694991e862ae84a79445346b2e51c58beb73341dd3cc56c65a7a848fd92987cd",
+    "dialog-warning-en.webp": "976f7a5f6eb15f13b0cd90dd7bed6ae80a41200ac3f8e2b588186ab4e59f2ea1",
     "edition-features-de.webp": "c61a73f0f80d444c1178c8c3b464b357338f297194198bdefadafdfcd310ef09",
     "edition-features-en.webp": "5d1f9ae8c61e0d65b771f0593e225b4c6157a3367ee3e4eda46117858c07ac44",
     "email-de.webp": "f53f2a8bea0424dbac2421956f36543387a9735f590d75d96d5a383914124152",
@@ -138,7 +138,7 @@
     "variants-en.webp": "6d210dbb1010e649afb4abde7009da8d5f4e666dc91fe66c715cba39ff26b586"
   },
   "sources": {
-    "de": "e552286ae68ca841c0dc4850c1894dea81da3997d08a46eaeedfe6a0c3790cb0",
-    "en": "a2c7bf8321a40f4502f07c13175b72347a33f09703abc19f6fbf978da6fe4e2d"
+    "de": "737580692b0aa43710ce4485863ef5ca215798f37403696dd1697c6b4d0d3ce0",
+    "en": "fe44bc766f5f1471103d7d9f1a0a7ebd033d03a1e4c758d6db207f907a42d0aa"
   }
 }

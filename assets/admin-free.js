@@ -512,12 +512,6 @@
     function issueControl(issue) {
         if (issue.tab === 'offers' && (tab !== 'offers' || config.offers[selected]?.id !== issue.offer_id))
             return null;
-        if (issue.path.endsWith('.component_ids'))
-            return (
-                [...root.querySelectorAll('[data-pick-component]')].find(
-                    (input) => input.dataset.pickComponent === issue.component_id
-                ) || root.querySelector('[data-pick-component]')
-            );
         return [...root.querySelectorAll('[data-bind]')]
             .filter(
                 (input) =>
@@ -599,11 +593,7 @@
                 detail.className = 'qb-field-error';
                 detail.dataset.validationMessage = '';
                 detail.textContent = issue.message;
-                const componentText = input.matches('[data-pick-component]')
-                    ? input.parentElement.querySelector('span')
-                    : null;
-                if (componentText) componentText.append(detail);
-                else input.after(detail);
+                input.after(detail);
                 input.dataset.validationMarked = '';
                 input.setAttribute('aria-invalid', 'true');
                 input.setAttribute(
@@ -825,11 +815,7 @@
                     esc(__('A custom title can be added using', 'offerweave')) +
                     ' <code>title="' +
                     esc(__('Your heading', 'offerweave')) +
-                    '"</code> ' +
-                    esc(__('. After deactivating the old plugin, you can also use', 'offerweave')) +
-                    ' <code>[rq_request]</code>' +
-                    esc(__('. Replace the old product shortcodes with the new ones.', 'offerweave')) +
-                    '</p>'
+                    '"</code>.</p>'
             ) +
             panel(
                 __('From offer to request', 'offerweave'),
@@ -967,7 +953,7 @@
                     __('Price unit on card', 'offerweave'),
                     'text',
                     __(
-                        'For one group or unit, for example / group. Multiple groups show their total scope automatically.',
+                        'Price unit shown after the amount, for example / item. The total price follows the selected quantity.',
                         'offerweave'
                     )
                 ) +
@@ -1009,14 +995,14 @@
                     p + '.enabled',
                     __('Enable offer', 'offerweave'),
                     'checkbox',
-                    __('Inactive offers cannot be selected individually or as components.', 'offerweave')
+                    __('Inactive offers cannot be selected.', 'offerweave')
                 ) +
                 field(
                     p + '.catalog_visible',
                     __('List individually in the catalog', 'offerweave'),
                     'checkbox',
                     __(
-                        'With this switch off, an active offer remains available within assigned packages.',
+                        'With this switch off, the offer cannot be selected through the catalog or an individual offer block.',
                         'offerweave'
                     )
                 ) +
@@ -1658,7 +1644,7 @@
                         ? '<p class="qb-warning" role="status">' +
                           esc(
                               __(
-                                  'A binding offer can bind you and become a contract through acceptance. Complete the scope, prices, payment and delivery terms and any required consumer information. Check your custom email templates for contradictory wording. Automatic sending also uses this document type.',
+                                  'A binding offer can bind you and become a contract through acceptance. Complete the scope, prices, payment and delivery terms and any required consumer information. Check your document wording for contradictions. Automatic sending also uses this document type.',
                                   'offerweave'
                               )
                           ) +
@@ -1769,7 +1755,7 @@
                     ),
                     'money',
                     __(
-                        '0 disables the value condition. Counts the known net contract value after discounts, including the full term of recurring items.',
+                        '0 disables the value condition. Counts the known net contract value, including the full term of recurring items.',
                         'offerweave'
                     )
                 ) +
@@ -1778,7 +1764,7 @@
                     __('Minimum number of different offers', 'offerweave'),
                     'number',
                     __(
-                        '0 disables the count condition. Selected components count individually; duplicate quantities do not.',
+                        '0 disables the count condition. Selected offers count individually; duplicate quantities do not.',
                         'offerweave'
                     ),
                     'min="0" max="150" step="1"'
@@ -1964,7 +1950,7 @@
                         })
                     ),
                     __(
-                        'Used for all offer prices, surcharges, discounts and new requests. Changing the currency preserves numerical price amounts; it does not convert exchange rates. Saved requests keep their original currency.',
+                        'Used for offer prices and new requests. Changing the currency preserves numerical price amounts; it does not convert exchange rates. Saved requests keep their original currency.',
                         'offerweave'
                     ),
                     true
@@ -2003,7 +1989,7 @@
                     ('</div><p class="qb-muted">' +
                         esc(
                             __(
-                                'Manage customer delivery, sender, email templates and SMTP in the Email tab.',
+                                'Manage customer delivery and sender details in the Email tab.',
                                 'offerweave'
                             )
                         ) +
@@ -2101,7 +2087,7 @@
                 '<p>' +
                     esc(
                         __(
-                            'Exports include offers, package assignments, promotions, form fields and general settings. Customer data and CAPTCHA secrets are excluded. Configure recipients, CAPTCHA and website URLs for the target website after import.',
+                            'Exports include your Free configuration and unchanged settings retained from other editions. Customer data and CAPTCHA secrets are excluded. Configure recipients, CAPTCHA and website URLs for the target website after import.',
                             'offerweave'
                         )
                     ) +
@@ -2451,12 +2437,12 @@
     }
     function requestDialog(row) {
         const d = document.createElement('dialog');
-        d.className = 'qb-dialog';
+        d.className = 'offerweave-dialog';
         const s = row.snapshot;
         const requestLanguage =
             (s.locale || 'de_DE') === 'de_DE' ? __('German', 'offerweave') : __('English', 'offerweave');
         d.innerHTML =
-            '<div class="qb-dialog-head"><h2>' +
+            '<div class="offerweave-dialog-head"><h2>' +
             esc(__('Request #', 'offerweave')) +
             row.id +
             ('</h2><button class="qb-secondary" data-close>' +
