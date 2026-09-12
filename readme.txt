@@ -4,7 +4,7 @@ Tags: quote calculator, request a quote, price calculator, service catalog, quot
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.35.10
+Stable tag: 2.35.11
 License: GPL-3.0-only
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -162,6 +162,9 @@ A paid Pro licence includes official updates, downloads and support for the purc
 11. Settings grouped into six areas, including separate customer-document and provider settings.
 
 == Changelog ==
+
+= 2.35.11 =
+* Stop migrations when table-state queries fail and verify the required request-table columns and indexes before recording a successful installation.
 
 = 2.35.10 =
 * Document the reasons for remaining database, migration and read-only navigation warnings directly in the source, without changing runtime behaviour or suppressing checks.

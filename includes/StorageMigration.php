@@ -178,7 +178,13 @@ final class StorageMigration
         // DirectQuery / NoCaching: migration guards must observe the current database
         // before/after DDL, including a concurrent upgrader's work. The own-table LIKE
         // pattern is escaped then prepared with %s; a cached existence flag would be stale.
-        return $wpdb->get_var($wpdb->prepare('SHOW TABLES LIKE %s', $wpdb->esc_like($table))) === $table;
+        $found = $wpdb->get_var($wpdb->prepare('SHOW TABLES LIKE %s', $wpdb->esc_like($table)));
+        // A failed query is not evidence that a table is absent. Stop before the caller
+        // can create an empty replacement or continue a migration with an unknown state.
+        if ($wpdb->last_error !== '') {
+            throw new \RuntimeException('OfferWeave could not verify the request-table state.');
+        }
+        return $found === $table;
     }
     public static function transient(string $key, string $oldKey, int $maximumTtl)
     {

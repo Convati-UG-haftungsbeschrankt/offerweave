@@ -35,8 +35,78 @@ final class Store
             KEY created_at (created_at),
             KEY contact_email (contact_email)
         ) $charset;");
+        self::assertInstalledSchema();
         update_option('offerweave_db_version', '2', false);
         wp_cache_delete('last_changed', 'offerweave_requests');
+    }
+    private static function assertInstalledSchema(): void
+    {
+        global $wpdb;
+        // DirectQuery / NoCaching: dbDelta reports planned changes, not confirmed success.
+        // Read the current own-table columns after DDL before marking installation complete.
+        // A cached schema could hide a failed creation/alteration; %i prepares the fixed table.
+        $columns = $wpdb->get_results($wpdb->prepare('SHOW COLUMNS FROM %i', self::table()), ARRAY_A);
+        if ($wpdb->last_error !== '' || !is_array($columns)) {
+            throw new \RuntimeException('OfferWeave could not verify the request-table columns.');
+        }
+        $fields = [];
+        foreach ($columns as $column) {
+            $fields[strtolower((string) ($column['Field'] ?? ''))] = $column;
+        }
+        $required = [
+            'id',
+            'created_at',
+            'request_key',
+            'fingerprint',
+            'contact_email',
+            'payload',
+            'status',
+            'mail_to',
+            'mail_status',
+            'mail_error',
+            'mail_attempt_at',
+            'customer_mail_status',
+            'customer_mail_error',
+            'customer_mail_attempt_at',
+        ];
+        if (
+            array_diff($required, array_keys($fields)) ||
+            !str_contains(strtolower((string) ($fields['id']['Extra'] ?? '')), 'auto_increment')
+        ) {
+            throw new \RuntimeException('OfferWeave request-table installation is incomplete.');
+        }
+        // DirectQuery / NoCaching: confirm the actual indexes after dbDelta, especially the
+        // unique request key used for concurrent submissions. No metadata cache is maintained.
+        // Prepared own-table name; additional columns/indexes and equivalent index names are allowed.
+        $indexes = $wpdb->get_results($wpdb->prepare('SHOW INDEX FROM %i', self::table()), ARRAY_A);
+        if ($wpdb->last_error !== '' || !is_array($indexes)) {
+            throw new \RuntimeException('OfferWeave could not verify the request-table indexes.');
+        }
+        $groups = [];
+        foreach ($indexes as $index) {
+            $name = strtolower((string) ($index['Key_name'] ?? ''));
+            $groups[$name]['columns'][(int) ($index['Seq_in_index'] ?? 0)] = strtolower(
+                (string) ($index['Column_name'] ?? ''),
+            );
+            $groups[$name]['partial'] = ($groups[$name]['partial'] ?? false) || !empty($index['Sub_part']);
+            $groups[$name]['non_unique'] =
+                ($groups[$name]['non_unique'] ?? false) || (int) ($index['Non_unique'] ?? 1) !== 0;
+        }
+        $primary = $unique = $created = $email = false;
+        foreach ($groups as $name => $index) {
+            ksort($index['columns']);
+            $names = array_values($index['columns']);
+            if ($index['partial']) {
+                continue;
+            }
+            $primary = $primary || ($name === 'primary' && !$index['non_unique'] && $names === ['id']);
+            $unique = $unique || (!$index['non_unique'] && $names === ['request_key']);
+            $created = $created || ($names[0] ?? '') === 'created_at';
+            $email = $email || ($names[0] ?? '') === 'contact_email';
+        }
+        if (!$primary || !$unique || !$created || !$email) {
+            throw new \RuntimeException('OfferWeave request-table indexes are incomplete.');
+        }
     }
     public static function get(int $id): ?array
     {
