@@ -23,6 +23,10 @@ final class Handbook
         }
         $language = str_starts_with(determine_locale(), 'de') ? 'de' : 'en';
         $manifest = json_decode((string) file_get_contents(OFFERWEAVE_DIR . 'handbook/manifest.json'), true);
+        // NonceVerification.Recommended: this GET selects an offline handbook chapter only;
+        // it changes no saved data and performs no privileged action requiring a nonce.
+        // Access is capability-checked above; the value is type-checked, sanitized and
+        // allowlisted below, then used only as a fragment in a fixed local URL escaped at output.
         $chapter =
             isset($_GET['chapter']) && is_string($_GET['chapter'])
                 ? sanitize_key(wp_unslash($_GET['chapter']))

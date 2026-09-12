@@ -41,12 +41,18 @@ final class Store
     public static function get(int $id): ?array
     {
         global $wpdb;
+        // DirectQuery / NoCaching: this is an OfferWeave request row, not a WordPress post.
+        // Read its current snapshot and delivery state; a cached row could outlive a mail claim
+        // or status change. The plugin-owned table and integer ID use %i/%d placeholders.
         $r = $wpdb->get_row($wpdb->prepare('SELECT * FROM %i WHERE id=%d', self::table(), $id), ARRAY_A);
         return $r ?: null;
     }
     public static function byKey(string $key): ?array
     {
         global $wpdb;
+        // DirectQuery / NoCaching: check the unique request key against the current own table
+        // so retries can find a request inserted by another process. A cached miss is unsafe
+        // for this idempotency lookup; both the identifier and key are prepared with %i/%s.
         $r = $wpdb->get_row(
             $wpdb->prepare('SELECT * FROM %i WHERE request_key=%s', self::table(), $key),
             ARRAY_A,
@@ -61,6 +67,9 @@ final class Store
         array $snapshot,
     ): int {
         global $wpdb;
+        // DirectQuery: persist the request snapshot in the plugin-owned table, whose unique
+        // request_key enforces deduplication. wpdb::insert formats every value explicitly;
+        // the listing cache is invalidated below only after a successful database write.
         $ok = $wpdb->insert(
             self::table(),
             [
@@ -96,6 +105,9 @@ final class Store
         }
         $like = '%' . $wpdb->esc_like($search) . '%';
         $all = (int) ($search === '');
+        // DirectQuery: pagination needs a count from the own request table. The LIKE value
+        // is escaped and all identifiers/values are prepared. Count and rows share the
+        // bounded, generation-keyed listing cache above/below; failed queries are not cached.
         $total = (int) $wpdb->get_var(
             $wpdb->prepare(
                 'SELECT COUNT(*) FROM %i WHERE (%d=1 OR contact_email LIKE %s OR payload LIKE %s)',
@@ -106,6 +118,9 @@ final class Store
             ),
         );
         $countFailed = $wpdb->last_error !== '';
+        // DirectQuery: fetch one page of own request snapshots in the same search as the
+        // count above. Table, search values and offset are prepared; limit is fixed at 20.
+        // This result shares the real listing cache and its write-triggered invalidation.
         $rows = $wpdb->get_results(
             $wpdb->prepare(
                 'SELECT * FROM %i WHERE (%d=1 OR contact_email LIKE %s OR payload LIKE %s) ORDER BY id DESC LIMIT 20 OFFSET %d',
@@ -142,6 +157,8 @@ final class Store
     public static function status(int $id, string $status): bool
     {
         global $wpdb;
+        // DirectQuery: update the workflow state on the own request row. wpdb::update
+        // formats status/ID as %s/%d; successful writes invalidate the listing cache below.
         $result = $wpdb->update(self::table(), ['status' => $status], ['id' => $id], ['%s'], ['%d']);
         if ($result !== false) {
             wp_cache_delete('last_changed', 'offerweave_requests');
@@ -151,6 +168,8 @@ final class Store
     public static function delete(int $id): bool
     {
         global $wpdb;
+        // DirectQuery: remove only the selected row from the plugin-owned request table.
+        // wpdb::delete formats the ID as %d; the listing cache is invalidated on success.
         $result = $wpdb->delete(self::table(), ['id' => $id], ['%d']);
         if ($result !== false) {
             wp_cache_delete('last_changed', 'offerweave_requests');
@@ -160,6 +179,9 @@ final class Store
     public static function claimMail(int $id): bool
     {
         global $wpdb;
+        // DirectQuery: a single conditional UPDATE claims delivery on the own request row.
+        // A read-then-write sequence would race with another sender. Identifiers/values are
+        // prepared, one affected row grants the claim, and the listing cache is invalidated.
         $result = $wpdb->query(
             $wpdb->prepare(
                 "UPDATE %i SET mail_status='sending', mail_attempt_at=%s WHERE id=%d AND (mail_status<>'sending' OR mail_attempt_at<%s)",
@@ -177,6 +199,9 @@ final class Store
     public static function mailResult(int $id, bool $ok): void
     {
         global $wpdb;
+        // DirectQuery: persist the delivery result on the own request row so later reads
+        // see the outcome. wpdb::update formats all values; success invalidates the listing
+        // cache below. Stored error text is data and is escaped separately when displayed.
         $result = $wpdb->update(
             self::table(),
             [
@@ -206,6 +231,9 @@ final class Store
             return;
         }
         if ($days > 0) {
+            // DirectQuery: enforce the configured positive retention period on the own
+            // request table. The table and UTC cutoff are prepared; no arbitrary table is
+            // accepted. Deleting any rows invalidates the listing cache below.
             $result = $wpdb->query(
                 $wpdb->prepare(
                     'DELETE FROM %i WHERE created_at<%s',
@@ -230,6 +258,9 @@ final class Store
     public static function claimCustomerMail(int $id, bool $manual = false): bool
     {
         global $wpdb;
+        // DirectQuery: atomically claim customer delivery under the pending/manual/retry
+        // conditions in this UPDATE. A cached status cannot authorize a claim. Table and
+        // values are prepared; one affected row is required and invalidates the listing cache.
         $result = $wpdb->query(
             $wpdb->prepare(
                 "UPDATE %i SET customer_mail_status='sending',customer_mail_attempt_at=%s WHERE id=%d AND ((%d=1 AND customer_mail_status<>'sending') OR (%d=0 AND customer_mail_status='pending') OR (customer_mail_status='sending' AND customer_mail_attempt_at<%s))",
@@ -249,6 +280,9 @@ final class Store
     public static function customerMailResult(int $id, string $status, string $error = ''): void
     {
         global $wpdb;
+        // DirectQuery: persist customer-delivery state/error on the own request row using
+        // wpdb's %s/%d formats. Successful writes invalidate the listing cache; stored error
+        // text is escaped at its eventual display, not treated as executable SQL or HTML here.
         $result = $wpdb->update(
             self::table(),
             ['customer_mail_status' => $status, 'customer_mail_error' => $error],

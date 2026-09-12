@@ -67,7 +67,10 @@ final class FrontendView
     {
         $category = $this->spec['category'];
         if ($this->spec['view'] === 'builder') {
-            // Public, read-only navigation: no stored state changes; values are allowlisted below.
+            // NonceVerification.Recommended: public GET navigation changes only this view,
+            // not saved selections or settings, so no write nonce is required. The sanitized
+            // value selects an existing public category below or the fixed selection view;
+            // it is not used as SQL, a file path or a redirect destination.
             $section = sanitize_key(
                 wp_unslash($_GET['offerweave_section'][FrontendState::scope($this->spec)] ?? ''),
             );

@@ -35,7 +35,13 @@ final class Uninstall
             return;
         }
         global $wpdb;
+        // DirectQuery / SchemaChange: this removes only OfferWeave's current own table
+        // during uninstall, after explicit delete_on_uninstall opt-in and the active-edition
+        // guard above. %i quotes the fixed prefixed identifier; the listing cache is cleared below.
         $wpdb->query($wpdb->prepare('DROP TABLE IF EXISTS %i', $wpdb->prefix . 'offerweave_requests'));
+        // DirectQuery / SchemaChange: remove the former own request table under the same
+        // uninstall/opt-in guards. Its name is fixed and prepared with %i; cleanup does not
+        // accept user-selected tables. This also clears the shared listing cache below.
         $wpdb->query($wpdb->prepare('DROP TABLE IF EXISTS %i', $wpdb->prefix . 'cqb_requests'));
         wp_cache_delete('last_changed', 'offerweave_requests');
         foreach (
