@@ -179,22 +179,10 @@
     outline-offset: 4px;
     box-shadow: none;
 }
-.offerweave-purchase-included {
-    margin-top: 24px;
-    padding: 18px 22px;
-    background: #e8eef8;
-    border-radius: 10px;
-}
-.offerweave-purchase-included h2,
 .offerweave-purchase-faq h2 {
     margin: 0 0 6px;
     font-size: 18px;
     color: var(--offerweave-ink);
-}
-.offerweave-purchase-included p {
-    margin: 0;
-    font-size: 14px;
-    color: var(--offerweave-muted);
 }
 .offerweave-purchase-faq {
     margin-top: 30px;

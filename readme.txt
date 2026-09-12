@@ -4,7 +4,7 @@ Tags: quote calculator, request a quote, price calculator, service catalog, quot
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.35.7
+Stable tag: 2.35.8
 License: GPL-3.0-only
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -162,6 +162,9 @@ A paid Pro licence includes official updates, downloads and support for the purc
 11. Settings grouped into six areas, including separate customer-document and provider settings.
 
 == Changelog ==
+
+= 2.35.8 =
+* Removed the redundant feature-summary panel below the Pro pricing cards.
 
 = 2.35.7 =
 * Added an OfferWeave Pro plan comparison with German VAT-inclusive annual prices and direct checkout links.

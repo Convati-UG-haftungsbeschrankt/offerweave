@@ -187,16 +187,6 @@ final class PurchasePage
                 <?php
                 endforeach; ?>
             </div>
-            <section class="offerweave-purchase-included" aria-labelledby="offerweave-purchase-included">
-                <h2 id="offerweave-purchase-included"><?php esc_html_e(
-                    'Included in every Pro plan',
-                    'offerweave',
-                ); ?></h2>
-                <p><?php esc_html_e(
-                    'Advanced pricing models, the design editor, promotions and customizable customer emails.',
-                    'offerweave',
-                ); ?></p>
-            </section>
             <section class="offerweave-purchase-faq" aria-labelledby="offerweave-purchase-faq">
                 <h2 id="offerweave-purchase-faq"><?php esc_html_e(
                     'Questions about your subscription',
