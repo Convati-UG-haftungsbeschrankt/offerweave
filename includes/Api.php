@@ -266,6 +266,9 @@ final class Api
             $fingerprint = hash('sha256', wp_json_encode([$quote, $fields, $revision]));
             $keyHash = Spam::sign('request|' . $key);
             $existing = Store::byKey($keyHash);
+            if (is_wp_error($existing)) {
+                return $existing;
+            }
             if ($existing) {
                 if (!self::sameSubmission($existing, $quote, $fields)) {
                     return self::error(
@@ -337,6 +340,9 @@ final class Api
             if (!$id) {
                 // A concurrent retry may have won the unique request-key insert.
                 $existing = Store::byKey($keyHash);
+                if (is_wp_error($existing)) {
+                    return $existing;
+                }
                 if ($existing && self::sameSubmission($existing, $quote, $fields)) {
                     return self::response([
                         'saved' => true,
@@ -354,13 +360,17 @@ final class Api
                     'offerweave_storage',
                 );
             }
-            Mailer::send($id);
-            Mailer::sendCustomer($id);
+            $adminMail = Mailer::send($id);
+            $customerMail = Mailer::sendCustomer($id);
             return self::response(
                 [
                     'saved' => true,
                     'reference' => $id,
-                    'message' => self::savedMessage($id, $s['success_text']),
+                    'message' => self::savedMessage(
+                        $id,
+                        $s['success_text'],
+                        is_wp_error($adminMail) || is_wp_error($customerMail),
+                    ),
                 ],
                 201,
             );
@@ -462,6 +472,9 @@ final class Api
                 __('Request reference', 'offerweave'),
             );
             $row = Store::get($id);
+            if (is_wp_error($row)) {
+                return $row;
+            }
             if (!$row) {
                 return self::error(__('Request not found.', 'offerweave'), 404);
             }
@@ -472,9 +485,20 @@ final class Api
             return self::error($error);
         }
     }
-    private static function savedMessage(int $id, string $text): string
+    private static function savedMessage(int $id, string $text, bool $mailReadFailed = false): string
     {
-        $status = Store::get($id)['customer_mail_status'] ?? 'disabled';
+        $row = Store::get($id);
+        // Saving was already confirmed. A later read failure must not turn this into
+        // an unsaved response or imply a confirmed email outcome.
+        if ($mailReadFailed || is_wp_error($row)) {
+            return $text .
+                ' ' .
+                __(
+                    'Your request remains saved. Email delivery could not be fully verified. Please contact the provider if needed.',
+                    'offerweave',
+                );
+        }
+        $status = $row['customer_mail_status'] ?? 'disabled';
         return $text .
             match ($status) {
                 'sent' => ' ' .
@@ -497,7 +521,11 @@ final class Api
         try {
             $id = (int) $r['id'];
             $b = self::body($r);
-            if (!Store::get($id)) {
+            $row = Store::get($id);
+            if (is_wp_error($row)) {
+                return $row;
+            }
+            if (!$row) {
                 return self::error(__('Request not found.', 'offerweave'), 404);
             }
             switch ($b['action'] ?? '') {
@@ -506,7 +534,11 @@ final class Api
                         ? self::response(['deleted' => true])
                         : self::error(__('Deletion failed.', 'offerweave'), 503);
                 case 'resend':
-                    return Mailer::send($id)
+                    $sent = Mailer::send($id);
+                    if (is_wp_error($sent)) {
+                        return $sent;
+                    }
+                    return $sent
                         ? self::response(['sent' => true])
                         : self::error(
                             __(
@@ -516,7 +548,11 @@ final class Api
                             502,
                         );
                 case 'customer_send':
-                    return Mailer::sendCustomer($id, true)
+                    $sent = Mailer::sendCustomer($id, true);
+                    if (is_wp_error($sent)) {
+                        return $sent;
+                    }
+                    return $sent
                         ? self::response(['sent' => true])
                         : self::error(
                             __(

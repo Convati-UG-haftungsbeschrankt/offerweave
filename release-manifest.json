@@ -29,8 +29,8 @@
     "docs/VARIANTEN.md": "230ed86c079f3940b8c6b564cee510ec144fddc908b1fe1fa91423d695719334",
     "docs/WAEHRUNG.md": "ce9f0f5f2883fc88ea951ffff101a4ee49ab9a8246bdb9126747aaaf003149c3",
     "docs/ZUSCHLAEGE.md": "cec5f05e691fcc643f76cb4b7db65587b22ece4db7cb117857a177c74055b5a8",
-    "handbook/de/index.html": "9c6b7cadde3c4fd76166a1dc7a5c0ddfb19a5a91cc5f6d48c142dbb5bd2d987b",
-    "handbook/en/index.html": "ab02c3746178570509592d3599539b8f9e85d875ffcb3d8cab80989c81e0e292",
+    "handbook/de/index.html": "7f18550ed3fa90aff6b3a927c5592243ded600209f951e884f9e1c8d97163168",
+    "handbook/en/index.html": "84c41553e574ff9ba73103060f63bbc4523c2e0722f2b48ebe072d9c3327b7a6",
     "handbook/images/add-design-de.webp": "e38f20404e66598fa9f55c610fa052e9e890dea053148596859fce4de455ec20",
     "handbook/images/add-design-en.webp": "322dbffdbcd52c38ed54e7d0153fa303360b721f15079cd5b9ac6c11990232b3",
     "handbook/images/add-layout-de.webp": "e0ba0d71c86d3c1ef6234219bcc1cb8bb55ab09d25b902cfdb553800c9e04c20",
@@ -149,12 +149,12 @@
     "handbook/images/variant-options-en.webp": "6bd8c8d08e612f1932d5d92df189769a7d66879d0f40ac6b3c4bf1264bb9bbaf",
     "handbook/images/variants-de.webp": "a0e0d64fc9db3bd92b89bcd6674746b082beb6305e7b12ef7ba012fcd275611c",
     "handbook/images/variants-en.webp": "6d210dbb1010e649afb4abde7009da8d5f4e666dc91fe66c715cba39ff26b586",
-    "handbook/manifest.json": "e56f1972288cb22b5e9ba2a515182faa137c6066dfa810007c40f78d7ec3844d",
+    "handbook/manifest.json": "d3c2bda796c6f335ce6a26383ad3901dc8cec15dcd0d9d07a87ab1f7436090b7",
     "handbook/manual.css": "f055eb6d9d0490102c3df92f0b0d782ab394ed3402d700007b1f97a7b3a0a5c6",
     "handbook/manual.js": "4b64e6b7debb137d274030ffc8d52af4476551232ad259dc78a45d8382d27eb5",
     "includes/Activation.php": "74c2bcb1f45a44a74283dd7b80dd53132c0834706a5357dc6ea0abe9d46ac86f",
     "includes/Admin.php": "f6d29eab8e3eca5e699d2363ec11d4f5ab916ac3a7d1da43a6e17b35127b1c66",
-    "includes/Api.php": "e0080e2b105702a896a2f1aeef9310de8dd610554123017a10a88b36357b605d",
+    "includes/Api.php": "d2eced143060afdc1318e48852a9d49b62bffc7d67487466b3f7a28b5f50ae1a",
     "includes/Catalog.php": "05917ce648044ab8aee857a2678b4afd131284db51e790fb8505976a6f1211c0",
     "includes/Config.php": "5f630b345a557c3db13d05bf6cfe090dce164e97e233095628eb718b2f6568ec",
     "includes/ConfigValidation.php": "e2cbc1cad778c4538e6c981f005f608e3b2049c4ae99df5eb9c5053aafe416cc",
@@ -176,7 +176,7 @@
     "includes/Legal.php": "f53613ccd9b6ec7d7d42b0bc2c50b23f3c2bdf93599f360724158c8740c0ea13",
     "includes/Licensing.php": "c537cfea26539c5daa9899b008749bbef4d65ca24fcfeaa34ec9ee8245351707",
     "includes/MailTransport.php": "04d49d50dcc5f5621f89d4ca01a3f6aecda48fd562ffe38e0bc1130e149adc2b",
-    "includes/Mailer.php": "d65d3454015eef4add7f61cece13961ba2dfc68c057976d459e124ffc2e42026",
+    "includes/Mailer.php": "411b0ba2115c5223d8bc235934cc2c47f5a98c90cf9e559b4343c77e545b0893",
     "includes/OfferImage.php": "18f15e0756d833d881ba4839910a430a332f01f157792d3b1e44c1ecc6dfb9af",
     "includes/Pricing.php": "b8fd812e4282e48ab7744f27f49f30c835ef1c3c915d78ce07f1ee098ea2c70b",
     "includes/PurchasePage.php": "25042fd5d2a669fe4271b359188de45eb273bc822d5be69a63b5497a7f76ade9",
@@ -184,7 +184,7 @@
     "includes/SelectionRules.php": "124e9381f6a27dc3cdc4015e184f3474691b72c5e4008d5b350a7d18d5cef405",
     "includes/Spam.php": "3eb40ba49f8edebb1cf702f0955284af77d05f2eb67b7c235e2654c78a498712",
     "includes/StorageMigration.php": "3b77ee7b74144eaccde66c6dfbccf7ab1405c908d2980925228063dc9addba74",
-    "includes/Store.php": "8b863e56bd9386a7fc790183813124c113841b199cc66b879c103ed7e3d5d86e",
+    "includes/Store.php": "d5be88bd73566eb2d3fadef1d9bb490e16c42b783e726de9b0c1591b4b7035ac",
     "includes/Tax.php": "d13a25af43754bd31287b953ef50c35110ff85d93809a7127428b1fa4e85d655",
     "includes/Translations.php": "312ab285b3ff361f4470ff6bf4bd27945e5b889f422e5203015d80fa8019fcc0",
     "includes/Uninstall.php": "cfa8ec7de462c36d1f4898305f367258c6e62929a1e62cadd937473dc28799fd",
@@ -192,8 +192,8 @@
     "includes/features.json": "bbaf534a397270de8801243f67bf23b066cb2e0afca07e3c53c592b87e7d8f19",
     "languages/default-content.json": "599bcb1736258916dbdf2a08434ed0b7db30d987dcd980d1f2108f16b849560c",
     "languages/scripts.json": "ac8ee8ca328fb96d54795a03f9fe7866eb8834d85b70bd292de52eef0de0d319",
-    "offerweave.php": "5e270b4b753f8358f0cf8e2f63a7b135a09543b6698dc5797b67e210918e1929",
-    "readme.txt": "570578909e189a8c572d65d3e8b899928b709d73b5a18d3fc33674232bf805f3",
+    "offerweave.php": "7d640efafd9e38066d0e27f425a0747735c91170b38d2caff3f670b9b5d8cedf",
+    "readme.txt": "13da5d591738ed011cf6c83de92cb4f346c67d25cab28480858f6ec00aaafdc0",
     "release-config.php": "f090c28694307ebffb91ead034ca36d94ec1b60e4fad5285d4898f5d9e08e928",
     "uninstall.php": "c5b76f5a1e4cd89bd1d695b11abf58fb51c9062fcc8a7e152007a3762baef3cb",
     "vendor/freemius/LICENSE.txt": "b98fbb37db5b23bc5cfdcd16793206a5a7120a7b01f75374e5e0888376e4691c",
@@ -493,11 +493,11 @@
       "source": "docs/ZUSCHLAEGE.md"
     },
     "handbook/de/index.html": {
-      "sha256": "9c6b7cadde3c4fd76166a1dc7a5c0ddfb19a5a91cc5f6d48c142dbb5bd2d987b",
+      "sha256": "7f18550ed3fa90aff6b3a927c5592243ded600209f951e884f9e1c8d97163168",
       "source": "handbook/de/index.html"
     },
     "handbook/en/index.html": {
-      "sha256": "ab02c3746178570509592d3599539b8f9e85d875ffcb3d8cab80989c81e0e292",
+      "sha256": "84c41553e574ff9ba73103060f63bbc4523c2e0722f2b48ebe072d9c3327b7a6",
       "source": "handbook/en/index.html"
     },
     "handbook/images/add-design-de.webp": {
@@ -973,7 +973,7 @@
       "source": "handbook/images/variants-en.webp"
     },
     "handbook/manifest.json": {
-      "sha256": "e56f1972288cb22b5e9ba2a515182faa137c6066dfa810007c40f78d7ec3844d",
+      "sha256": "d3c2bda796c6f335ce6a26383ad3901dc8cec15dcd0d9d07a87ab1f7436090b7",
       "source": "handbook/manifest.json"
     },
     "handbook/manual.css": {
@@ -993,7 +993,7 @@
       "source": "editions/free/includes/Admin.php"
     },
     "includes/Api.php": {
-      "sha256": "e0080e2b105702a896a2f1aeef9310de8dd610554123017a10a88b36357b605d",
+      "sha256": "d2eced143060afdc1318e48852a9d49b62bffc7d67487466b3f7a28b5f50ae1a",
       "source": "editions/free/includes/Api.php"
     },
     "includes/Catalog.php": {
@@ -1081,7 +1081,7 @@
       "source": "editions/free/includes/MailTransport.php"
     },
     "includes/Mailer.php": {
-      "sha256": "d65d3454015eef4add7f61cece13961ba2dfc68c057976d459e124ffc2e42026",
+      "sha256": "411b0ba2115c5223d8bc235934cc2c47f5a98c90cf9e559b4343c77e545b0893",
       "source": "includes/Mailer.php"
     },
     "includes/OfferImage.php": {
@@ -1113,7 +1113,7 @@
       "source": "includes/StorageMigration.php"
     },
     "includes/Store.php": {
-      "sha256": "8b863e56bd9386a7fc790183813124c113841b199cc66b879c103ed7e3d5d86e",
+      "sha256": "d5be88bd73566eb2d3fadef1d9bb490e16c42b783e726de9b0c1591b4b7035ac",
       "source": "includes/Store.php"
     },
     "includes/Tax.php": {
@@ -1145,11 +1145,11 @@
       "source": "editions/free/languages/scripts.json"
     },
     "offerweave.php": {
-      "sha256": "5e270b4b753f8358f0cf8e2f63a7b135a09543b6698dc5797b67e210918e1929",
+      "sha256": "7d640efafd9e38066d0e27f425a0747735c91170b38d2caff3f670b9b5d8cedf",
       "source": "editions/free/offerweave.php"
     },
     "readme.txt": {
-      "sha256": "570578909e189a8c572d65d3e8b899928b709d73b5a18d3fc33674232bf805f3",
+      "sha256": "13da5d591738ed011cf6c83de92cb4f346c67d25cab28480858f6ec00aaafdc0",
       "source": "readme.txt"
     },
     "uninstall.php": {
@@ -1945,5 +1945,5 @@
       "source": "vendor/freemius/templates/tabs.php"
     }
   },
-  "version": "2.35.11"
+  "version": "2.35.12"
 }

@@ -171,9 +171,12 @@ final class Mailer
             '</p></div></body></html>';
         return $html;
     }
-    public static function send(int $id): bool
+    public static function send(int $id): bool|\WP_Error
     {
         $row = Store::get($id);
+        if (is_wp_error($row)) {
+            return $row;
+        }
         if (!$row || !Store::claimMail($id)) {
             return false;
         }
@@ -195,9 +198,12 @@ final class Mailer
         Store::mailResult($id, (bool) $ok);
         return (bool) $ok;
     }
-    public static function sendCustomer(int $id, bool $manual = false): bool
+    public static function sendCustomer(int $id, bool $manual = false): bool|\WP_Error
     {
         $row = Store::get($id);
+        if (is_wp_error($row)) {
+            return $row;
+        }
         if (!$row || !Store::claimCustomerMail($id, $manual)) {
             return false;
         }

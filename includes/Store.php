@@ -108,16 +108,19 @@ final class Store
             throw new \RuntimeException('OfferWeave request-table indexes are incomplete.');
         }
     }
-    public static function get(int $id): ?array
+    public static function get(int $id): array|\WP_Error|null
     {
         global $wpdb;
         // DirectQuery / NoCaching: this is an OfferWeave request row, not a WordPress post.
         // Read its current snapshot and delivery state; a cached row could outlive a mail claim
         // or status change. The plugin-owned table and integer ID use %i/%d placeholders.
         $r = $wpdb->get_row($wpdb->prepare('SELECT * FROM %i WHERE id=%d', self::table(), $id), ARRAY_A);
+        if ($wpdb->last_error !== '') {
+            return self::readError();
+        }
         return $r ?: null;
     }
-    public static function byKey(string $key): ?array
+    public static function byKey(string $key): array|\WP_Error|null
     {
         global $wpdb;
         // DirectQuery / NoCaching: check the unique request key against the current own table
@@ -127,7 +130,20 @@ final class Store
             $wpdb->prepare('SELECT * FROM %i WHERE request_key=%s', self::table(), $key),
             ARRAY_A,
         );
+        if ($wpdb->last_error !== '') {
+            return self::readError();
+        }
         return $r ?: null;
+    }
+    private static function readError(): \WP_Error
+    {
+        // A failed lookup does not establish that a request is absent. Keep database
+        // diagnostics private and let callers distinguish an outage from a genuine miss.
+        return new \WP_Error(
+            'offerweave_request_storage',
+            __('The request could not be checked. Please try again.', 'offerweave'),
+            ['status' => 503],
+        );
     }
     public static function create(
         string $key,
