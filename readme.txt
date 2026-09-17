@@ -4,7 +4,7 @@ Tags: quote calculator, request a quote, price calculator, service catalog, quot
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.35.13
+Stable tag: 2.35.14
 License: GPL-3.0-only
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,7 +12,7 @@ Create service cards, calculate prices and collect quote requests with custom fo
 
 == Description ==
 
-Developed and published by Convati UG (haftungsbeschränkt).
+Developed and published under the NovaPlug brand.
 
 = Service cards, live prices and quote requests =
 
@@ -162,6 +162,9 @@ A paid Pro licence includes official updates, downloads and support for the purc
 11. Settings grouped into six areas, including separate customer-document and provider settings.
 
 == Changelog ==
+
+= 2.35.14 =
+* Display NovaPlug as the plugin author in Free and Pro and update the publisher description. Legal ownership and plugin functionality are unchanged.
 
 = 2.35.13 =
 * Removed the Freemius SDK and licence/account integration from Free.

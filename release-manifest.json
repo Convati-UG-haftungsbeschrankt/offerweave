@@ -29,8 +29,8 @@
     "docs/VARIANTEN.md": "230ed86c079f3940b8c6b564cee510ec144fddc908b1fe1fa91423d695719334",
     "docs/WAEHRUNG.md": "ce9f0f5f2883fc88ea951ffff101a4ee49ab9a8246bdb9126747aaaf003149c3",
     "docs/ZUSCHLAEGE.md": "cec5f05e691fcc643f76cb4b7db65587b22ece4db7cb117857a177c74055b5a8",
-    "handbook/de/index.html": "a2405b27195b9f7989d1125de6d3b6f9e5ef9ca3f2cfc56c7473a32ee26bb822",
-    "handbook/en/index.html": "9727661bbc5f94aa4cdc2761c09c1cbc34a6c75d8d1255ca80489b262d1305aa",
+    "handbook/de/index.html": "b9df2ae810656d94999f76831ac2ade464aa4d8aa3ed0acec92790a9c31b1c77",
+    "handbook/en/index.html": "c7c3b666c8de65badd115f2e7e83a066b46c599f1dcb083326a91f3239388350",
     "handbook/images/add-design-de.webp": "e38f20404e66598fa9f55c610fa052e9e890dea053148596859fce4de455ec20",
     "handbook/images/add-design-en.webp": "322dbffdbcd52c38ed54e7d0153fa303360b721f15079cd5b9ac6c11990232b3",
     "handbook/images/add-layout-de.webp": "e0ba0d71c86d3c1ef6234219bcc1cb8bb55ab09d25b902cfdb553800c9e04c20",
@@ -149,7 +149,7 @@
     "handbook/images/variant-options-en.webp": "6bd8c8d08e612f1932d5d92df189769a7d66879d0f40ac6b3c4bf1264bb9bbaf",
     "handbook/images/variants-de.webp": "a0e0d64fc9db3bd92b89bcd6674746b082beb6305e7b12ef7ba012fcd275611c",
     "handbook/images/variants-en.webp": "6d210dbb1010e649afb4abde7009da8d5f4e666dc91fe66c715cba39ff26b586",
-    "handbook/manifest.json": "aebff6af77bc2ba9f6609777e0ab7c60cd6601b2a9dca90e5b33bc584fd2fdd7",
+    "handbook/manifest.json": "ad321655173316ff85c1a02b2cb7d20970b5160d1e4693ffc6b10d1f9016bd64",
     "handbook/manual.css": "f055eb6d9d0490102c3df92f0b0d782ab394ed3402d700007b1f97a7b3a0a5c6",
     "handbook/manual.js": "4b64e6b7debb137d274030ffc8d52af4476551232ad259dc78a45d8382d27eb5",
     "includes/Activation.php": "74c2bcb1f45a44a74283dd7b80dd53132c0834706a5357dc6ea0abe9d46ac86f",
@@ -193,8 +193,8 @@
     "includes/features.json": "bbaf534a397270de8801243f67bf23b066cb2e0afca07e3c53c592b87e7d8f19",
     "languages/default-content.json": "599bcb1736258916dbdf2a08434ed0b7db30d987dcd980d1f2108f16b849560c",
     "languages/scripts.json": "ac8ee8ca328fb96d54795a03f9fe7866eb8834d85b70bd292de52eef0de0d319",
-    "offerweave.php": "56accc959be0a9bbe244064720f75f0d2420d6f5587b8f981efd8b7c0fd31882",
-    "readme.txt": "e6cd6ddd9960ea5c3dc31b16fb7033c90b8f092534ecc1e3e3dab955811d6270",
+    "offerweave.php": "7a6e1f8b780c9c59661bed8981b0011252ca2a2532fda49345f91fcc8686f249",
+    "readme.txt": "06c07e8fa02329de56c509e3678ab1d52978e45c90a8e614d4e5f94d2fc63aff",
     "release-config.php": "25821961c5555f39f32f561efcf5add7423db7dcf853ae63a7b6664156848fab",
     "uninstall.php": "c5b76f5a1e4cd89bd1d695b11abf58fb51c9062fcc8a7e152007a3762baef3cb"
   },
@@ -297,11 +297,11 @@
       "source": "docs/ZUSCHLAEGE.md"
     },
     "handbook/de/index.html": {
-      "sha256": "a2405b27195b9f7989d1125de6d3b6f9e5ef9ca3f2cfc56c7473a32ee26bb822",
+      "sha256": "b9df2ae810656d94999f76831ac2ade464aa4d8aa3ed0acec92790a9c31b1c77",
       "source": "handbook/de/index.html"
     },
     "handbook/en/index.html": {
-      "sha256": "9727661bbc5f94aa4cdc2761c09c1cbc34a6c75d8d1255ca80489b262d1305aa",
+      "sha256": "c7c3b666c8de65badd115f2e7e83a066b46c599f1dcb083326a91f3239388350",
       "source": "handbook/en/index.html"
     },
     "handbook/images/add-design-de.webp": {
@@ -777,7 +777,7 @@
       "source": "handbook/images/variants-en.webp"
     },
     "handbook/manifest.json": {
-      "sha256": "aebff6af77bc2ba9f6609777e0ab7c60cd6601b2a9dca90e5b33bc584fd2fdd7",
+      "sha256": "ad321655173316ff85c1a02b2cb7d20970b5160d1e4693ffc6b10d1f9016bd64",
       "source": "handbook/manifest.json"
     },
     "handbook/manual.css": {
@@ -953,11 +953,11 @@
       "source": "editions/free/languages/scripts.json"
     },
     "offerweave.php": {
-      "sha256": "56accc959be0a9bbe244064720f75f0d2420d6f5587b8f981efd8b7c0fd31882",
+      "sha256": "7a6e1f8b780c9c59661bed8981b0011252ca2a2532fda49345f91fcc8686f249",
       "source": "editions/free/offerweave.php"
     },
     "readme.txt": {
-      "sha256": "e6cd6ddd9960ea5c3dc31b16fb7033c90b8f092534ecc1e3e3dab955811d6270",
+      "sha256": "06c07e8fa02329de56c509e3678ab1d52978e45c90a8e614d4e5f94d2fc63aff",
       "source": "readme.txt"
     },
     "uninstall.php": {
@@ -965,5 +965,5 @@
       "source": "uninstall.php"
     }
   },
-  "version": "2.35.13"
+  "version": "2.35.14"
 }

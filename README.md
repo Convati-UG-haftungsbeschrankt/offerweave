@@ -2,7 +2,7 @@
 
 An editable, self-contained WordPress plugin for service catalogues, quantity-based
 price calculation and quote requests. Developed and published by
-**Convati UG (haftungsbeschränkt)**. Licensed under **GPL-3.0-only**; see [LICENSE](LICENSE).
+**NovaPlug**, a brand of **Convati UG (haftungsbeschränkt)**. Licensed under **GPL-3.0-only**; see [LICENSE](LICENSE).
 
 This repository contains the complete **Free edition**. Read [readme.txt](readme.txt)
 for features, installation, external services and the changelog. Download the
