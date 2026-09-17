@@ -2,7 +2,7 @@
 /**
  * Plugin Name: OfferWeave
  * Description: Offer cards with images, quantity-based fixed prices, request forms and standard customer emails.
- * Version: 2.35.12
+ * Version: 2.35.13
  * Requires at least: 6.5
  * Requires PHP: 8.1
  * Author: Convati UG (haftungsbeschränkt)
@@ -81,7 +81,7 @@ if (
     return;
 }
 unset($offerweave_previous_plugin);
-define('OFFERWEAVE_VERSION', '2.35.12');
+define('OFFERWEAVE_VERSION', '2.35.13');
 define('OFFERWEAVE_DIR', plugin_dir_path(__FILE__));
 define('OFFERWEAVE_URL', plugin_dir_url(__FILE__));
 foreach (
@@ -125,7 +125,7 @@ foreach (
     require_once OFFERWEAVE_DIR . 'includes/' . $offerweave_class . '.php';
 }
 
-\OfferWeave\Licensing::boot(require OFFERWEAVE_DIR . 'release-config.php');
+\OfferWeave\Licensing::boot();
 /* DISTRIBUTION_BOOT */
 
 register_deactivation_hook(__FILE__, static function () {

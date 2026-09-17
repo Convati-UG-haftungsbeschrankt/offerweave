@@ -354,7 +354,7 @@
     }
     function purchaseLink() {
         const e = boot.edition || {};
-        if (e.build === 'owner' || !e.configured || e.services_active || !e.purchase_url) return '';
+        if (!e.purchase_url) return '';
         return (
             '<a class="qb-button qb-upgrade" data-purchase-pro href="' +
             esc(e.purchase_url) +
@@ -654,28 +654,7 @@
                         'OfferWeave Free: fixed-price offers, images, detail selection, forms and standard emails.',
                         'offerweave'
                     );
-        const setup =
-            e.build === 'owner'
-                ? __(
-                      'Install updates manually using the owner ZIP. Use the separate Free and public Pro packages for distribution to customers.',
-                      'offerweave'
-                  )
-                : !e.configured
-                  ? __(
-                        'Freemius is not connected yet. The publisher must configure the release to offer official updates and account services.',
-                        'offerweave'
-                    )
-                  : e.build === 'pro'
-                    ? e.services_active
-                        ? __(
-                              'Official updates, downloads and support: your paid license is active.',
-                              'offerweave'
-                          )
-                        : __(
-                              'No active paid service license is confirmed. Activate or renew your license for official updates, downloads and support.',
-                              'offerweave'
-                          )
-                    : '';
+        const setup = '';
         let html = '<p data-edition-status><strong>' + esc(text) + '</strong></p>';
         if (setup) html += '<p>' + esc(setup) + '</p>';
         if (!e.pro && config.offers.some((o) => o.kind !== 'fixed')) {
