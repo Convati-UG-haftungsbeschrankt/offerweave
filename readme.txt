@@ -4,7 +4,7 @@ Tags: quote calculator, request a quote, price calculator, service catalog, quot
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.35.14
+Stable tag: 2.35.15
 License: GPL-3.0-only
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -72,7 +72,7 @@ Use the WordPress.org Support tab for Free support. Include software versions, s
 
 **Your WordPress installation:** Configuration and requests are stored in your WordPress database. Requests include contact details, selected services and form data. You control the fields, retention and deletion settings. Emails use your site's configured mail transport.
 
-**Optional Pro purchase:** Free does not include or initialize the Freemius SDK and does not contact Freemius in the background. The local Pro plan comparison links to an external Freemius checkout and customer portal only when you choose to open them. Freemius handles purchases and account data there. The separate Pro plugin includes the official SDK for licence, account and update services. [Service](https://freemius.com/) | [Privacy](https://freemius.com/privacy/) | [Terms](https://freemius.com/terms/).
+**Freemius:** Free includes the original Freemius SDK for an optional account connection. You can skip this connection and use all Free features. Depending on your connection and consent, Freemius processes account/contact details, website/installation details, licence and transaction data, and optional environment/usage information as described on its consent screen. The existing local Pro plan comparison links to the external Freemius checkout and customer portal. Pro also uses the SDK for licence and update services. [Service](https://freemius.com/) | [Privacy](https://freemius.com/privacy/) | [Terms](https://freemius.com/terms/).
 
 **Optional CAPTCHA:** CAPTCHA is disabled by default. If you enable hCaptcha or Cloudflare Turnstile and provide your own keys, the form loads that provider's browser script and the server verifies the token with the provider. Browser and connection information needed for bot detection may be processed by that service. Add the appropriate information to your site's privacy notice before enabling it.
 
@@ -85,7 +85,7 @@ Use the WordPress.org Support tab for Free support. Include software versions, s
 
 OfferWeave Free's editable PHP, JavaScript, CSS and complete packaging tools are publicly maintained at https://github.com/Convati-UG-haftungsbeschrankt/offerweave . Clone that repository and run `python3 tools/package.py` to build the Free installation ZIP. The public README documents development, verification and changing Free source files. No private repository, Pro generator or Node.js runtime is needed to build or run Free. Release source tags and checksummed installation ZIPs are available from the repository's Releases page.
 
-Free contains no Freemius SDK, SDK assets or SDK translations. The following upstream build information applies only to the separate Pro package, which includes the unmodified official Freemius WordPress SDK 2.13.4:
+Free and Pro include the unmodified official Freemius WordPress SDK 2.13.4. The following upstream source and build information applies to its bundled assets:
 
 * SDK source and release: https://github.com/Freemius/wordpress-sdk/tree/2.13.4
 * SDK stylesheets and their source: https://github.com/Freemius/wordpress-sdk/tree/2.13.4/assets/scss
@@ -162,6 +162,9 @@ A paid Pro licence includes official updates, downloads and support for the purc
 11. Settings grouped into six areas, including separate customer-document and provider settings.
 
 == Changelog ==
+
+= 2.35.15 =
+* Restore the optional original Freemius account integration in Free. Keep the existing local Pro plans page, prices and checkout links unchanged.
 
 = 2.35.14 =
 * Display NovaPlug as the plugin author in Free and Pro and update the publisher description. Legal ownership and plugin functionality are unchanged.

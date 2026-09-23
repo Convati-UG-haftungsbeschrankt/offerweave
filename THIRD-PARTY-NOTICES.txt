@@ -1,5 +1,17 @@
 # Third-party software
 
-OfferWeave Free relies on WordPress-provided APIs, libraries, translations and the media library. No Freemius SDK, remote checkout assets or SDK translation catalogs are included. Its optional purchase links open the external Freemius checkout in the user's browser.
+OfferWeave Free and Pro bundle the official Freemius WordPress SDK **2.13.4**, released 2026-07-09. Free uses its optional account integration; OfferWeave provides its own local purchase page. The SDK files and notices are unchanged.
 
-OfferWeave is distributed under GPL-3.0-only; see LICENSE. Earlier OfferWeave code was available under GPL-2.0-or-later. Development tools are not included in the installation ZIP.
+- Source/release: <https://github.com/Freemius/wordpress-sdk/releases/tag/2.13.4>
+- Copyright: Freemius, Inc. and the respective contributors; source file notices are preserved.
+- License: GNU GPL v3; full text at `vendor/freemius/LICENSE.txt`. See individual SDK files for further third-party notices.
+- Downloaded official source archive SHA-256: `a678786c5a87333e0d5875577138aee42e1694ee39470c78f8c37ad01edf0c4e`.
+- SDK source files are distributed without code modifications. Development dependencies and test fixtures of OfferWeave are excluded from WordPress ZIPs.
+
+Earlier OfferWeave code was available under GPL-2.0-or-later. The current editions are provided under GPL v3; see `LICENSE`. WordPress, its editor and media library remain dependencies supplied by the host installation. Development tools in `package.json` are not included in installable ZIPs.
+
+Pricing UI sources: https://github.com/Freemius/pricing-page/tree/1.4.1
+Pinned source commit: e698ea512a55839dda26be4a1fb7341e675d7053.
+Build: npm install --legacy-peer-deps; npm run build. See package.json and webpack.config.js in that tag. It has no lockfile; a fresh build is not guaranteed to match the upstream release byte for byte. React/React DOM 17.0.2 and bundled asset notices remain in assets/js/pricing/freemius-pricing.js.LICENSE.txt within the SDK.
+
+The SDK's small checkout utility files and styles are developed in the SDK repository itself (tag 2.13.4, assets/scripts and assets/scss directories). Build from the SDK tag with npm ci and npm run build; gulpfile.js and gulptasks map the readable sources to assets/js and assets/css. Both this SDK build and the pricing-page 1.4.1 build were executed successfully during the 2026-09-08 audit. They are not OfferWeave-generated code. Any upstream source/build clarification for these files must retain the original licensing and working SDK integration.

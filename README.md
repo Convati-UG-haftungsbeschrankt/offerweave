@@ -62,10 +62,11 @@ available through WordPress when the corresponding packs are published. Missing
 interface translations use the English source text. Saved offer-content translations
 are independent of interface language packs.
 
-Free does not include the Freemius SDK and does not contact Freemius in the background.
-The local Pro price comparison contains optional links to the external Freemius
-checkout and customer portal. Opening them is your choice. The separate Pro
-package uses the SDK for its licence, update and account integration.
+Free includes the original Freemius SDK for an optional account connection. You
+can skip the connection and use every Free feature. The local Pro price comparison
+and its external checkout/customer-portal links remain independent of the SDK.
+The separate Pro package uses the SDK for its licence, update and account integration.
+See readme.txt and THIRD-PARTY-NOTICES.txt for data processing and upstream sources.
 
 For documentation and support, see the bundled `handbook/` or
 [offerweave.de](https://offerweave.de/). Do not include customer data or credentials

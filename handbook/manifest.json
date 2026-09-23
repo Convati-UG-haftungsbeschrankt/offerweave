@@ -1,5 +1,5 @@
 {
-  "version": "2.35.14",
+  "version": "2.35.15",
   "chapters": [
     "start",
     "editions",
@@ -146,7 +146,7 @@
     "variants-en.webp": "6d210dbb1010e649afb4abde7009da8d5f4e666dc91fe66c715cba39ff26b586"
   },
   "sources": {
-    "de": "ded102dfc819ab80fb1007ad30a38eed231248ef822e1450908f8542dfbbd740",
-    "en": "28a86433be5d7a052e565f0beccaeb0bf013c1e4d0d0385df3f91e74744ea0cd"
+    "de": "693535c52e2a0a3f8e611da75ab30ae623d6f1cf9efaab809ebd4b56d5d79c55",
+    "en": "74f65f07e624c179f64af5202dd634b863dc5e418c5fd00a2597c3fe34e4da8d"
   }
 }
