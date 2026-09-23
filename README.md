@@ -66,8 +66,20 @@ Free includes the original Freemius SDK for an optional account connection. You
 can skip the connection and use every Free feature. The local Pro price comparison
 and its external checkout/customer-portal links remain independent of the SDK.
 The separate Pro package uses the SDK for its licence, update and account integration.
-See readme.txt and THIRD-PARTY-NOTICES.txt for data processing and upstream sources.
+See [readme.txt](readme.txt) for external-service data processing and
+[THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt) for licences and provenance.
 
 For documentation and support, see the bundled `handbook/` or
 [offerweave.de](https://offerweave.de/). Do not include customer data or credentials
 in public issues.
+
+## Third-party source code and builds
+
+Free and Pro include the unmodified official Freemius WordPress SDK 2.13.4. The following upstream source and build information applies to its bundled assets:
+
+* SDK source and release: https://github.com/Freemius/wordpress-sdk/tree/2.13.4
+* SDK stylesheets and their source: https://github.com/Freemius/wordpress-sdk/tree/2.13.4/assets/scss
+* SDK checkout utilities `jquery.form.js`, `postmessage.js` and `nojquery.ba-postmessage.js`: https://github.com/Freemius/wordpress-sdk/tree/2.13.4/assets/scripts . Check out SDK tag 2.13.4, run `npm ci` and `npm run build` (Gulp, Sass and Terser). This produces the SDK CSS and the three JS utility files. The similarly named jQuery Form AJAX plugin is a different project.
+* Pricing UI source (including React components, styles and webpack configuration): https://github.com/Freemius/pricing-page/tree/1.4.1 . Check out this tag, install its package.json dependencies with Node.js/npm (`npm install --legacy-peer-deps`), then run `npm run build`. The result is `dist/freemius-pricing.js`. The upstream tag has no dependency lockfile, so newly resolved dependency versions can affect exact output bytes.
+
+Upstream licence notices remain in `vendor/freemius/LICENSE.txt` and the adjacent asset licence files. See `THIRD-PARTY-NOTICES.txt` for versions and provenance. OfferWeave applies its verified HTTPS policy through WordPress hooks without changing the SDK files.
