@@ -4,7 +4,7 @@ Tags: quote calculator, request a quote, price calculator, service catalog, quot
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.35.15
+Stable tag: 2.35.16
 License: GPL-3.0-only
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -162,6 +162,10 @@ A paid Pro licence includes official updates, downloads and support for the purc
 11. Settings grouped into six areas, including separate customer-document and provider settings.
 
 == Changelog ==
+
+= 2.35.16 =
+* Simplify the Buy Pro button and open the existing plan comparison directly in the same tab.
+* Keep the Pro plans submenu available alongside the optional SDK account flow in both editions.
 
 = 2.35.15 =
 * Restore the optional original Freemius account integration in Free. Keep the existing local Pro plans page, prices and checkout links unchanged.

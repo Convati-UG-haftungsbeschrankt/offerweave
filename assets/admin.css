@@ -925,8 +925,7 @@
 .cqb-admin .qb-upgrade {
     display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+    justify-content: center;
     padding: 10px 16px;
     border-radius: 8px;
     background: #0b60c6;
@@ -936,16 +935,6 @@
     text-align: left;
     line-height: 1.35;
 }
-.cqb-admin .qb-upgrade strong {
-    display: block;
-    font-size: 15px;
-}
-.cqb-admin .qb-upgrade small {
-    display: block;
-    font-size: 11px;
-    margin-top: 2px;
-    color: #fff;
-}
 .cqb-admin .qb-upgrade:hover {
     background: #084c9d;
     border-color: #084c9d;
@@ -954,9 +943,6 @@
 .cqb-admin .qb-upgrade:focus-visible {
     outline: 3px solid #172339;
     outline-offset: 3px;
-}
-.cqb-admin .qb-upgrade svg {
-    flex: 0 0 18px;
 }
 @media (max-width: 700px) {
     .cqb-admin .qb-header-actions {

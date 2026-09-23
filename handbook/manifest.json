@@ -1,5 +1,5 @@
 {
-  "version": "2.35.15",
+  "version": "2.35.16",
   "chapters": [
     "start",
     "editions",
@@ -100,6 +100,8 @@
     "promotion-missing-reference-en.webp": "f367a30ac5cb70c453145e124f063b697c62957e628b0e00b5efa35f6537f9d1",
     "promotions-de.webp": "067ce9d1a1dc030a03b4d8882be8087dafdff3e51e4462604a7945563f6fded3",
     "promotions-en.webp": "035bdb1d3dc8ef4eade4d5d19327c9e5b893553a6b1e1c40117fe7efa7f1b2ee",
+    "purchase-navigation-de.webp": "41363da7450e831f3b4a2348d73616dd272ee33129b6034b8e2ed8b94c64c514",
+    "purchase-navigation-en.webp": "3598fb010ba20768c7ce36660e2eb3d8008a9210b5624bbfd660664602edae63",
     "quantity-design-de.webp": "3b39010a18124e1d6a0f221b3b34eb1b82bdbe98b135081014ffbacb03f9f262",
     "quantity-design-en.webp": "915dd08706b5010cba34a27c620d26d54c188e50c6e72817f9ed7a5a50d1c100",
     "request-notice-de.webp": "66efa8cc4274bc891d4cf05d4088f0012e555f448f3967d21eb631fb54eec0b9",
@@ -146,7 +148,7 @@
     "variants-en.webp": "6d210dbb1010e649afb4abde7009da8d5f4e666dc91fe66c715cba39ff26b586"
   },
   "sources": {
-    "de": "693535c52e2a0a3f8e611da75ab30ae623d6f1cf9efaab809ebd4b56d5d79c55",
-    "en": "74f65f07e624c179f64af5202dd634b863dc5e418c5fd00a2597c3fe34e4da8d"
+    "de": "28cd0e17aace7f27af97bd99025b1afb1f21d05c73eff8f0d573bf8a55a040a0",
+    "en": "f27ec4809508025ac65f72a79edd37b14d56b7387355155f4981f820cc7ab3f5"
   }
 }

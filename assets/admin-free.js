@@ -358,15 +358,12 @@
         return (
             '<a class="qb-button qb-upgrade" data-purchase-pro href="' +
             esc(e.purchase_url) +
-            '" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" aria-label="' +
-            esc(__('Compare Pro plans — opens a new tab', 'offerweave')) +
-            '"><span><strong>' +
+            '">' +
             esc(__('Buy Pro', 'offerweave')) +
-            '</strong><small>' +
-            esc(__('1, 5 or 25 websites', 'offerweave')) +
-            '</small></span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M14 4h6v6M20 4 10 14M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></svg></a>'
+            '</a>'
         );
     }
+
     function brand(title = 'OfferWeave') {
         return (
             '<div class="qb-brand"><span class="qb-brand-mark" aria-hidden="true"><img src="' +
