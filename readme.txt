@@ -1,18 +1,16 @@
 === OfferWeave ===
 Contributors: Convati
-Tags: quote calculator, request a quote, price calculator, service catalog, quote form
+Tags: quote, quote calculator, request a quote, price calculator, quote form
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.35.16
+Stable tag: 2.35.17
 License: GPL-3.0-only
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 Create service cards, calculate prices and collect quote requests with custom forms, email notifications and a request inbox.
 
 == Description ==
-
-Developed and published under the NovaPlug brand.
 
 = Service cards, live prices and quote requests =
 
@@ -60,39 +58,24 @@ The separate paid Pro edition adds more detailed pricing and presentation tools:
 * Advanced card, image, input-area and banner design with a live preview, including individual styles.
 * Custom email templates, email design and an SMTP transport for OfferWeave messages.
 
-These are Pro features and are not included in the free download. Free works on its own and does not require a paid licence or a Freemius account. Details about the paid edition are available on the [OfferWeave website](https://offerweave.de/en/).
-
-= Documentation and support =
+= Documentation =
 
 Open **OfferWeave > Documentation** for the bundled handbook, or use the contextual help link in the editor. The handbook includes search, screenshots and printable instructions in German and English.
 
-Use the WordPress.org Support tab for Free support. Include software versions, steps to reproduce the issue and relevant errors. Remove customer data and credentials from attachments.
+= External services =
 
-= Data and external services =
+**Freemius:** The bundled SDK provides optional account connection and Pro purchase, licence and update services. Free works without connecting. Depending on the service and your consent, Freemius processes account/contact, website/installation, licence/transaction and optional environment/usage data, as described in its opt-in. [Service](https://freemius.com/) · [Privacy](https://freemius.com/privacy/) · [Terms](https://freemius.com/terms/).
 
-**Your WordPress installation:** Configuration and requests are stored in your WordPress database. Requests include contact details, selected services and form data. You control the fields, retention and deletion settings. Emails use your site's configured mail transport.
+**CAPTCHA:** Disabled by default. When you enable a provider with your own keys, its browser script and server-side token verification process browser/connection information to prevent spam. Include this processing in your site's privacy notice.
 
-**Freemius:** Free includes the original Freemius SDK for an optional account connection. You can skip this connection and use all Free features. Depending on your connection and consent, Freemius processes account/contact details, website/installation details, licence and transaction data, and optional environment/usage information as described on its consent screen. The existing local Pro plan comparison links to the external Freemius checkout and customer portal. Pro also uses the SDK for licence and update services. [Service](https://freemius.com/) | [Privacy](https://freemius.com/privacy/) | [Terms](https://freemius.com/terms/).
+* hCaptcha: [Service](https://docs.hcaptcha.com/) · [Privacy](https://www.hcaptcha.com/privacy) · [Terms](https://www.hcaptcha.com/terms).
+* Cloudflare Turnstile: [Service](https://developers.cloudflare.com/turnstile/) · [Privacy](https://www.cloudflare.com/privacypolicy/) · [Terms](https://www.cloudflare.com/website-terms/).
 
-**Optional CAPTCHA:** CAPTCHA is disabled by default. If you enable hCaptcha or Cloudflare Turnstile and provide your own keys, the form loads that provider's browser script and the server verifies the token with the provider. Browser and connection information needed for bot detection may be processed by that service. Add the appropriate information to your site's privacy notice before enabling it.
+**Images:** External image URLs connect visitors to their host. Use local Media Library images to avoid these connections.
 
-* hCaptcha: [Documentation](https://docs.hcaptcha.com/) | [Privacy](https://www.hcaptcha.com/privacy) | [Terms](https://www.hcaptcha.com/terms).
-* Cloudflare Turnstile: [Documentation](https://developers.cloudflare.com/turnstile/) | [Privacy](https://www.cloudflare.com/privacypolicy/) | [Terms](https://www.cloudflare.com/website-terms/).
+= Source code =
 
-**Images:** Media Library images are served by your site. External image URLs connect visitors to that image host; use local images to avoid this.
-
-= Source code and build tools =
-
-OfferWeave Free's editable PHP, JavaScript, CSS and complete packaging tools are publicly maintained at https://github.com/Convati-UG-haftungsbeschrankt/offerweave . Clone that repository and run `python3 tools/package.py` to build the Free installation ZIP. The public README documents development, verification and changing Free source files. No private repository, Pro generator or Node.js runtime is needed to build or run Free. Release source tags and checksummed installation ZIPs are available from the repository's Releases page.
-
-Free and Pro include the unmodified official Freemius WordPress SDK 2.13.4. The following upstream source and build information applies to its bundled assets:
-
-* SDK source and release: https://github.com/Freemius/wordpress-sdk/tree/2.13.4
-* SDK stylesheets and their source: https://github.com/Freemius/wordpress-sdk/tree/2.13.4/assets/scss
-* SDK checkout utilities `jquery.form.js`, `postmessage.js` and `nojquery.ba-postmessage.js`: https://github.com/Freemius/wordpress-sdk/tree/2.13.4/assets/scripts . Check out SDK tag 2.13.4, run `npm ci` and `npm run build` (Gulp, Sass and Terser). This produces the SDK CSS and the three JS utility files. The similarly named jQuery Form AJAX plugin is a different project.
-* Pricing UI source (including React components, styles and webpack configuration): https://github.com/Freemius/pricing-page/tree/1.4.1 . Check out this tag, install its package.json dependencies with Node.js/npm (`npm install --legacy-peer-deps`), then run `npm run build`. The result is `dist/freemius-pricing.js`. The upstream tag has no dependency lockfile, so newly resolved dependency versions can affect exact output bytes.
-
-Upstream licence notices remain in `vendor/freemius/LICENSE.txt` and the adjacent asset licence files. See `THIRD-PARTY-NOTICES.txt` for versions and provenance. OfferWeave applies its verified HTTPS policy through WordPress hooks without changing the SDK files.
+Editable Free source code, packaging tools and build instructions, including the bundled third-party assets: [GitHub / OfferWeave](https://github.com/Convati-UG-haftungsbeschrankt/offerweave#third-party-source-code-and-builds).
 
 == Installation ==
 
@@ -162,6 +145,9 @@ A paid Pro licence includes official updates, downloads and support for the purc
 11. Settings grouped into six areas, including separate customer-document and provider settings.
 
 == Changelog ==
+
+= 2.35.17 =
+* Keep WordPress and Freemius notices outside the logo and page heading. Preserve notices when the editor changes tabs or reloads its content.
 
 = 2.35.16 =
 * Simplify the Buy Pro button and open the existing plan comparison directly in the same tab.

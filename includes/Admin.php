@@ -137,7 +137,8 @@ final class Admin
             wp_die(esc_html__('You do not have permission to access this page.', 'offerweave'));
         }
         $requests = get_current_screen()?->id === self::$requestsHook;
-        echo '<div class="wrap cqb-admin" id="offerweave-admin"><header class="qb-top"><div class="qb-brand"><span class="qb-brand-mark" aria-hidden="true"><img src="' .
+        // Keep Core's notice anchor outside the editor root: re-rendering must not remove notices.
+        echo '<div class="wrap cqb-admin"><hr class="wp-header-end"><div id="offerweave-admin"><header class="qb-top"><div class="qb-brand"><span class="qb-brand-mark" aria-hidden="true"><img src="' .
             esc_url(OFFERWEAVE_URL . 'assets/brand/offerweave-logo.png') .
             '" alt="" width="76" height="76"></span><h1>OfferWeave' .
             ($requests ? ' – ' . esc_html__('Requests', 'offerweave') : '') .
@@ -145,6 +146,6 @@ final class Admin
             ($requests
                 ? esc_html__('Loading requests …', 'offerweave')
                 : esc_html__('Loading configuration …', 'offerweave')) .
-            '</p></div>';
+            '</p></div></div>';
     }
 }

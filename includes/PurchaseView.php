@@ -33,6 +33,9 @@ abstract class PurchaseView
                     static::accountUrl(),
                 ); ?>"><?php esc_html_e('My account', 'offerweave'); ?></a>
             </header>
+            <?php // WordPress moves admin notices here instead of into the nested brand heading.
+        ?>
+            <hr class="wp-header-end">
             <p class="offerweave-purchase-intro"><?php esc_html_e(
                 'All Pro features in every plan. Choose how many websites you want to register.',
                 'offerweave',

@@ -155,7 +155,7 @@
     "handbook/manual.css": "f055eb6d9d0490102c3df92f0b0d782ab394ed3402d700007b1f97a7b3a0a5c6",
     "handbook/manual.js": "4b64e6b7debb137d274030ffc8d52af4476551232ad259dc78a45d8382d27eb5",
     "includes/Activation.php": "74c2bcb1f45a44a74283dd7b80dd53132c0834706a5357dc6ea0abe9d46ac86f",
-    "includes/Admin.php": "f6d29eab8e3eca5e699d2363ec11d4f5ab916ac3a7d1da43a6e17b35127b1c66",
+    "includes/Admin.php": "76b2e03010f42215db7c02362dba562a640da8e7b7bcc3f442dbcfe222333f52",
     "includes/Api.php": "d2eced143060afdc1318e48852a9d49b62bffc7d67487466b3f7a28b5f50ae1a",
     "includes/Catalog.php": "05917ce648044ab8aee857a2678b4afd131284db51e790fb8505976a6f1211c0",
     "includes/Config.php": "5f630b345a557c3db13d05bf6cfe090dce164e97e233095628eb718b2f6568ec",
@@ -182,7 +182,7 @@
     "includes/OfferImage.php": "18f15e0756d833d881ba4839910a430a332f01f157792d3b1e44c1ecc6dfb9af",
     "includes/Pricing.php": "b8fd812e4282e48ab7744f27f49f30c835ef1c3c915d78ce07f1ee098ea2c70b",
     "includes/PurchasePage.php": "8cb0a67f55428aa7f3baf418b8bb1e18319f6b797ca4e8cee8ef957f2fa4f8c2",
-    "includes/PurchaseView.php": "639fab6182b387edc1a7b2fc800740e6ffc4a73659dc606be1a6656e94c3eeb2",
+    "includes/PurchaseView.php": "d09d749e141c28155212368c9d92c0d2e215f319fd83873018da8fe54d30ab91",
     "includes/RuntimeGuard.php": "cc71f0959228b98315275d9327304af8a1f614313b0bfa917d8b11f636ddab9c",
     "includes/SelectionRules.php": "124e9381f6a27dc3cdc4015e184f3474691b72c5e4008d5b350a7d18d5cef405",
     "includes/Spam.php": "3eb40ba49f8edebb1cf702f0955284af77d05f2eb67b7c235e2654c78a498712",
@@ -195,8 +195,8 @@
     "includes/features.json": "bbaf534a397270de8801243f67bf23b066cb2e0afca07e3c53c592b87e7d8f19",
     "languages/default-content.json": "599bcb1736258916dbdf2a08434ed0b7db30d987dcd980d1f2108f16b849560c",
     "languages/scripts.json": "ac8ee8ca328fb96d54795a03f9fe7866eb8834d85b70bd292de52eef0de0d319",
-    "offerweave.php": "ff09ace78486a6dd7c106949b1f7e66a9dd860ade4c7bbb0f5deb8df69f476ef",
-    "readme.txt": "8209a64184b77f03f27d49c848e50812e2e630feceb131f7e6377d3e8f85f1e1",
+    "offerweave.php": "f6756e78b2fffaf211def4ef0927e5f6445b56be6df37816521659dbb729dc6f",
+    "readme.txt": "661f4ca7b4db1a9a2cec2adb4db8f824cbc25a560988029f4228de26ce0f82b8",
     "release-config.php": "f090c28694307ebffb91ead034ca36d94ec1b60e4fad5285d4898f5d9e08e928",
     "uninstall.php": "c5b76f5a1e4cd89bd1d695b11abf58fb51c9062fcc8a7e152007a3762baef3cb",
     "vendor/freemius/LICENSE.txt": "b98fbb37db5b23bc5cfdcd16793206a5a7120a7b01f75374e5e0888376e4691c",
@@ -1000,7 +1000,7 @@
       "source": "includes/Activation.php"
     },
     "includes/Admin.php": {
-      "sha256": "f6d29eab8e3eca5e699d2363ec11d4f5ab916ac3a7d1da43a6e17b35127b1c66",
+      "sha256": "76b2e03010f42215db7c02362dba562a640da8e7b7bcc3f442dbcfe222333f52",
       "source": "editions/free/includes/Admin.php"
     },
     "includes/Api.php": {
@@ -1108,7 +1108,7 @@
       "source": "editions/free/includes/PurchasePage.php"
     },
     "includes/PurchaseView.php": {
-      "sha256": "639fab6182b387edc1a7b2fc800740e6ffc4a73659dc606be1a6656e94c3eeb2",
+      "sha256": "d09d749e141c28155212368c9d92c0d2e215f319fd83873018da8fe54d30ab91",
       "source": "includes/PurchaseView.php"
     },
     "includes/RuntimeGuard.php": {
@@ -1160,11 +1160,11 @@
       "source": "editions/free/languages/scripts.json"
     },
     "offerweave.php": {
-      "sha256": "ff09ace78486a6dd7c106949b1f7e66a9dd860ade4c7bbb0f5deb8df69f476ef",
+      "sha256": "f6756e78b2fffaf211def4ef0927e5f6445b56be6df37816521659dbb729dc6f",
       "source": "editions/free/offerweave.php"
     },
     "readme.txt": {
-      "sha256": "8209a64184b77f03f27d49c848e50812e2e630feceb131f7e6377d3e8f85f1e1",
+      "sha256": "661f4ca7b4db1a9a2cec2adb4db8f824cbc25a560988029f4228de26ce0f82b8",
       "source": "readme.txt"
     },
     "uninstall.php": {
@@ -1960,5 +1960,5 @@
       "source": "vendor/freemius/templates/tabs.php"
     }
   },
-  "version": "2.35.16"
+  "version": "2.35.17"
 }

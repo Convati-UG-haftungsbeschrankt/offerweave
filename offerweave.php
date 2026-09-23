@@ -2,7 +2,7 @@
 /**
  * Plugin Name: OfferWeave
  * Description: Offer cards with images, quantity-based fixed prices, request forms and standard customer emails.
- * Version: 2.35.16
+ * Version: 2.35.17
  * Requires at least: 6.5
  * Requires PHP: 8.1
  * Author: NovaPlug
@@ -81,7 +81,7 @@ if (
     return;
 }
 unset($offerweave_previous_plugin);
-define('OFFERWEAVE_VERSION', '2.35.16');
+define('OFFERWEAVE_VERSION', '2.35.17');
 define('OFFERWEAVE_DIR', plugin_dir_path(__FILE__));
 define('OFFERWEAVE_URL', plugin_dir_url(__FILE__));
 foreach (
